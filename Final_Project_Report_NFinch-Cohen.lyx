@@ -1004,6 +1004,38 @@ An Oscillating Circuit - The circuit in Figure 7 is fed with a DC bias voltage.
 ? Yes.
  It can be seen that it satisfies the phase oscillation criterion.
  How can this been seen with small signal analysis?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+f=
+\backslash
+frac{1}{
+\backslash
+sum_{i=1}^{n}D_{i}}[
+\backslash
+text{Hz}]
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset Float figure
 placement H
 wide false
@@ -1161,13 +1193,44 @@ Properties of oscillating circuits
 Phase noise
 \end_layout
 
+\begin_layout Standard
+When planning an pscillator,
+\end_layout
+
 \begin_layout Subsubsection
 Tuning range
 \end_layout
 
 \begin_layout Standard
-The Tuning range of an oscillator circuit is the range of frequencies over
- which the oscillator can reliably operate
+The tuning range of an oscillator circuit is the range of frequencies over
+ which the oscillator can reliably operate.
+ It reperesents, in some sense, the versatility of the oscillator in being
+ able to produce a range of different output signal frequencies.
+ Tuning range is often described as a percentage measure calculated with
+ the below formula,
+\begin_inset Formula 
+\[
+\text{Tuning Range}\%=\bigg(\frac{f_{max}-f_{min}}{f_{mid}}\bigg)\cdot100\%
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{max}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{min}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{mid}$
+\end_inset
+
+ are the highest, lowest and central frequencies of the range, respectively.
+ The tuning range is often impacted by the components used in the oscillator.
+ Some devices such as Op-Amps and RC pairs may have band-pass effects limiting
+ the frequency range.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1808,6 +1871,25 @@ Greater ease of controlling oscillation amplitude
 
 \begin_layout Itemize
 Greater ease of tuning to required frequency
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+f=
+\backslash
+frac{1}{
+\backslash
+sum_{i=1}^{n}D_{i}}[
+\backslash
+text{Hz}]
 \end_layout
 
 \begin_layout Paragraph

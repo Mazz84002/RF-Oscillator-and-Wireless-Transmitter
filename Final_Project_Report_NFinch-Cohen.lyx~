@@ -1165,6 +1165,11 @@ Phase noise
 Tuning range
 \end_layout
 
+\begin_layout Standard
+The Tuning range of an oscillator circuit is the range of frequencies over
+ which the oscillator can reliably operate
+\end_layout
+
 \begin_layout Subsubsection
 DC to RF efficiency
 \end_layout
@@ -1920,26 +1925,6 @@ Sensitivity to operating conditions
 
 \begin_layout Itemize
 Poor spectral purity (due to being based on stage delay)
-\end_layout
-
-\begin_layout Subsubsection
-Vackar Oscillators
-\end_layout
-
-\begin_layout Paragraph
-Topology
-\end_layout
-
-\begin_layout Paragraph
-Basic Principles
-\end_layout
-
-\begin_layout Paragraph
-Advantages
-\end_layout
-
-\begin_layout Paragraph
-Disadvantages
 \end_layout
 
 \begin_layout Subsubsection

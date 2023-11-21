@@ -333,7 +333,7 @@ where,
  This gives,
 \begin_inset Formula 
 \[
-v_{VCO}(t)=A_{VCO}\cos\Big(\omega_{f}t+\phi_{0}+K_{VCO}\intop_{-\infty}^{t}V_{\text{c}}dt\Big)
+v_{VCO}(t)=A_{VCO}\cos\Big(\omega f=\frac{1}{\sum_{i=1}^{n}D_{i}}[\text{Hz}]_{f}t+\phi_{0}+K_{VCO}\intop_{-\infty}^{t}V_{\text{c}}dt\Big)
 \]
 
 \end_inset
@@ -1004,6 +1004,38 @@ An Oscillating Circuit - The circuit in Figure 7 is fed with a DC bias voltage.
 ? Yes.
  It can be seen that it satisfies the phase oscillation criterion.
  How can this been seen with small signal analysis?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+f=
+\backslash
+frac{1}{
+\backslash
+sum_{i=1}^{n}D_{i}}[
+\backslash
+text{Hz}]
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset Float figure
 placement H
 wide false
@@ -1161,13 +1193,87 @@ Properties of oscillating circuits
 Phase noise
 \end_layout
 
+\begin_layout Paragraph
+Qualitative Description of Phase Noise
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+When planning an oscillator, there are precise requirements for the frequency
+ of the output.
+ The ideal output that is planned when designing the system is unlikely
+ to be attained perfectly.
+ Phase noise is a measure of random and short term fluctuations in the phase
+ of a signal relative to the ideal signal, as a reference.
+ Its existence in an output signal can be attributed to conventional electronic
+ and thermal noise and many non-idealities of the components that comprise
+ the oscillator.
+ Non idealities can lead to the output signal completing a deviant (typically
+ non-integer) number of cycles in a given time period.
+ The mathematical foundation for quantifying phase noise was presented in
+ the 1996 paper by B.Razavi entitled 
+\begin_inset Quotes eld
+\end_inset
+
+A Study of Phase Noise in CMOS Oscillators
+\begin_inset Quotes erd
+\end_inset
+
+, and we have summarised it below.
+\end_layout
+
+\begin_layout Paragraph
+Razavi's Phase Noise Mathematical Model
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Tuning range
 \end_layout
 
 \begin_layout Standard
-The Tuning range of an oscillator circuit is the range of frequencies over
- which the oscillator can reliably operate
+The tuning range of an oscillator circuit is the range of frequencies over
+ which the oscillator can reliably operate.
+ It reperesents, in some sense, the versatility of the oscillator in being
+ able to produce a range of different output signal frequencies.
+ Tuning range is often described as a percentage measure calculated with
+ the below formula,
+\begin_inset Formula 
+\[
+\text{Tuning Range}\%=\bigg(\frac{f_{max}-f_{min}}{f_{mid}}\bigg)\cdot100\%
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{max}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{min}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{mid}$
+\end_inset
+
+ are the highest, lowest and central frequencies of the range, respectively.
+ The tuning range is often impacted by the components used in the oscillator.
+ Some devices such as Op-Amps and RC pairs may have band-pass effects limiting
+ the frequency range.
 \end_layout
 
 \begin_layout Subsubsection

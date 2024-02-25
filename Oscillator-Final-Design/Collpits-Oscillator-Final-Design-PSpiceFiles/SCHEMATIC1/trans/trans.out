@@ -1,0 +1,197 @@
+
+**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\mazz\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3e-6 0 2e-11 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source COLLPITS-OSCILLATOR-FINAL-DESIGN
+.EXTERNAL OUTPUT Vout_prem
+.EXTERNAL OUTPUT Vout_sec
+V_V9         N39003 0 5Vdc
+X_Qi2         N39267 N39115 N39533 BFP520/INF
+C_Cs         N39197 VOUT_SEC  1m  TC=0,0 
+R_Rload         0 VOUT_SEC  50 TC=0,0 
+V_V11         N39533 0 -5Vdc
+X_Qi3         N39197 N39115 N39533 BFP520/INF
+R_Ri         N39115 N39003  9.3k TC=0,0 
+V_V10         N39243 0 3Vdc
+L_Lp         N39107 N39003  1nH  
+X_Qm2         N40503 VOUT_PREM N39197 BFP520/INF
+R_Rp         N39107 N39003  50k TC=0,0 
+C_C1         N39267 N39107  2.5p  TC=0,0 
+C_C2         0 N39267  2.5p  TC=0,0 
+X_Qi1         N39115 N39115 N39533 BFP520/INF
+X_Qm1         N39107 N39243 N39267 BFP520/INF
+I_I1         N39267 0 DC 0Adc AC 1Aac 
+R_Rc         N40503 N39003  1k TC=0,0 
+C_C3         N39107 VOUT_PREM  1m  TC=0,0 
+R_Rb1         VOUT_PREM N39003  100k TC=0,0 
+R_Rb2         0 VOUT_PREM  80k TC=0,0 
+
+**** RESUMING trans.cir ****
+.END
+
+**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BFP520          
+               NPN             
+       LEVEL    1            
+          IS   15.000000E-18 
+          BF  235            
+          NF    1            
+         VAF   25            
+         IKF     .4          
+         ISE   25.000000E-15 
+          NE    2            
+          BR    1.5          
+          NR    1            
+         VAR    2            
+         IKR     .01         
+         ISC   20.000000E-15 
+         ISS    0            
+          RB   11            
+         RBM    7.5          
+          RE     .6          
+          RC    7.6          
+         CJE  235.000000E-15 
+         VJE     .958        
+         MJE     .335        
+         CJC   93.000000E-15 
+         VJC     .661        
+         MJC     .236        
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+         MJS     .333        
+          TF    1.700000E-12 
+         XTF   10            
+         VTF    5            
+         ITF     .7          
+         PTF   50            
+          TR   50.000000E-09 
+         XTB    -.25         
+         XTI     .035        
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N39003)    5.0000 (N39107)    5.0000 (N39115)   -4.1629 (N39197)     .9941     
+
+(N39243)    3.0000 (N39267)    2.1569 (N39533)   -5.0000 (N40503)    3.7138     
+
+(X_Qi1.1)   -4.1629                   (X_Qi1.2)   -4.1629                       
+
+(X_Qi1.3)   -5.0000                   (X_Qi2.1)   -4.1629                       
+
+(X_Qi2.2)    2.1569                   (X_Qi2.3)   -5.0000                       
+
+(X_Qi3.1)   -4.1629                   (X_Qi3.2)     .9941                       
+
+(X_Qi3.3)   -5.0000                   (X_Qm1.1)    3.0000                       
+
+(X_Qm1.2)    5.0000                   (X_Qm1.3)    2.1569                       
+
+(X_Qm2.1)    1.8359                   (X_Qm2.2)    3.7138                       
+
+(X_Qm2.3)     .9941                   (VOUT_SEC)    0.0000                      
+
+(X_Qi1.10)   -4.1629                  (X_Qi1.20)   -4.1629                      
+
+(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1629                      
+
+(X_Qi2.20)    2.1569                  (X_Qi2.30)   -5.0000                      
+
+(X_Qi3.10)   -4.1629                  (X_Qi3.20)     .9941                      
+
+(X_Qi3.30)   -5.0000                  (X_Qm1.10)    3.0000                      
+
+(X_Qm1.20)    5.0000                  (X_Qm1.30)    2.1569                      
+
+(X_Qm2.10)    1.8359                  (X_Qm2.20)    3.7138                      
+
+(X_Qm2.30)     .9941                  (VOUT_PREM)    1.8359                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V9        -3.663E-03
+    V_V11        3.649E-03
+    V_V10       -9.127E-06
+
+    TOTAL POWER DISSIPATION   3.66E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       75.66
+

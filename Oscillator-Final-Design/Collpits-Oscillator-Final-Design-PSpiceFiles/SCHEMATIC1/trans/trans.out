@@ -1,7 +1,7 @@
 
-**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+ ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
 
  ****     CIRCUIT DESCRIPTION
@@ -40,26 +40,23 @@ R_Rload         0 VOUT_SEC  50 TC=0,0
 V_V11         N39533 0 -5Vdc
 X_Qi3         N39197 N39115 N39533 BFP520/INF
 R_Ri         N39115 N39003  9.3k TC=0,0 
-V_V10         N39243 0 3Vdc
 L_Lp         N39107 N39003  1nH  
-X_Qm2         N40503 VOUT_PREM N39197 BFP520/INF
+X_Qm2         N39003 VOUT_PREM N39197 BFP520/INF
 R_Rp         N39107 N39003  50k TC=0,0 
 C_C1         N39267 N39107  2.5p  TC=0,0 
 C_C2         0 N39267  2.5p  TC=0,0 
 X_Qi1         N39115 N39115 N39533 BFP520/INF
-X_Qm1         N39107 N39243 N39267 BFP520/INF
-I_I1         N39267 0 DC 0Adc AC 1Aac 
-R_Rc         N40503 N39003  1k TC=0,0 
+X_Qm1         N39107 0 N39267 BFP520/INF
 C_C3         N39107 VOUT_PREM  1m  TC=0,0 
 R_Rb1         VOUT_PREM N39003  100k TC=0,0 
-R_Rb2         0 VOUT_PREM  80k TC=0,0 
+R_Rb2         0 VOUT_PREM  70 TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
 
-**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+ ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
 
  ****     BJT MODEL PARAMETERS
@@ -114,9 +111,9 @@ R_Rb2         0 VOUT_PREM  80k TC=0,0
            D     .87         
 
 
-**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+ ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -129,41 +126,41 @@ R_Rb2         0 VOUT_PREM  80k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N39003)    5.0000 (N39107)    5.0000 (N39115)   -4.1629 (N39197)     .9941     
+(N39003)    5.0000 (N39107)    5.0000 (N39115)   -4.1629 (N39197)    -.8315     
 
-(N39243)    3.0000 (N39267)    2.1569 (N39533)   -5.0000 (N40503)    3.7138     
+(N39267)    -.8346 (N39533)   -5.0000 (X_Qi1.1)   -4.1629                       
 
-(X_Qi1.1)   -4.1629                   (X_Qi1.2)   -4.1629                       
+(X_Qi1.2)   -4.1629                   (X_Qi1.3)   -5.0000                       
 
-(X_Qi1.3)   -5.0000                   (X_Qi2.1)   -4.1629                       
+(X_Qi2.1)   -4.1629                   (X_Qi2.2)    -.8346                       
 
-(X_Qi2.2)    2.1569                   (X_Qi2.3)   -5.0000                       
+(X_Qi2.3)   -5.0000                   (X_Qi3.1)   -4.1629                       
 
-(X_Qi3.1)   -4.1629                   (X_Qi3.2)     .9941                       
+(X_Qi3.2)    -.8315                   (X_Qi3.3)   -5.0000                       
 
-(X_Qi3.3)   -5.0000                   (X_Qm1.1)    3.0000                       
+(X_Qm1.1) 35.39E-18                   (X_Qm1.2)    5.0000                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    2.1569                       
+(X_Qm1.3)    -.8346                   (X_Qm2.1)     .0030                       
 
-(X_Qm2.1)    1.8359                   (X_Qm2.2)    3.7138                       
+(X_Qm2.2)    5.0000                   (X_Qm2.3)    -.8315                       
 
-(X_Qm2.3)     .9941                   (VOUT_SEC)    0.0000                      
+(VOUT_SEC)    0.0000                  (X_Qi1.10)   -4.1629                      
 
-(X_Qi1.10)   -4.1629                  (X_Qi1.20)   -4.1629                      
+(X_Qi1.20)   -4.1629                  (X_Qi1.30)   -5.0000                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1629                      
+(X_Qi2.10)   -4.1629                  (X_Qi2.20)    -.8346                      
 
-(X_Qi2.20)    2.1569                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.30)   -5.0000                  (X_Qi3.10)   -4.1629                      
 
-(X_Qi3.10)   -4.1629                  (X_Qi3.20)     .9941                      
+(X_Qi3.20)    -.8315                  (X_Qi3.30)   -5.0000                      
 
-(X_Qi3.30)   -5.0000                  (X_Qm1.10)    3.0000                      
+(X_Qm1.10) 35.40E-18                  (X_Qm1.20)    5.0000                      
 
-(X_Qm1.20)    5.0000                  (X_Qm1.30)    2.1569                      
+(X_Qm1.30)    -.8346                  (X_Qm2.10)     .0030                      
 
-(X_Qm2.10)    1.8359                  (X_Qm2.20)    3.7138                      
+(X_Qm2.20)    5.0000                  (X_Qm2.30)    -.8315                      
 
-(X_Qm2.30)     .9941                  (VOUT_PREM)    1.8359                 
+(VOUT_PREM)     .0030                 
 
 
 
@@ -171,19 +168,18 @@ R_Rb2         0 VOUT_PREM  80k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V9        -3.663E-03
-    V_V11        3.649E-03
-    V_V10       -9.127E-06
+    V_V9        -3.378E-03
+    V_V11        3.341E-03
 
-    TOTAL POWER DISSIPATION   3.66E-02  WATTS
+    TOTAL POWER DISSIPATION   3.36E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 02/25/24 11:58:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ c:\cadence_projects\final-design\collpits-oscillator-final-design-PSpiceFiles\SCHEMATIC1\trans.sim
+ ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
 
  ****     JOB STATISTICS SUMMARY
@@ -193,5 +189,5 @@ R_Rb2         0 VOUT_PREM  80k TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       75.66
+  Total job time (using Solver 1)   =       56.88
 

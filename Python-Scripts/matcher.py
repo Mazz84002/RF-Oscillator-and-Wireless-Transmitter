@@ -22,8 +22,8 @@ def findXseries(Q, R_low):
     return Q*R_low
 
 def findLC(Xparallel, Xseries, f0):
-    C = 1/(2*np.pi*f0*Xparallel)
-    L = Xseries/(2*np.pi*f0)
+    C = 1/(2*np.pi*f0*Xseries)
+    L = Xparallel/(2*np.pi*f0)
     return L, C
 
 def ll(x, y):
@@ -37,8 +37,9 @@ def plotResponse(f, x, title):
     plt.ylabel(title)
     plt.grid()
 
-def plotImpedance(w, L_src, L_ld, C_com, Z_load):
-    impedance = (1j*w*L_src) + ll(1/(1j*w*C_com), 1j*w*L_ld+Z_load)
+def plotImpedance(w, L_src, L_ld, C_src, C_ld, Z_load):
+    #impedance = (1j*w*L_src) + ll(1/(1j*w*C_com), 1j*w*L_ld+Z_load)
+    impedance = (1/(1j*w*C_src)) + ll(1j*w*(ll(L_src, L_ld)), (1/(1j*w*C_ld)) + Z_load )
     plt.figure()
     plt.plot(w/(2*np.pi), impedance)
     plt.xlabel('f')
@@ -80,6 +81,7 @@ def displayStats(f0,
         ["L_ld", L_ld],
         ["C_ld", C_ld],
         ["C_com", C_com],
+        ["L_com", ll(L_src, L_ld)],
         ["max_imp", max_imp]
     ]
     # Printing the table
@@ -92,10 +94,10 @@ def main():
     f0 = 3.5e9                                                                  # operating freq
     f = np.linspace(3e9, 4e9, 100000)                                           # f array for plots
     Z_out_osc = read_second_column("Input-Impedance.txt")                       # the load impedance at the output of oscillator for f = 3.5 Ghz
-    Z_out_osc_0 = np.max(np.real(Z_out_osc))                                    # oscillator output impedance at 3.5 GHz
+    Z_out_osc_0 = 1000                                # oscillator output impedance at 3.5 GHz
     Z_load = 50                                                                 # the actual load impedance
 
-    Z_center = int(args[1])                                                  # must be larger than both Z_load and Z_out_osc
+    Z_center = 1050                                             # must be larger than both Z_load and Z_out_osc
 
     # At the source side
     Q_src = findQ(R_high=Z_center, R_low=Z_out_osc_0)
@@ -113,7 +115,7 @@ def main():
     # values at source that are freq dependent
     plotResponse(f, Z_out_osc, "Z_out_osc")
     
-    max_imp = plotImpedance(w=2*np.pi*f,L_src=L_src, L_ld=L_ld, C_com=C_src+C_ld, Z_load=Z_load)
+    max_imp = plotImpedance(w=2*np.pi*f,L_src=L_src, L_ld=L_ld, C_src=C_src, C_ld=C_ld, Z_load=Z_load)
 
     displayStats(f0, 
                  Z_out_osc_0,

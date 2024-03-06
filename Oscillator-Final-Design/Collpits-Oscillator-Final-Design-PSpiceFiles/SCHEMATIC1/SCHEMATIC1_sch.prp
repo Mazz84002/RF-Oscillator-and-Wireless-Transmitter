@@ -420,7 +420,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-17.36mW")
+                    ("value"	"-16.89mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"
@@ -593,7 +593,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"4.917mW")
+                    ("value"	"4.916mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("Schematics' Source Library"
@@ -1086,7 +1086,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"131.4nW")
+                    ("value"	"112.7nW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"

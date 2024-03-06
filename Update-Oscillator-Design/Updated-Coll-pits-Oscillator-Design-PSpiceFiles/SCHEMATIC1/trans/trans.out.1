@@ -1,0 +1,55 @@
+
+**** 03/06/24 15:21:02 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\mazz\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3e-6 0 2e-11 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source UPDATED-COLL-PITS-OSCILLATOR-DESIGN
+.EXTERNAL OUTPUT Vout_sec
+L_Lp         N41424 N41294  1nH  
+X_Qm1         N41424 0 N41608 BFP520/INF
+X_Qi2         N41608 N41428 N41876 BFP520/INF
+C_C1         N41608 N41424  2.5p  TC=0,0 
+V_V9         N41294 0 5Vdc
+R_Ri         N41428 N41294  9.3k TC=0,0 
+C_C3         N41424 N41658  4.03104e-13  TC=0,0 
+C_C2         0 N41608  2.5p  TC=0,0 
+R_Rp         N41424 N41294  10k TC=0,0 
+X_Qi1         N41428 N41428 N41876 BFP520/INF
+V_V11         N41876 0 -5Vdc
+L_L1         0 N41658  1.16573e-07  
+C_C4         N41658 VOUT_SEC  2.87595e-13  TC=0,0 
+R_Rp1         0 VOUT_SEC  50 TC=0,0 
+L_L2         0 N41658  7.90888e-09  
+
+**** RESUMING trans.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving L_L2. You may break the loop by adding a series resistance
+

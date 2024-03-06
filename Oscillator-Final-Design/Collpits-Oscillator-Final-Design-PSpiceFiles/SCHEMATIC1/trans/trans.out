@@ -1,5 +1,5 @@
 
-**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -54,7 +54,7 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
 **** RESUMING trans.cir ****
 .END
 
-**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -111,7 +111,7 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
            D     .87         
 
 
-**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -177,7 +177,7 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
 
           JOB CONCLUDED
 
-**** 03/03/24 19:44:21 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -189,5 +189,5 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       56.88
+  Total job time (using Solver 1)   =       60.84
 

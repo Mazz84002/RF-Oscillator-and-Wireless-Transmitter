@@ -1,6 +1,6 @@
 (ExpressProject "Collpits-Oscillator-Final-Design"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[02/25/24]")
+  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[03/03/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library"
@@ -33,16 +33,20 @@
     (ANNOTATE_Property_Combine "{Value}{Source Package}")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Display_Online_DRC_Results "FALSE"))
   (Folder "Layout")
   (Folder "Outputs"
     (File
        ".\collpits-oscillator-final-design-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\collpits-oscillator-final-design-pspicefiles\schematic1\bias.sim"
@@ -107,30 +111,29 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "c:\cadence_projects\final-design\collpits-oscillator-final-design.dsn")
+         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design.dsn")
       (Path "Design Resources"
-         "c:\cadence_projects\final-design\collpits-oscillator-final-design.dsn"
+         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "PSpice Resources" "Simulation Profiles"
-         ".\collpits-oscillator-final-design-pspicefiles\schematic1\trans.sim"))
-    (HierarchyView
-      (Select "SCHEMATIC1"))
+         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1\trans.sim"))
+    (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 271 0 473"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 252 0 700"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 874 24 514")
-        (Scroll "182 49")
-        (Zoom "126")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1142 24 741")
+        (Scroll "-101 -7")
+        (Zoom "93")
         (Occurrence "/"))
       (Path
-         "C:\CADENCE_PROJECTS\FINAL-DESIGN\COLLPITS-OSCILLATOR-FINAL-DESIGN.DSN")
+         "C:\VCO-TRANSMITTER\OSCILLATOR-FINAL-DESIGN\COLLPITS-OSCILLATOR-FINAL-DESIGN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

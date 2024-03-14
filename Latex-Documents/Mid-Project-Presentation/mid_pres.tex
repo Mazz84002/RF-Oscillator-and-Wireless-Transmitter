@@ -1,0 +1,75 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{tikz}
+
+\usetheme{metropolis}           % Use metropolis theme
+\title{Project follow-up Presentation}
+
+\date{}
+\author{Mazz Shaikh, Nir Finch Cohen}
+\institute{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
+
+% Define the logo image file
+\newcommand{\mylogo}{\includegraphics[height=1cm]{tau.jpg}} % Adjust the height as needed
+\setbeamercovered{transparent}
+
+% Change the color of the headings
+\setbeamercolor{frametitle}{bg=gray!15, fg=black} % Adjust the color as needed
+
+% Define the background template
+\setbeamertemplate{background}{
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[white] (current page.south west) rectangle (current page.north east); % White background
+        \node[anchor=north east, inner sep=0pt] at (current page.north east) {\mylogo};
+    \end{tikzpicture}
+}
+\begin{document}
+\maketitle
+
+\section{Section 1}
+\label{sec:section1}
+
+\begin{frame}{Title}
+This is a frame in Section 1.
+\end{frame}
+
+\section{Section 2}
+\label{sec:section2}
+
+\begin{frame}{Title}
+This is a frame in Section 2.
+\end{frame}
+
+% Add more sections and frames as needed
+
+\begin{frame}{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\begin{frame}{Links to Sections}
+\begin{itemize}
+    \item \hyperlink{sec:section1}{Section 1}
+    \item \hyperlink{sec:section2}{Section 2}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Remark}
+    This is a remark
+  \end{block}
+
+  \begin{example}
+    This is an example
+  \end{example}
+  
+  \begin{theorem}{Pytha}
+    This is a Theorem
+  \end{theorem}
+
+\end{frame}
+
+\end{document}

@@ -1,2 +1,2 @@
-\beamer@sectionintoc {1}{Section 1}{2}{0}{1}
+\beamer@sectionintoc {1}{What is completed so far?}{2}{0}{1}
 \beamer@sectionintoc {2}{Section 2}{4}{0}{2}

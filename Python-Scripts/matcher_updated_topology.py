@@ -104,10 +104,10 @@ def main():
     f0 = 3.5e9                                                                  # operating freq
     f = np.linspace(3e9, 4e9, 100000)                                           # f array for plots
     Z_out_osc = read_second_column("Input-Impedance.txt")                       # the load impedance at the output of oscillator for f = 3.5 Ghz
-    Z_out_osc_0 = 1000                                # oscillator output impedance at 3.5 GHz
+    Z_out_osc_0 = 90                                # oscillator output impedance at 3.5 GHz
     Z_load = 50                                                                 # the actual load impedance
 
-    Z_center = 1050                                             # must be larger than both Z_load and Z_out_osc
+    Z_center = 91                                           # must be larger than both Z_load and Z_out_osc
 
     # At the source side
     Q_src = findQ(R_high=Z_center, R_low=Z_out_osc_0)

@@ -107,7 +107,7 @@ def main():
     Z_out_osc_0 = 110                                # oscillator output impedance at 3.5 GHz
     Z_load = 50                                                                 # the actual load impedance
 
-    Z_center = 111                                           # must be larger than both Z_load and Z_out_osc
+    Z_center = 1e4                                           # must be larger than both Z_load and Z_out_osc
 
     # At the source side
     Q_src = findQ(R_high=Z_center, R_low=Z_out_osc_0)

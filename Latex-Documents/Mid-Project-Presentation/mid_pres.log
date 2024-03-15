@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.8)  14 MAR 2024 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.8)  15 MAR 2024 08:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -606,7 +606,20 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count353
  (/usr/local/texlive/2023basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (./beamerthememetropolis.sty
+))) (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2023basic/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2023basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count354
+\l__pdf_internal_box=\box83
+))
+Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count355
+\l__lipsum_a_int=\count356
+\l__lipsum_b_int=\count357
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./beamerthememetropolis.sty
 Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
@@ -616,15 +629,15 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count354
-\calc@Bcount=\count355
+\calc@Acount=\count358
+\calc@Bcount=\count359
 \calc@Adimen=\dimen311
 \calc@Bdimen=\dimen312
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count356
+\calc@Ccount=\count360
 \calc@Cskip=\skip67
 )
 \metropolis@titleseparator@linewidth=\skip68
@@ -650,31 +663,36 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 
 Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLaTeX to use the Fira fonts on input line 95.
 
-)) (/usr/local/texlive/2023basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count357
-\l__pdf_internal_box=\box83
-) (./mid_pres.aux)
+))
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 34.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 34.
+
+(./mid_pres.aux)
 \openout1 = `mid_pres.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -712,16 +730,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2023basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
+\scratchcounter=\count361
 \scratchdimen=\dimen313
 \scratchbox=\box84
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\nofMPsegments=\count362
+\nofMParguments=\count363
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count361
+\MPscratchCnt=\count364
 \MPscratchDim=\dimen314
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPnumerator=\count365
+\makeMPintoPDFobject=\count366
 \everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2023basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -729,53 +747,53 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 34.
  (./mid_pres.out) (./mid_pres.out)
 \@outlinefile=\write5
 \openout5 = `mid_pres.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 30.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 30.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 30.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 30.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 34.
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023basic/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -789,78 +807,198 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2023basic/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count364
+\c@lstlisting=\count367
  (./mid_pres.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (15.63992pt too high) detected at line 31
+Overfull \vbox (15.63992pt too high) detected at line 35
  []
 
-<tau.jpg, id=21, 710.655pt x 161.60374pt>
+<tau.jpg, id=37, 710.655pt x 161.60374pt>
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 31.
+Package pdftex.def Info: tau.jpg  used on input line 35.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
 [1
 
 {/usr/local/texlive/2023basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./tau.jpg>]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 33.
+Package pdftex.def Info: tau.jpg  used on input line 39.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [2
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 53.
+ (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 38.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [3
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 40.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [4
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 45.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [5
 
-] (./mid_pres.toc)
+]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 51.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [6
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 58.
- (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 58.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [7
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 73.
+Package pdftex.def Info: tau.jpg  used on input line 53.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [8
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 53.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [9
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 57.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [10
+
+]
+Overfull \vbox (21.22151pt too high) detected at line 70
+ []
+
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 70.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+[11
+
+]
+Overfull \vbox (21.22151pt too high) detected at line 70
+ []
+
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 70.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+[12
+
+]
+Overfull \vbox (21.22151pt too high) detected at line 70
+ []
+
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 70.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+[13
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 75.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [14
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 81.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [15
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 84.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [16
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 90.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [17
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 95.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [18
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 97.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [19
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 102.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [20
+
+]
+\openout4 = `mid_pres.vrb'.
+
+ (./mid_pres.vrb)
+Overfull \vbox (25.64285pt too high) detected at line 139
+ []
+
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 139.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+[21
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 143.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [22
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 148.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [23
 
 ]
 \tf@nav=\write6
@@ -878,21 +1016,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `mid_pres.out' has not changed.
-(rerunfilecheck)             Checksum: DE1032ABA652934FD3E368989647D51E;271.
+(rerunfilecheck)             Checksum: CA01BD1442D5EFF4E3A8CC2C2B4EAFD2;1039.
  ) 
 Here is how much of TeX's memory you used:
- 26308 strings out of 475573
- 523849 string characters out of 5778194
- 1931187 words of memory out of 5000000
- 47930 multiletter control sequences out of 15000+600000
- 567822 words of font info for 71 fonts, out of 8000000 for 9000
+ 27108 strings out of 475573
+ 537368 string characters out of 5778194
+ 2007187 words of memory out of 5000000
+ 48675 multiletter control sequences out of 15000+600000
+ 573448 words of font info for 92 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 101i,13n,107p,2033b,814s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/mazz/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600pk></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on mid_pres.pdf (8 pages, 81373 bytes).
+ 101i,13n,107p,2033b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/mazz/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0600.600pk> </Users/mazz/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600pk></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on mid_pres.pdf (23 pages, 152518 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,13 +5,17 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{tikz}
+\usepackage{lipsum}
 
 \usetheme{metropolis}           % Use metropolis theme
-\title{Project follow-up Presentation}
+\title{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
 
 \date{}
-\author{Mazz Shaikh, Nir Finch Cohen}
-\institute{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
+
+\subtitle{2896}
+\author{Mazz Shaikh(932056724), Nir Finch Cohen(230336612)}
+\date{Edoh Shaulov}
+\institute{Tel Aviv University}
 
 % Define the logo image file
 \newcommand{\mylogo}{\includegraphics[height=1cm]{tau.jpg}} % Adjust the height as needed
@@ -30,13 +34,121 @@
 \begin{document}
 \maketitle
 
-\section{What is completed so far?}
-\label{sec:section1}
+% ----------------- section 1 --------------------
 
-\begin{frame}{Title}
-This is a frame in Section 1.
+\section{Milestones completed so far}
+
+\begin{frame}{List of Milestones completed}
+
+\begin{itemize}
+  \item<1-> Created test schematic for oscillator using an ideal transistor
+  \item<2-> Ran LTSpice Simulations for the ideal version
+  \item<3-> Selected an RF transistor with a required performance at the interested frequency
+  \item<4-> Ran PSpice Simulations for the same schematic but with non-ideal transistor
+  \item<5-> Collected useful data like S-parameters, Z-parameters, \(Z_{in}\) and \(Z_{out}\) in order to build matching network
+  \item<6-> Built matching network for \(Z_{out}\) and \(Z_{load}=50[\Omega]\) at \(\sim3.5[GHz]\)
+  \item<7-> Tested the power output of the circuit for the matching and adjusted the values to maximize power transfer between the DC sources and \(Z_{load}\)
+\end{itemize}
+
 \end{frame}
 
+% ----------------- section 1 --------------------
+
+\section{Topology of Ideal Transistor Circuit}
+
+\begin{frame}{Collpit's Oscillator}
+\begin{columns}
+  \column{0.5\textwidth}
+  \begin{itemize}
+    \item <1-> The non-feedback Collpit's version was used for better performance at high frequencies
+    \item <2-> The circuit was tested with no load attached
+    \item <3-> Values of \(L_p\), \(C_1\) and \(C_2\) were computed using the operating frequency formula \[f_c\approx\frac{1}{2\pi\sqrt{L_p\frac{C_1C_2}{C_1+C_2}}}\]\footnote{Full Derivation in the Appendix}
+  \end{itemize}
+  \column{0.5\textwidth}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Ouput Waveform}
+
+
+\end{frame}
+
+
+
+% ----------------- section 2 --------------------
+
+\section{Choosing the BJT}
+\begin{frame}{Reqired characteristics}
+  
+\end{frame}
+
+
+
+% ----------------- section 3 --------------------
+
+\section{Testing with Load and Choosing a Matching Network}
+
+
+% ----------------- section 4 --------------------
+
+\section{Next Steps}
+
+\section*{Appendix}
+
+
+\begin{frame}{Proof of operating frequency}
+
+\end{frame}
+
+\begin{frame}[fragile]{BFP520 Spice File}
+\begin{tiny}
+  \begin{lstlisting}
+    *$
+    .SUBCKT BFP520/INF 200 100 300
+    L1    1   10    0.47nH
+    L2    2   20    0.56nH
+    L3    3   30    0.23nH
+    C1   10   20    6.9fF
+    C2   20   30    134fF
+    C3   30   10    136fF
+    L4   10  100    0.53nH
+    L5   20  200    0.58nH
+    L6   30  300    0.05nH
+    Q1   2 1 3 BFP520
+    .ENDS
+    .MODEL BFP520 NPN(
+    + IS =1.5E-17      NF =1            NR =1
+    + ISE=2.5E-14      NE =2            ISC=2E-14
+    + NC =2            BF =235          BR =1.5
+    + VAF=25           VAR=2            IKF=0.4
+    + IKR=0.01         RB =11           RBM=7.5
+    + RE =0.6          RC =7.6          CJE=2.35E-13
+    + VJE=0.958        MJE=0.335        CJC=9.3E-14
+    + VJC=0.661        MJC=0.236        CJS=0
+    + VJS=0.75         MJS=0.333        FC=0.5
+    + XCJC=1           TF=1.7E-12       TR=5E-08
+    + XTF=10           ITF=0.7          VTF=5
+    + PTF=50           XTB=-0.25        XTI=0.035
+    + EG=1.11)
+    ***************************************************************
+    *$
+  \end{lstlisting}
+\end{tiny}
+
+\end{frame}
+
+\begin{frame}{Calculation of matching network}
+
+\end{frame}
+
+
+\begin{frame}{Bibliography}
+
+\end{frame}
+
+
+\begin{comment}
 \section{Section 2}
 \label{sec:section2}
 
@@ -71,5 +183,6 @@ This is a frame in Section 2.
   \end{theorem}
 
 \end{frame}
+\end{comment}
 
 \end{document}

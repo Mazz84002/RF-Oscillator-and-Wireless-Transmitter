@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.8)  15 MAR 2024 09:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.8)  15 MAR 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,7 +941,7 @@ Package pdftex.def Info: tau.jpg  used on input line 81.
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 84.
+Package pdftex.def Info: tau.jpg  used on input line 90.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [16
 
@@ -955,50 +955,85 @@ Package pdftex.def Info: tau.jpg  used on input line 90.
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 95.
+Package pdftex.def Info: tau.jpg  used on input line 90.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [18
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 97.
+Package pdftex.def Info: tau.jpg  used on input line 90.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [19
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 102.
+Package pdftex.def Info: tau.jpg  used on input line 90.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [20
 
 ]
-\openout4 = `mid_pres.vrb'.
-
- (./mid_pres.vrb)
-Overfull \vbox (25.64285pt too high) detected at line 139
- []
-
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 139.
+Package pdftex.def Info: tau.jpg  used on input line 94.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
-[21
+ [21
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 143.
+Package pdftex.def Info: tau.jpg  used on input line 100.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [22
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 148.
+Package pdftex.def Info: tau.jpg  used on input line 105.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [23
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 107.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [24
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 112.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [25
+
+]
+\openout4 = `mid_pres.vrb'.
+
+ (./mid_pres.vrb)
+Overfull \vbox (25.64285pt too high) detected at line 149
+ []
+
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 149.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+[26
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 153.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [27
+
+]
+File: tau.jpg Graphic file (type jpg)
+<use tau.jpg>
+Package pdftex.def Info: tau.jpg  used on input line 158.
+(pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
+ [28
 
 ]
 \tf@nav=\write6
@@ -1019,18 +1054,18 @@ Package rerunfilecheck Info: File `mid_pres.out' has not changed.
 (rerunfilecheck)             Checksum: CA01BD1442D5EFF4E3A8CC2C2B4EAFD2;1039.
  ) 
 Here is how much of TeX's memory you used:
- 27108 strings out of 475573
- 537368 string characters out of 5778194
+ 27134 strings out of 475573
+ 537849 string characters out of 5778194
  2007187 words of memory out of 5000000
- 48675 multiletter control sequences out of 15000+600000
+ 48691 multiletter control sequences out of 15000+600000
  573448 words of font info for 92 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  101i,13n,107p,2033b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/mazz/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0600.600pk> </Users/mazz/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600pk></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on mid_pres.pdf (23 pages, 152518 bytes).
+Output written on mid_pres.pdf (28 pages, 159473 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

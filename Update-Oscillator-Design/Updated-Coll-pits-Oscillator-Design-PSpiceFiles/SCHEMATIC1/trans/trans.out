@@ -1,5 +1,5 @@
 
-**** 03/06/24 16:43:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -32,28 +32,26 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source UPDATED-COLL-PITS-OSCILLATOR-DESIGN
 .EXTERNAL OUTPUT Vout
-L_Lp         N41424 N41294  1nH  
-X_Qm1         N41424 0 N41608 BFP520/INF
+L_Lp         N41434 N41294  1nH  
+X_Qm1         N41434 0 N41608 BFP520/INF
 X_Qi2         N41608 N41428 N41876 BFP520/INF
-C_C1         N41608 N41424  3p  TC=0,0 
+C_C1         N41608 N41434  3p  TC=0,0 
 V_V9         N41294 0 5Vdc
 R_Ri         N41428 N41294  9.3k TC=0,0 
 C_C2         0 N41608  3p  TC=0,0 
-R_Rp         N41424 N41294  1000 TC=0,0 
 X_Qi1         N41428 N41428 N41876 BFP520/INF
 V_V11         N41876 0 -5Vdc
 R_R1         0 VOUT  50 TC=0,0 
-L_L1         0 N44705  1.06764e-08  
-C_C3         N44705 VOUT  2.03361e-13  TC=0,0 
-C_C4         0 N44705  9.68384e-15  TC=0,0 
-L_L2         N45322 N44705  1.0168e-08  
-C_C5         N41424 N45322  1m  TC=0,0 
-I_I1         N41608 0 DC 0Adc AC 1Aac 
+L_L1         0 N44705  1.04421e-08  
+C_C3         N44705 VOUT  2.08424e-13  TC=0,0 
+C_C4         0 N44705  2.02955e-15  TC=0,0 
+L_L2         N46288 N44705  2.03361e-09  
+C_C5         N41434 N46288  1m  TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
 
-**** 03/06/24 16:43:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -110,7 +108,7 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
            D     .87         
 
 
-**** 03/06/24 16:43:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -125,9 +123,9 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-( VOUT)    0.0000  (N41294)    5.0000 (N41424)    5.0000 (N41428)   -4.1627     
+( VOUT)    0.0000  (N41294)    5.0000 (N41428)   -4.1627 (N41434)    5.0000     
 
-(N41608)    -.8348 (N41876)   -5.0000 (N44705)    0.0000 (N45322)    0.0000     
+(N41608)    -.8348 (N41876)   -5.0000 (N44705)    0.0000 (N46288)    0.0000     
 
 (X_Qi1.1)   -4.1627                   (X_Qi1.2)   -4.1627                       
 
@@ -135,7 +133,7 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
 
 (X_Qi2.2)    -.8348                   (X_Qi2.3)   -5.0000                       
 
-(X_Qm1.1) 71.72E-18                   (X_Qm1.2)    5.0000                       
+(X_Qm1.1) 17.37E-18                   (X_Qm1.2)    5.0000                       
 
 (X_Qm1.3)    -.8348                   (X_Qi1.10)   -4.1627                      
 
@@ -143,7 +141,7 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
 
 (X_Qi2.10)   -4.1627                  (X_Qi2.20)    -.8348                      
 
-(X_Qi2.30)   -5.0000                  (X_Qm1.10) 71.72E-18                      
+(X_Qi2.30)   -5.0000                  (X_Qm1.10) 17.37E-18                      
 
 (X_Qm1.20)    5.0000                  (X_Qm1.30)    -.8348                  
 
@@ -162,7 +160,7 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
 
           JOB CONCLUDED
 
-**** 03/06/24 16:43:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -174,5 +172,5 @@ I_I1         N41608 0 DC 0Adc AC 1Aac
 
 
 
-  Total job time (using Solver 1)   =        3.56
+  Total job time (using Solver 1)   =        3.41
 

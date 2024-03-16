@@ -408,7 +408,6 @@
                 ("device_max_ops")
             )
         )
-        ("IAC")
     )
     ("instances"
         ("Lp"
@@ -707,63 +706,6 @@
                 ("MAX_TEMP"	"125.0")
             )
         )
-        ("Rp"
-            ("device_name"	"R")
-            ("pspice_path"	"R_Rp")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"1000")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
-                )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
-                ("VOLTAGE"
-                    ("value"	"RVMAX")
-                    ("pspice_param"	"VOLTAGE")
-                )
-                ("SLOPE"
-                    ("value"	"RSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("MAX_TEMP"
-                    ("value"	"RTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("POWER"
-                    ("value"	"RMAX")
-                    ("pspice_param"	"POWER")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
-                )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-            ("smoke_vars"
-                ("POWER"	"0.25")
-                ("SLOPE"	"0.005")
-                ("MAX_TEMP"	"200.0")
-            )
-        )
         ("Qi1"
             ("device_name"	"BFP520/INF")
             ("pspice_path"	"X_Qi1")
@@ -861,7 +803,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1.06764e-08")
+                    ("value"	"1.04421e-08")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -917,7 +859,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"2.03361e-13")
+                    ("value"	"2.08424e-13")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -984,7 +926,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"9.68384e-15")
+                    ("value"	"2.02955e-15")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1051,7 +993,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1.0168e-08")
+                    ("value"	"2.03361e-09")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1166,29 +1108,6 @@
                 ("SLOPE"	"0.005")
                 ("KNEE"	"125.0")
                 ("MAX_TEMP"	"125.0")
-            )
-        )
-        ("I1"
-            ("device_name"	"IAC")
-            ("pspice_path"	"I_I1")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"0Adc")
-                    ("pspice_param"	"DC")
-                )
-                ("ACMAG"
-                    ("value"	"1Aac")
-                    ("pspice_param"	"AC")
-                )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("ACPHASE"
-                    ("value"	"")
-                    ("pspice_param"	"ACPHASE")
-                )
             )
         )
     )

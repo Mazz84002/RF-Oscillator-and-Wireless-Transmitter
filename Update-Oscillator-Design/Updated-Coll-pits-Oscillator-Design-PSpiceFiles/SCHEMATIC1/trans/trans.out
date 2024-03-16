@@ -1,5 +1,5 @@
-
-**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+
+**** 03/16/24 22:38:44 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -51,7 +51,7 @@ C_C5         N41434 N46288  1m  TC=0,0
 **** RESUMING trans.cir ****
 .END
 
-**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 22:38:44 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -108,7 +108,7 @@ C_C5         N41434 N46288  1m  TC=0,0
            D     .87         
 
 
-**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 22:38:44 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -160,7 +160,7 @@ C_C5         N41434 N46288  1m  TC=0,0
 
           JOB CONCLUDED
 
-**** 03/16/24 21:27:50 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/16/24 22:38:44 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
@@ -172,5 +172,5 @@ C_C5         N41434 N46288  1m  TC=0,0
 
 
 
-  Total job time (using Solver 1)   =        3.41
+  Total job time (using Solver 1)   =        3.78
 

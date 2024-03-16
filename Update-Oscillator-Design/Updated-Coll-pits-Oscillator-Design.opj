@@ -100,21 +100,19 @@
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         ".\updated-coll-pits-oscillator-design-pspicefiles\schematic1\trans.sim"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 568"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 591"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 5 24 5 895 24 609")
-        (Scroll "394 207")
-        (Zoom "152")
+        (Placement "44 2 3 -1 -1 5 24 5 1144 24 609")
+        (Scroll "-165 0")
+        (Zoom "80")
         (Occurrence "/"))
       (Path
          "C:\VCO-TRANSMITTER\UPDATE-OSCILLATOR-DESIGN\UPDATED-COLL-PITS-OSCILLATOR-DESIGN.DSN")

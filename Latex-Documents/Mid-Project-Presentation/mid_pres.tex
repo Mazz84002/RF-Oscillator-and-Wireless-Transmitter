@@ -6,6 +6,7 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage{subfig}
 
 \usetheme{metropolis}           % Use metropolis theme
 \title{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
@@ -54,17 +55,66 @@
 
 % ----------------- section 1 --------------------
 
-\section{Topology of Ideal Transistor Circuit}
+
+
+
+\section{Choosing the BJT}
+\begin{frame}{Reqired characteristics}
+  \begin{itemize}
+    \item <1-> The transistor needs high-frequency performance, including \(f_{\text{max}}\) and \(f_t\), well above \(3.5[GHz]\).
+    \item <2-> Low parasitic capacitance at collector, base, and emitter terminals is crucial.
+    \item <3-> Low noise figure is essential.
+    \item <4-> High gain, especially at the operating frequency, is necessary for stable oscillation.
+    \item <5-> Ensure appropriate biasing for Colpitts oscillator operation, including DC voltages and currents.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Transistor Details}
+\begin{center}
+  \textbf{BFP520} from Infenion\footnote{\url{https://www.infineon.com/dgdl/Infineon-BFP520-DS-v02_00-EN.pdf?fileId=5546d462689a790c01690f035fe2391a}}
+\end{center}
+\begin{itemize}
+  \item <2-> Surface mount low voltage silicon NPN RF bipolar transistor
+  \item <3-> Transition frequency \(f_T\) of \(45[GHz]\)
+  \item <4-> High Gain, with \(|S_{12}|, G_{ma}, G_{ms} > 16[dB]\) at \(3.5[GHz]\) under \(V_{ce} = 2[V]\)
+  \item <5-> Low Noise Figure, \(NF < 1.2[dB]\) at \(3.5[GHz], 2[V], 2[mA]\)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Data from Infenion - 1}
+\begin{columns}
+  \column{0.48\textwidth}
+  \includegraphics[width=\linewidth]{images/transition_freq_vs_f.png}
+  \column{0.48\textwidth}
+  \includegraphics[width=\linewidth]{images/gain_vs_f.png}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Data from Infenion - 2}
+\begin{columns}
+  \column{0.48\textwidth}
+  \includegraphics[width=\linewidth]{images/noise_fig_vs_f.png}
+  \column{0.48\textwidth}
+  \includegraphics[width=\linewidth]{images/c_cb_vs_f.png}
+\end{columns}
+  
+\end{frame}
+
+% ----------------- section 2 --------------------
+
+
+\section{Oscillator Circuit}
 
 \begin{frame}{Collpit's Oscillator}
 \begin{columns}
   \column{0.5\textwidth}
   \begin{itemize}
-    \item <1-> The non-feedback Collpit's version was used for better performance at high frequencies
-    \item <2-> The circuit was tested with no load attached
-    \item <3-> Values of \(L_p\), \(C_1\) and \(C_2\) were computed using the operating frequency formula \[f_c\approx\frac{1}{2\pi\sqrt{L_p\frac{C_1C_2}{C_1+C_2}}}\]\footnote{Full Derivation in the Appendix}
+    \item <1-> The circuit was tested with some high impedance load attached
+    \item <2-> Values of \(L_p\), \(C_1\) and \(C_2\) were computed using the operating frequency formula \[f_c\approx\frac{1}{2\pi\sqrt{L_p\frac{C_1C_2}{C_1+C_2}}}\]
+    \item <3-> \(C_1=C_2\) was chosen since it gave the highest oscillation frequency
   \end{itemize}
   \column{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{images/collpits.png}
 \end{columns}
 
 \end{frame}
@@ -75,34 +125,73 @@
 \end{frame}
 
 
+% ----------------- section 3 --------------------
 
-% ----------------- section 2 --------------------
+\section{Choosing a Matching Network}
 
-\section{Choosing the BJT}
-\begin{frame}{Reqired characteristics}
+\begin{frame}{Why Matching Network}
   \begin{itemize}
-    \item <1-> The transistor needs high-frequency performance, including \(f_{\text{max}}\) and \(f_t\), well above 3.5 GHz.
-    \item <2-> Low parasitic capacitance at collector, base, and emitter terminals is crucial.
-    \item <3-> Low noise figure is essential.
-    \item <4-> High gain, especially at the operating frequency, is necessary for stable oscillation.
-    \item <5-> Ensure appropriate biasing for Colpitts oscillator operation, including DC voltages and currents.
+    \item <1-> The oscillator we have works for high \(R_L\). Having low \(R_L\), such as \(50[\Omega]\) fails to satisfy \(g_{m}R_L^{eff} >> 4\)
+    \item <2-> We need to design a matching network that converts \(R_L = 50[\Omega]\) to the \(R_L\) we have in the schematic
+    \item <3-> We used a T-Matching network. T-matching is better for matching a load to a source impedance when there's a large disparity because it provides efficient power transfer, minimizes losses, and offers impedance transformation with stability.
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Choise of Transistor}
+\begin{frame}{Matching Network}
+The following is the matching network used\footnote{Design method in Appendix}
+\begin{columns}
+  \column{0.4\textwidth}
+  \begin{equation*}
+    \begin{cases}
+      L_{src} = \\
+      C_{src} = \\
+      L_{ld} = \\
+      C_{ld} = 
+    \end{cases}
+  \end{equation*}
+  \column{0.6\textwidth}
+  \includegraphics[width = \linewidth]{images/matching_network.png}
+\end{columns}
   
 \end{frame}
 
+\begin{frame}{S-parameters of the Matching Network}
+Tested with \(R_S = 1000 [\Omega]\) and \(R_L = 50[\Omega]\)
 
+\end{frame}
 
-% ----------------- section 3 --------------------
+\begin{frame}{Ouput of Oscillator using Matching Network as \(50[\Omega]\) load}
 
-\section{Testing with Load and Choosing a Matching Network}
+\end{frame}
 
+% ----------------- section 5 --------------------
 
-% ----------------- section 4 --------------------
+\section{Efficiency \(\eta\)}
+
+\begin{frame}{Defining \(\eta\)}
+\begin{itemize}
+  \item <1-> \textbf{Input:} \(P_{DC} = V_{CC}I_C\)
+  \item <2-> \textbf{Output:} \(P_{ac} = \frac{V_{rms}^2}{R_L}\) where \(V_{rms}=\frac{V_{max}}{\sqrt{2}}\) for the output waveform
+  \item <3-> \textbf{Efficiency:} \(\eta=\frac{P_{ac}}{P_{CD}}\)\footnote{It has been shown (Krauss, et al., 1980) that the maximum theoretical efficiency for this oscillator configuration is \(25\%\)}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Calculation of \(\eta\)}
+  
+\end{frame}
+
+% ----------------- section 5 --------------------
 
 \section{Next Steps}
+
+\begin{frame}{Next Steps}
+\begin{itemize}
+  \item <1-> Create an antenna at \(3.5[GHz]\)
+  \item <2-> Measure S-parameters of the antenna and of the whole system
+  \item <3-> Layout the PCB
+  \item <4-> Fabrication and Testing
+\end{itemize}
+\end{frame}
 
 \section*{Appendix}
 
@@ -149,11 +238,6 @@
 \end{frame}
 
 \begin{frame}{Calculation of matching network}
-
-\end{frame}
-
-
-\begin{frame}{Bibliography}
 
 \end{frame}
 

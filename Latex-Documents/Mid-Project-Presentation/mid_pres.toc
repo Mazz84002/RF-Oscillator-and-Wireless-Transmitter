@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Milestones completed so far}{2}{0}{1}
-\beamer@sectionintoc {2}{Topology of Ideal Transistor Circuit}{10}{0}{2}
-\beamer@sectionintoc {3}{Choosing the BJT}{15}{0}{3}
-\beamer@sectionintoc {4}{Testing with Load and Choosing a Matching Network}{22}{0}{4}
-\beamer@sectionintoc {5}{Next Steps}{23}{0}{5}
+\beamer@sectionintoc {2}{Choosing the BJT}{10}{0}{2}
+\beamer@sectionintoc {3}{Oscillator Circuit}{23}{0}{3}
+\beamer@sectionintoc {4}{Choosing a Matching Network}{28}{0}{4}
+\beamer@sectionintoc {5}{Efficiency \(\eta \)}{35}{0}{5}
+\beamer@sectionintoc {6}{Next Steps}{40}{0}{6}

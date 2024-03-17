@@ -41,15 +41,17 @@
 
 \begin{frame}{List of Milestones completed}
 
-\begin{itemize}
-  \item<1-> Created test schematic for oscillator using an ideal transistor
-  \item<2-> Ran LTSpice Simulations for the ideal version
-  \item<3-> Selected an RF transistor with a required performance at the interested frequency
-  \item<4-> Ran PSpice Simulations for the same schematic but with non-ideal transistor
-  \item<5-> Collected useful data like S-parameters, Z-parameters, \(Z_{in}\) and \(Z_{out}\) in order to build matching network
-  \item<6-> Built matching network for \(Z_{out}\) and \(Z_{load}=50[\Omega]\) at \(\sim3.5[GHz]\)
-  \item<7-> Tested the power output of the circuit for the matching and adjusted the values to maximize power transfer between the DC sources and \(Z_{load}\)
-\end{itemize}
+  \begin{itemize}
+    \item<1-> Simulations evaluated a test schematic with an ideal transistor.
+    \item<2-> LTSpice verified the design with the ideal transistor model.
+    \item<3-> Selection of an RF transistor was based on simulation results.
+    \item<4-> PSpice analyzed non-ideal behavior using the selected model.
+    \item<5-> Essential data, like S-parameters, informed the matching network design.
+    \item<6-> A matching network optimized impedance for \(Z_{out}\) and a \(50[\Omega]\) load at \(3.5[GHz]\).
+    \item<7-> Circuit power output was tested with the matching network, adjusting components for efficiency.
+  \end{itemize}
+  
+  
 
 \end{frame}
 

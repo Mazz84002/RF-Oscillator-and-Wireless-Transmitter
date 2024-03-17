@@ -1,7 +1,7 @@
+
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -49,9 +49,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
 **** RESUMING param-sweep.cir ****
 .END
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     BJT MODEL PARAMETERS
@@ -106,9 +106,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
            D     .87         
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -157,9 +157,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -208,9 +208,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -259,9 +259,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -310,9 +310,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -361,9 +361,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -412,9 +412,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -463,9 +463,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     TOTAL POWER DISSIPATION   2.17E-02  WATTS
 
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -517,9 +517,9 @@ R_RL         0 OUTPUT  {RL} TC=0,0
 
           JOB CONCLUDED
 
-**** 03/16/24 20:12:25 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\Load-sweep-PSpiceFiles\SCHEMATIC1\param-sweep.sim ] 
+ ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -531,5 +531,5 @@ R_RL         0 OUTPUT  {RL} TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       24.63
+  Total job time (using Solver 1)   =       23.88
 

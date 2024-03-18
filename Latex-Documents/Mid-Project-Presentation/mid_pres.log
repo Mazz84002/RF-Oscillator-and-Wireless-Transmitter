@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.18)  18 MAR 2024 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.18)  18 MAR 2024 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1075,70 +1075,70 @@ Package pdftex.def Info: tau.jpg  used on input line 145.
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 153.
+Package pdftex.def Info: tau.jpg  used on input line 155.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [31
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 153.
+Package pdftex.def Info: tau.jpg  used on input line 155.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [32
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 153.
+Package pdftex.def Info: tau.jpg  used on input line 155.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [33
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 157.
+Package pdftex.def Info: tau.jpg  used on input line 155.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [34
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 161.
+Package pdftex.def Info: tau.jpg  used on input line 160.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [35
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 170.
+Package pdftex.def Info: tau.jpg  used on input line 169.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [36
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 170.
+Package pdftex.def Info: tau.jpg  used on input line 169.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [37
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 170.
+Package pdftex.def Info: tau.jpg  used on input line 169.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [38
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 170.
+Package pdftex.def Info: tau.jpg  used on input line 169.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [39
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 172.
+Package pdftex.def Info: tau.jpg  used on input line 171.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [40
 
@@ -1146,16 +1146,16 @@ Package pdftex.def Info: tau.jpg  used on input line 172.
 <images/transition_freq_vs_f.png, id=288, 396.48125pt x 474.77374pt>
 File: images/transition_freq_vs_f.png Graphic file (type png)
 <use images/transition_freq_vs_f.png>
-Package pdftex.def Info: images/transition_freq_vs_f.png  used on input line 181.
+Package pdftex.def Info: images/transition_freq_vs_f.png  used on input line 180.
 (pdftex.def)             Requested size: 147.49782pt x 176.62704pt.
 <images/gain_vs_f.png, id=289, 417.56pt x 487.8225pt>
 File: images/gain_vs_f.png Graphic file (type png)
 <use images/gain_vs_f.png>
-Package pdftex.def Info: images/gain_vs_f.png  used on input line 181.
+Package pdftex.def Info: images/gain_vs_f.png  used on input line 180.
 (pdftex.def)             Requested size: 147.49782pt x 172.31847pt.
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 181.
+Package pdftex.def Info: tau.jpg  used on input line 180.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [41
 
@@ -1163,16 +1163,16 @@ Package pdftex.def Info: tau.jpg  used on input line 181.
 <images/noise_fig_vs_f.png, id=297, 418.56375pt x 483.8075pt>
 File: images/noise_fig_vs_f.png Graphic file (type png)
 <use images/noise_fig_vs_f.png>
-Package pdftex.def Info: images/noise_fig_vs_f.png  used on input line 191.
+Package pdftex.def Info: images/noise_fig_vs_f.png  used on input line 190.
 (pdftex.def)             Requested size: 147.49782pt x 170.4868pt.
 <images/c_cb_vs_f.png, id=298, 425.59pt x 489.83pt>
 File: images/c_cb_vs_f.png Graphic file (type png)
 <use images/c_cb_vs_f.png>
-Package pdftex.def Info: images/c_cb_vs_f.png  used on input line 191.
+Package pdftex.def Info: images/c_cb_vs_f.png  used on input line 190.
 (pdftex.def)             Requested size: 147.49782pt x 169.76137pt.
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 191.
+Package pdftex.def Info: tau.jpg  used on input line 190.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [42
 
@@ -1180,12 +1180,12 @@ Package pdftex.def Info: tau.jpg  used on input line 191.
 \openout4 = `mid_pres.vrb'.
 
  (./mid_pres.vrb)
-Overfull \vbox (25.64285pt too high) detected at line 228
+Overfull \vbox (25.64285pt too high) detected at line 227
  []
 
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 228.
+Package pdftex.def Info: tau.jpg  used on input line 227.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
 [43
 
@@ -1193,32 +1193,32 @@ Package pdftex.def Info: tau.jpg  used on input line 228.
 <images/ssm.png, id=313, 648.4225pt x 395.4775pt>
 File: images/ssm.png Graphic file (type png)
 <use images/ssm.png>
-Package pdftex.def Info: images/ssm.png  used on input line 240.
+Package pdftex.def Info: images/ssm.png  used on input line 239.
 (pdftex.def)             Requested size: 215.10196pt x 131.18987pt.
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 240.
+Package pdftex.def Info: tau.jpg  used on input line 239.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [44
 
  <./images/ssm.png>]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 262.
+Package pdftex.def Info: tau.jpg  used on input line 261.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [45
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 277.
+Package pdftex.def Info: tau.jpg  used on input line 276.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [46
 
 ]
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 295.
+Package pdftex.def Info: tau.jpg  used on input line 294.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [47
 
@@ -1238,7 +1238,7 @@ Overfull \hbox (1.88951pt too wide) in paragraph at lines 24--38
 )
 File: tau.jpg Graphic file (type jpg)
 <use tau.jpg>
-Package pdftex.def Info: tau.jpg  used on input line 337.
+Package pdftex.def Info: tau.jpg  used on input line 336.
 (pdftex.def)             Requested size: 125.1147pt x 28.45274pt.
  [48
 
@@ -1261,15 +1261,15 @@ Package rerunfilecheck Info: File `mid_pres.out' has not changed.
 (rerunfilecheck)             Checksum: 46C83DCB76FD24DC49E5AADDFD12EDE5;919.
  ) 
 Here is how much of TeX's memory you used:
- 27307 strings out of 475555
- 541005 string characters out of 5777674
+ 27305 strings out of 475555
+ 540989 string characters out of 5777674
  2009493 words of memory out of 5000000
- 48833 multiletter control sequences out of 15000+600000
+ 48831 multiletter control sequences out of 15000+600000
  575856 words of font info for 101 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  101i,17n,107p,2033b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/mazz/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss0600.600pk> </Users/mazz/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1000.600pk> </Users/mazz/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcss1095.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on mid_pres.pdf (48 pages, 541513 bytes).
+Output written on mid_pres.pdf (48 pages, 542504 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  348 compressed objects within 4 object streams

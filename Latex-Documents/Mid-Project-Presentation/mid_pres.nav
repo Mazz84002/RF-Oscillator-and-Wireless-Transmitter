@@ -41,10 +41,8 @@
 \headcommand {\sectionentry {5}{Efficiency \(\eta \)}{30}{Efficiency \(\eta \)}{0}}
 \headcommand {\slideentry {5}{0}{1}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {5}{0}{2}{31/33}{}{0}}
-\headcommand {\beamer@framepages {31}{33}}
-\headcommand {\slideentry {5}{0}{3}{34/34}{}{0}}
-\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {5}{0}{2}{31/34}{}{0}}
+\headcommand {\beamer@framepages {31}{34}}
 \headcommand {\beamer@sectionpages {30}{34}}
 \headcommand {\beamer@subsectionpages {30}{34}}
 \headcommand {\sectionentry {6}{Next Steps}{35}{Next Steps}{0}}
@@ -77,4 +75,4 @@
 \headcommand {\beamer@subsectionpages {40}{48}}
 \headcommand {\beamer@sectionpages {40}{48}}
 \headcommand {\beamer@documentpages {48}}
-\headcommand {\gdef \inserttotalframenumber {19}}
+\headcommand {\gdef \inserttotalframenumber {18}}

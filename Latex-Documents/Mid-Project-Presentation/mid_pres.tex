@@ -8,7 +8,9 @@
 \usepackage{lipsum}
 
 \usetheme{metropolis}           % Use metropolis theme
-\title{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
+% Set the font to the default LaTeX font
+\renewcommand{\familydefault}{\rmdefault}
+\title{Designing Oscillator for an Antenna at \(\sim3.5[GHz]\)}
 
 \date{}
 
@@ -41,13 +43,10 @@
 \begin{frame}{List of Milestones completed}
 
   \begin{itemize}
-    \item<1-> Simulations evaluated a test schematic with an ideal transistor.
-    \item<2-> LTSpice verified the design with the ideal transistor model.
-    \item<3-> Selection of an RF transistor was based on simulation results.
-    \item<4-> PSpice analyzed non-ideal behavior using the selected model.
-    \item<5-> Essential data, like S-parameters, informed the matching network design.
-    \item<6-> A matching network optimized impedance for \(Z_{out}\) and a \(50[\Omega]\) load at \(3.5[GHz]\).
-    \item<7-> Circuit power output was tested with the matching network, adjusting components for efficiency.
+    \item<1-> Selected the transistor we will use
+    \item<2-> Simulated the oscillator we designed in PSpice
+    \item<3-> Designed Matching network for the load(antenna)
+    \item<4-> Optimised matching network for efficiency
   \end{itemize}
   
   
@@ -264,7 +263,7 @@ Assuming \(r_\pi \to\infty\), as is the case is MOS, we reach the well-known exp
 
 For sustained oscillations, we need
 \begin{equation*}
-  -(r_\pi C L_p R_L g_m + 2r_\pi C L_p + CL_p R_L)\omega^2_0 + R_L > 0
+  -(-r_\pi C L_p R_L g_m + 2r_\pi C L_p + CL_p R_L)\omega^2_0 + R_L > 0
 \end{equation*}
 
 This gives us
@@ -336,49 +335,16 @@ Then, \(L=\frac{X}{2\pi f_0}\) and \(C = \frac{1}{2\pi f_0 X}\) for chosen \(X\)
 \end{frame}
 
 \begin{comment}
-\section{Section 2}
-\label{sec:section2}
-
-\begin{frame}{Title}
-This is a frame in Section 2.
-\end{frame}
-
-% Add more sections and frames as needed
-
-\begin{frame}{Table of Contents}
-\tableofcontents
-\end{frame}
-
-\begin{frame}{Links to Sections}
-\begin{itemize}
-    \item \hyperlink{sec:section1}{Section 1}
-    \item \hyperlink{sec:section2}{Section 2}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-  \begin{block}{Remark}
-    This is a remark
-  \end{block}
-
-  \begin{example}
-    This is an example
-  \end{example}
-  
-  \begin{theorem}{Pytha}
-    This is a Theorem
-  \end{theorem}
-
-\end{frame}
-
-
-\begin{frame}{Why Matching Network}
-  \begin{itemize}
-    \item <1-> The oscillator we have works for high \(R_L\). Having low \(R_L\), such as \(50[\Omega]\) fails to satisfy \(g_{m}R_L^{eff} >> 4\)
-    \item <2-> We need to design a matching network that converts \(R_L = 50[\Omega]\) to the \(R_L\) we have in the schematic
-    \item <3-> We used a T-Matching network. 
-  \end{itemize}
-\end{frame}
+  pdflatex yourfile.tex
+  bibtex yourfile.aux
+  pdflatex yourfile.tex
+  pdflatex yourfile.tex
 \end{comment}
+
+\begin{frame}[allowframebreaks]{References}
+  \nocite{*}
+  \bibliographystyle{ieeetr}
+  \bibliography{references.bib}
+\end{frame} 
 
 \end{document}

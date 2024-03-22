@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: mid_pres.aux
+The style file: ieeetr.bst
+Database file #1: references.bib
+Warning--empty booktitle in Johnson1986ACO
+Warning--empty school in phdthesis
+You've used 6 entries,
+            1876 wiz_defined-function locations,
+            515 strings with 4362 characters,
+and the built_in function-call counts, 1274 in all, are:
+= -- 120
+> -- 47
+< -- 0
++ -- 19
+- -- 13
+* -- 84
+:= -- 191
+add.period$ -- 9
+call.type$ -- 6
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 71
+empty$ -- 127
+format.name$ -- 13
+if$ -- 307
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 24
+num.names$ -- 6
+pop$ -- 26
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 37
+stack$ -- 0
+substring$ -- 50
+swap$ -- 23
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 9
+width$ -- 7
+write$ -- 57
+(There were 2 warnings)

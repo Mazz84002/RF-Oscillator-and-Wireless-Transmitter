@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Milestones completed so far}{2}{0}{1}
-\beamer@sectionintoc {2}{Choosing the BJT}{10}{0}{2}
-\beamer@sectionintoc {3}{Oscillator Circuit}{21}{0}{3}
-\beamer@sectionintoc {4}{Choosing a Matching Network}{26}{0}{4}
-\beamer@sectionintoc {5}{Efficiency \(\eta \)}{30}{0}{5}
-\beamer@sectionintoc {6}{Next Steps}{35}{0}{6}
+\beamer@sectionintoc {2}{Choosing the BJT}{7}{0}{2}
+\beamer@sectionintoc {3}{Oscillator Circuit}{18}{0}{3}
+\beamer@sectionintoc {4}{Choosing a Matching Network}{23}{0}{4}
+\beamer@sectionintoc {5}{Efficiency \(\eta \)}{27}{0}{5}
+\beamer@sectionintoc {6}{Next Steps}{32}{0}{6}

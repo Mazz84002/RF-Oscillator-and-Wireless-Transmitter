@@ -1,35 +1,40 @@
-\frametitle{BFP520 Spice File}
-\begin{tiny}
-  \begin{lstlisting}
-    *$
-    .SUBCKT BFP520/INF 200 100 300
-    L1    1   10    0.47nH
-    L2    2   20    0.56nH
-    L3    3   30    0.23nH
-    C1   10   20    6.9fF
-    C2   20   30    134fF
-    C3   30   10    136fF
-    L4   10  100    0.53nH
-    L5   20  200    0.58nH
-    L6   30  300    0.05nH
-    Q1   2 1 3 BFP520
-    .ENDS
-    .MODEL BFP520 NPN(
-    + IS =1.5E-17      NF =1            NR =1
-    + ISE=2.5E-14      NE =2            ISC=2E-14
-    + NC =2            BF =235          BR =1.5
-    + VAF=25           VAR=2            IKF=0.4
-    + IKR=0.01         RB =11           RBM=7.5
-    + RE =0.6          RC =7.6          CJE=2.35E-13
-    + VJE=0.958        MJE=0.335        CJC=9.3E-14
-    + VJC=0.661        MJC=0.236        CJS=0
-    + VJS=0.75         MJS=0.333        FC=0.5
-    + XCJC=1           TF=1.7E-12       TR=5E-08
-    + XTF=10           ITF=0.7          VTF=5
-    + PTF=50           XTB=-0.25        XTI=0.035
-    + EG=1.11)
-    ***************************************************************
-    *$
-  \end{lstlisting}
-\end{tiny}
+\frametitle{Calculation of matching network - 2}
+\begin{columns}
+  \column{0.45\textwidth}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Variable} & \textbf{Value} \\
+        \hline
+        $f0$ & $3.5 \times 10^9$ \\
+        $Z_{\text{out\_osc}}$ & $1000$ \\
+        $Z_{\text{load}}$ & $50$ \\
+        $Z_{\text{center}}$ & $1002$ \\
+        $Q_{\text{src}}$ & $0.0447214$ \\
+        $X_{\text{paralle\_src}}$ & $22405.4$ \\
+        $X_{\text{series\_src}}$ & $44.7214$ \\
+        $L_{\text{src}}$ & $2.03361 \times 10^{-9}$ \\
+        \hline
+    \end{tabular}
+  \end{table}
+  \column{0.45\textwidth}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Variable} & \textbf{Value} \\
+        \hline
+        $C_{\text{src}}$ & $2.02955 \times 10^{-15}$ \\
+        $Q_{\text{ld}}$ & $4.36348$ \\
+        $X_{\text{paralle\_ld}}$ & $229.633$ \\
+        $X_{\text{series\_ld}}$ & $218.174$ \\
+        $L_{\text{ld}}$ & $1.04421 \times 10^{-8}$ \\
+        $C_{\text{ld}}$ & $2.08424 \times 10^{-13}$ \\
+        $C_{\text{com}}$ & $2.10454 \times 10^{-13}$ \\
+        $L_{\text{com}}$ & $1.70212 \times 10^{-9}$ \\
+        \hline
+    \end{tabular}
+  \end{table}
+\end{columns}
 

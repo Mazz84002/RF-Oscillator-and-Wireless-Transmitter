@@ -6,7 +6,6 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{lipsum}
-\usepackage{subfig}
 
 \usetheme{metropolis}           % Use metropolis theme
 \title{Designing Oscillator for an Antenna at \(\sim\)3.5 GHz}
@@ -41,15 +40,17 @@
 
 \begin{frame}{List of Milestones completed}
 
-\begin{itemize}
-  \item<1-> Created test schematic for oscillator using an ideal transistor
-  \item<2-> Ran LTSpice Simulations for the ideal version
-  \item<3-> Selected an RF transistor with a required performance at the interested frequency
-  \item<4-> Ran PSpice Simulations for the same schematic but with non-ideal transistor
-  \item<5-> Collected useful data like S-parameters, Z-parameters, \(Z_{in}\) and \(Z_{out}\) in order to build matching network
-  \item<6-> Built matching network for \(Z_{out}\) and \(Z_{load}=50[\Omega]\) at \(\sim3.5[GHz]\)
-  \item<7-> Tested the power output of the circuit for the matching and adjusted the values to maximize power transfer between the DC sources and \(Z_{load}\)
-\end{itemize}
+  \begin{itemize}
+    \item<1-> Simulations evaluated a test schematic with an ideal transistor.
+    \item<2-> LTSpice verified the design with the ideal transistor model.
+    \item<3-> Selection of an RF transistor was based on simulation results.
+    \item<4-> PSpice analyzed non-ideal behavior using the selected model.
+    \item<5-> Essential data, like S-parameters, informed the matching network design.
+    \item<6-> A matching network optimized impedance for \(Z_{out}\) and a \(50[\Omega]\) load at \(3.5[GHz]\).
+    \item<7-> Circuit power output was tested with the matching network, adjusting components for efficiency.
+  \end{itemize}
+  
+  
 
 \end{frame}
 
@@ -81,36 +82,18 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Data from Infenion - 1}
-\begin{columns}
-  \column{0.48\textwidth}
-  \includegraphics[width=\linewidth]{images/transition_freq_vs_f.png}
-  \column{0.48\textwidth}
-  \includegraphics[width=\linewidth]{images/gain_vs_f.png}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Data from Infenion - 2}
-\begin{columns}
-  \column{0.48\textwidth}
-  \includegraphics[width=\linewidth]{images/noise_fig_vs_f.png}
-  \column{0.48\textwidth}
-  \includegraphics[width=\linewidth]{images/c_cb_vs_f.png}
-\end{columns}
-  
-\end{frame}
-
 % ----------------- section 2 --------------------
 
 
 \section{Oscillator Circuit}
 
 \begin{frame}{Collpit's Oscillator}
+\small
 \begin{columns}
   \column{0.5\textwidth}
   \begin{itemize}
     \item <1-> The circuit was tested with some high impedance load attached
-    \item <2-> Values of \(L_p\), \(C_1\) and \(C_2\) were computed using the operating frequency formula \[f_c\approx\frac{1}{2\pi\sqrt{L_p\frac{C_1C_2}{C_1+C_2}}}\]
+    \item <2-> Values of \(L_p\), \(C_1\) and \(C_2\) were computed using the operating frequency formula \[f_c\approx\frac{1}{2\pi\sqrt{L_p\frac{C_1C_2}{C_1+C_2}}}\] \footnote{In-depth analysis in Appendix}
     \item <3-> \(C_1=C_2\) was chosen since it gave the highest oscillation frequency
   \end{itemize}
   \column{0.5\textwidth}
@@ -129,26 +112,19 @@
 
 \section{Choosing a Matching Network}
 
-\begin{frame}{Why Matching Network}
-  \begin{itemize}
-    \item <1-> The oscillator we have works for high \(R_L\). Having low \(R_L\), such as \(50[\Omega]\) fails to satisfy \(g_{m}R_L^{eff} >> 4\)
-    \item <2-> We need to design a matching network that converts \(R_L = 50[\Omega]\) to the \(R_L\) we have in the schematic
-    \item <3-> We used a T-Matching network. T-matching is better for matching a load to a source impedance when there's a large disparity because it provides efficient power transfer, minimizes losses, and offers impedance transformation with stability.
-  \end{itemize}
-\end{frame}
 
 \begin{frame}{Matching Network}
-The following is the matching network used\footnote{Design method in Appendix}
+
+T-matching is better for matching a load to a source impedance when there's a large disparity because it provides efficient power transfer, minimizes losses, and offers impedance transformation with stability.\footnote{Design method in Appendix}
 \begin{columns}
   \column{0.4\textwidth}
-  \begin{equation*}
-    \begin{cases}
-      L_{src} = \\
-      C_{src} = \\
-      L_{ld} = \\
-      C_{ld} = 
-    \end{cases}
-  \end{equation*}
+
+  \begin{itemize}
+    \item \(L_{src} = \)
+    \item \(C_{src} = \)
+    \item \(L_{ld} = \)
+    \item \(C_{ld} = \)
+  \end{itemize}
   \column{0.6\textwidth}
   \includegraphics[width = \linewidth]{images/matching_network.png}
 \end{columns}
@@ -168,17 +144,16 @@ Tested with \(R_S = 1000 [\Omega]\) and \(R_L = 50[\Omega]\)
 
 \section{Efficiency \(\eta\)}
 
-\begin{frame}{Defining \(\eta\)}
+\begin{frame}{Calculation of \(\eta\)}
 \begin{itemize}
   \item <1-> \textbf{Input:} \(P_{DC} = V_{CC}I_C\)
   \item <2-> \textbf{Output:} \(P_{ac} = \frac{V_{rms}^2}{R_L}\) where \(V_{rms}=\frac{V_{max}}{\sqrt{2}}\) for the output waveform
   \item <3-> \textbf{Efficiency:} \(\eta=\frac{P_{ac}}{P_{CD}}\)\footnote{It has been shown (Krauss, et al., 1980) that the maximum theoretical efficiency for this oscillator configuration is \(25\%\)}
 \end{itemize}
+
+\only<4->{We have \(\eta \approx 11\%\)}
 \end{frame}
 
-\begin{frame}{Calculation of \(\eta\)}
-  
-\end{frame}
 
 % ----------------- section 5 --------------------
 
@@ -195,52 +170,170 @@ Tested with \(R_S = 1000 [\Omega]\) and \(R_L = 50[\Omega]\)
 
 \section*{Appendix}
 
-
-\begin{frame}{Proof of operating frequency}
-
-\end{frame}
+\begin{frame}{Data from Infenion - 1}
+  \begin{columns}
+    \column{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/transition_freq_vs_f.png}
+    \column{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/gain_vs_f.png}
+  \end{columns}
+  \end{frame}
+  
+  \begin{frame}{Data from Infenion - 2}
+  \begin{columns}
+    \column{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/noise_fig_vs_f.png}
+    \column{0.48\textwidth}
+    \includegraphics[width=\linewidth]{images/c_cb_vs_f.png}
+  \end{columns}
+    
+  \end{frame}
 
 \begin{frame}[fragile]{BFP520 Spice File}
+  \begin{tiny}
+    \begin{lstlisting}
+      *$
+      .SUBCKT BFP520/INF 200 100 300
+      L1    1   10    0.47nH
+      L2    2   20    0.56nH
+      L3    3   30    0.23nH
+      C1   10   20    6.9fF
+      C2   20   30    134fF
+      C3   30   10    136fF
+      L4   10  100    0.53nH
+      L5   20  200    0.58nH
+      L6   30  300    0.05nH
+      Q1   2 1 3 BFP520
+      .ENDS
+      .MODEL BFP520 NPN(
+      + IS =1.5E-17      NF =1            NR =1
+      + ISE=2.5E-14      NE =2            ISC=2E-14
+      + NC =2            BF =235          BR =1.5
+      + VAF=25           VAR=2            IKF=0.4
+      + IKR=0.01         RB =11           RBM=7.5
+      + RE =0.6          RC =7.6          CJE=2.35E-13
+      + VJE=0.958        MJE=0.335        CJC=9.3E-14
+      + VJC=0.661        MJC=0.236        CJS=0
+      + VJS=0.75         MJS=0.333        FC=0.5
+      + XCJC=1           TF=1.7E-12       TR=5E-08
+      + XTF=10           ITF=0.7          VTF=5
+      + PTF=50           XTB=-0.25        XTI=0.035
+      + EG=1.11)
+      ***************************************************************
+      *$
+    \end{lstlisting}
+  \end{tiny}
+  
+  \end{frame}
+
+
+
+
+\begin{frame}{Proof of operating frequency - 1}
+
+  We have the following small signal model of Collpit's oscillator, with \(C_1 = C_2 = C\)\footnote{In all the results, we try to ignore effects of \(r_\pi\) and then adjust the values accordingly to get required response}
+  \begin{center}
+    \includegraphics[width = 0.7\linewidth]{images/ssm.png}
+  \end{center}
+  
+\end{frame}
+
+\begin{frame}{Proof of operating frequency - 2}
+
+\begin{equation*}
+  i_{in} = -\frac{v_\pi}{r_\pi} - sC(v_{out}+2v_\pi)
+\end{equation*}
+\begin{equation*}
+  g_m v_\pi + sC(v_{out}+v_\pi) + \frac{v_{out}}{sL_p} + \frac{v_{out}}{R_L} = 0
+\end{equation*}
+This gives us the following frequency response
 \begin{tiny}
-  \begin{lstlisting}
-    *$
-    .SUBCKT BFP520/INF 200 100 300
-    L1    1   10    0.47nH
-    L2    2   20    0.56nH
-    L3    3   30    0.23nH
-    C1   10   20    6.9fF
-    C2   20   30    134fF
-    C3   30   10    136fF
-    L4   10  100    0.53nH
-    L5   20  200    0.58nH
-    L6   30  300    0.05nH
-    Q1   2 1 3 BFP520
-    .ENDS
-    .MODEL BFP520 NPN(
-    + IS =1.5E-17      NF =1            NR =1
-    + ISE=2.5E-14      NE =2            ISC=2E-14
-    + NC =2            BF =235          BR =1.5
-    + VAF=25           VAR=2            IKF=0.4
-    + IKR=0.01         RB =11           RBM=7.5
-    + RE =0.6          RC =7.6          CJE=2.35E-13
-    + VJE=0.958        MJE=0.335        CJC=9.3E-14
-    + VJC=0.661        MJC=0.236        CJS=0
-    + VJS=0.75         MJS=0.333        FC=0.5
-    + XCJC=1           TF=1.7E-12       TR=5E-08
-    + XTF=10           ITF=0.7          VTF=5
-    + PTF=50           XTB=-0.25        XTI=0.035
-    + EG=1.11)
-    ***************************************************************
-    *$
-  \end{lstlisting}
+  \begin{equation*}
+    \frac{v_{out}}{i_{in}} = \frac{r_\pi L_p R_L(s^2C + sg_m)}{r_\pi C^2L_p R_L s^3  +(- r\pi C L_p R_L g_m + 2r_\pi CL_p + CL_pR_L)s^2 + (2r_\pi CR_L + L_p)s + R_L}
+  \end{equation*}
 \end{tiny}
 
+Put \(s = j\omega\) and let \(Im\) of denominator \(\to0\)
+\begin{equation*}
+  \omega_0 = \sqrt{\frac{2r_\pi CR_L + L_p}{r_\pi C^2 L_p R_L}}
+\end{equation*}
+Assuming \(r_\pi \to\infty\), as is the case is MOS, we reach the well-known expression \(\omega_0 = \sqrt{\frac{1}{L\frac{C.C}{C+C}}}\)
 \end{frame}
 
-\begin{frame}{Calculation of matching network}
+\begin{frame}{Proof of operating frequency - 3}
 
+For sustained oscillations, we need
+\begin{equation*}
+  -(r_\pi C L_p R_L g_m + 2r_\pi C L_p + CL_p R_L)\omega^2_0 + R_L > 0
+\end{equation*}
+
+This gives us
+\begin{equation*}\footnote{This is similar to the condition found in Razavi, but for NMOS in place of NPN BJT}
+  R_L g_m -\frac{R_L}{r_\pi} -2 > 0
+\end{equation*}
+
+Thus, we need to set \(R_L\) accordingly at the oscillating frequency, giving us a lower bound for load and thus a need for a matching network.
 \end{frame}
 
+\begin{frame}{Calculation of matching network - 1}
+\small
+We have a source impedance \(Z_s\), a load impedance \(Z_L\), and operating frequency \(f_0\) and we need to match \(Z_L\) to \(Z_s\) at \(f_0\) using a T-Matching Network. We assume a central impedance \(Z_c\) such that \(Z_c > \max(Z_s, Z_L)\), and then calculate the series and parallel reactive components on both sides.\footnote{In our case, all impedances are real}
+\begin{columns}
+  \column{0.5\textwidth}
+  Source:
+  \[Q_{src} = \sqrt{\frac{Z_c}{Z_s}-1}\]
+  \[X_{src}^{patallel} = \frac{Z_c}{Q_{src}}\]
+  \[X_{src}^{series} = Q_{src}Z_s\]
+  \column{0.5\textwidth}
+  Load:
+  \[Q_{ld} = \sqrt{\frac{Z_c}{Z_L}-1}\]
+  \[X_{ld}^{patallel} = \frac{Z_c}{Q_{ld}}\]
+  \[X_{ls}^{series} = Q_{ls}Z_L\]
+\end{columns}
+Then, \(L=\frac{X}{2\pi f_0}\) and \(C = \frac{1}{2\pi f_0 X}\) for chosen \(X\) series/parallel
+\end{frame}
+
+\begin{frame}[fragile]{Calculation of matching network - 2}
+\begin{columns}
+  \column{0.45\textwidth}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Variable} & \textbf{Value} \\
+        \hline
+        $f0$ & $3.5 \times 10^9$ \\
+        $Z_{\text{out\_osc}}$ & $1000$ \\
+        $Z_{\text{load}}$ & $50$ \\
+        $Z_{\text{center}}$ & $1002$ \\
+        $Q_{\text{src}}$ & $0.0447214$ \\
+        $X_{\text{paralle\_src}}$ & $22405.4$ \\
+        $X_{\text{series\_src}}$ & $44.7214$ \\
+        $L_{\text{src}}$ & $2.03361 \times 10^{-9}$ \\
+        \hline
+    \end{tabular}
+  \end{table} 
+  \column{0.45\textwidth}
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Variable} & \textbf{Value} \\
+        \hline
+        $C_{\text{src}}$ & $2.02955 \times 10^{-15}$ \\
+        $Q_{\text{ld}}$ & $4.36348$ \\
+        $X_{\text{paralle\_ld}}$ & $229.633$ \\
+        $X_{\text{series\_ld}}$ & $218.174$ \\
+        $L_{\text{ld}}$ & $1.04421 \times 10^{-8}$ \\
+        $C_{\text{ld}}$ & $2.08424 \times 10^{-13}$ \\
+        $C_{\text{com}}$ & $2.10454 \times 10^{-13}$ \\
+        $L_{\text{com}}$ & $1.70212 \times 10^{-9}$ \\
+        \hline
+    \end{tabular}
+  \end{table} 
+\end{columns}
+
+\end{frame}
 
 \begin{comment}
 \section{Section 2}
@@ -276,6 +369,15 @@ This is a frame in Section 2.
     This is a Theorem
   \end{theorem}
 
+\end{frame}
+
+
+\begin{frame}{Why Matching Network}
+  \begin{itemize}
+    \item <1-> The oscillator we have works for high \(R_L\). Having low \(R_L\), such as \(50[\Omega]\) fails to satisfy \(g_{m}R_L^{eff} >> 4\)
+    \item <2-> We need to design a matching network that converts \(R_L = 50[\Omega]\) to the \(R_L\) we have in the schematic
+    \item <3-> We used a T-Matching network. 
+  \end{itemize}
 \end{frame}
 \end{comment}
 

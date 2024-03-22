@@ -1,6 +1,6 @@
 (ExpressProject "Load-sweep"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[03/16/24]")
+  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[03/17/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library"
@@ -104,9 +104,7 @@
          "C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep.dsn" "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         "C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -116,8 +114,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 895 24 609")
-        (Scroll "320 163")
+        (Placement "44 0 1 -1 -1 5 24 5 1167 24 609")
+        (Scroll "15 127")
         (Zoom "160")
         (Occurrence "/"))
       (Path "C:\VCO-TRANSMITTER\PSPICE-LOAD-SWEEP\LOAD-SWEEP.DSN")

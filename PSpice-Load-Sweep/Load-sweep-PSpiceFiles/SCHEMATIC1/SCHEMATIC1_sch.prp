@@ -551,12 +551,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"9.3k")
+                    ("value"	"7.15k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"4.532mW")
+                    ("value"	"9.027mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -608,11 +608,11 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"-5Vdc")
+                    ("value"	"-10Vdc")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-5.446mW")
+                    ("value"	"-10.86mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"
@@ -627,7 +627,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"3.447mW")
+                    ("value"	"6.890mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("Schematics' Source Library"
@@ -642,7 +642,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"2.495mW")
+                    ("value"	"4.949mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("Schematics' Source Library"
@@ -724,7 +724,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"401.1uW")
+                    ("value"	"818.8uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("Schematics' Source Library"
@@ -739,11 +739,11 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"5Vdc")
+                    ("value"	"10Vdc")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-5.429mW")
+                    ("value"	"-10.83mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"

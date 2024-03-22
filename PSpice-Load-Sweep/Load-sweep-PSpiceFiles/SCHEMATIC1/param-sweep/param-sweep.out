@@ -1,5 +1,5 @@
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -35,13 +35,13 @@
 .EXTERNAL OUTPUT output
 C_C5         N46758 OUTPUT  1m  TC=0,0 
 C_C1         N46860 N46758  3p  TC=0,0 
-R_Ri         N46752 N46694  9.3k TC=0,0 
-V_V11         N46992 0 -5Vdc
+R_Ri         N46752 N46694  7.15k TC=0,0 
+V_V11         N46992 0 -10Vdc
 X_Qm1         N46758 0 N46860 BFP520/INF
 X_Qi2         N46860 N46752 N46992 BFP520/INF
 C_C2         0 N46860  3p  TC=0,0 
 X_Qi1         N46752 N46752 N46992 BFP520/INF
-V_V9         N46694 0 5Vdc
+V_V9         N46694 0 10Vdc
 L_Lp         N46758 N46694  1nH  
 R_RL         0 OUTPUT  {RL} TC=0,0 
 .PARAM  rl=100
@@ -49,7 +49,7 @@ R_RL         0 OUTPUT  {RL} TC=0,0
 **** RESUMING param-sweep.cir ****
 .END
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -106,7 +106,7 @@ R_RL         0 OUTPUT  {RL} TC=0,0
            D     .87         
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -123,27 +123,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -151,13 +151,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -174,27 +174,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -202,13 +202,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -225,27 +225,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -253,13 +253,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -276,27 +276,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -304,13 +304,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -327,27 +327,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -355,13 +355,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -378,27 +378,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -406,13 +406,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -429,27 +429,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -457,13 +457,13 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -480,27 +480,27 @@ R_RL         0 OUTPUT  {RL} TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N46694)    5.0000 (N46752)   -4.1627 (N46758)    5.0000 (N46860)    -.8348     
+(N46694)   10.0000 (N46752)   -9.1349 (N46758)   10.0000 (N46860)    -.8630     
 
-(N46992)   -5.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -4.1627                       
+(N46992)  -10.0000 (OUTPUT)    0.0000 (X_Qi1.1)   -9.1349                       
 
-(X_Qi1.2)   -4.1627                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.2)   -9.1349                   (X_Qi1.3)  -10.0000                       
 
-(X_Qi2.1)   -4.1627                   (X_Qi2.2)    -.8348                       
+(X_Qi2.1)   -9.1349                   (X_Qi2.2)    -.8630                       
 
-(X_Qi2.3)   -5.0000                   (X_Qm1.1)-52.80E-18                       
+(X_Qi2.3)  -10.0000                   (X_Qm1.1) 85.00E-18                       
 
-(X_Qm1.2)    5.0000                   (X_Qm1.3)    -.8348                       
+(X_Qm1.2)   10.0000                   (X_Qm1.3)    -.8630                       
 
-(X_Qi1.10)   -4.1627                  (X_Qi1.20)   -4.1627                      
+(X_Qi1.10)   -9.1349                  (X_Qi1.20)   -9.1349                      
 
-(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1627                      
+(X_Qi1.30)  -10.0000                  (X_Qi2.10)   -9.1349                      
 
-(X_Qi2.20)    -.8348                  (X_Qi2.30)   -5.0000                      
+(X_Qi2.20)    -.8630                  (X_Qi2.30)  -10.0000                      
 
-(X_Qm1.10)-52.80E-18                  (X_Qm1.20)    5.0000                      
+(X_Qm1.10) 85.00E-18                  (X_Qm1.20)   10.0000                      
 
-(X_Qm1.30)    -.8348                  
+(X_Qm1.30)    -.8630                  
 
 
 
@@ -508,16 +508,16 @@ R_RL         0 OUTPUT  {RL} TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V11        2.172E-03
-    V_V9        -2.165E-03
+    V_V11        6.714E-03
+    V_V9        -6.696E-03
 
-    TOTAL POWER DISSIPATION   2.17E-02  WATTS
+    TOTAL POWER DISSIPATION   1.34E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 03/17/24 18:04:36 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/17/24 18:27:05 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-param-sweep"  [ C:\VCO-transmitter\PSpice-Load-Sweep\load-sweep-pspicefiles\schematic1\param-sweep.sim ] 
 
@@ -531,5 +531,5 @@ R_RL         0 OUTPUT  {RL} TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       23.88
+  Total job time (using Solver 1)   =       58.83
 

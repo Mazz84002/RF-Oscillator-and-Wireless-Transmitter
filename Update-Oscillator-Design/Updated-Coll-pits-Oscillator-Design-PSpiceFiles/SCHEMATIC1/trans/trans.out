@@ -1,7 +1,7 @@
 
-**** 03/17/24 18:50:26 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/23/24 09:09:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
+ ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,11 +18,11 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\mazz\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
-.lib "nom.lib" 
+* From [PSPICE NETLIST] section of C:\Users\mazz\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 8e-8 0 1e-11 
+.TRAN  0 5e-8 0 1e-11 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -35,25 +35,25 @@
 L_Lp         N41434 N41294  1nH  
 X_Qm1         N41434 0 N41608 BFP520/INF
 X_Qi2         N41608 N41428 N41876 BFP520/INF
-C_C1         N41608 N41434  3p  TC=0,0 
-V_V9         N41294 0 10Vdc
-R_Ri         N41428 N41294  7.15k TC=0,0 
-C_C2         0 N41608  3p  TC=0,0 
+C_C1         N41608 N41434  3.3p  TC=0,0 
+V_V9         N41294 0 8Vdc
+R_Ri         N41428 N41294  4.5k TC=0,0 
+C_C2         0 N41608  3.3p  TC=0,0 
 X_Qi1         N41428 N41428 N41876 BFP520/INF
-V_V11         N41876 0 -10Vdc
+V_V11         N41876 0 -8Vdc
 R_R1         0 VOUT  50 TC=0,0 
 L_L1         0 N44705  1.04421e-08  
 C_C3         N44705 VOUT  2.08424e-13  TC=0,0 
 C_C4         0 N44705  2.02955e-15  TC=0,0 
-L_L2         N46288 N44705  2.03361e-09  
-C_C5         N41434 N46288  1m  TC=0,0 
+L_L2         N50998 N44705  2.03361e-09  
+C_C5         N41434 N50998  1m  TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
 
-**** 03/17/24 18:50:26 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/23/24 09:09:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
+ ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
 
  ****     BJT MODEL PARAMETERS
@@ -108,9 +108,9 @@ C_C5         N41434 N46288  1m  TC=0,0
            D     .87         
 
 
-**** 03/17/24 18:50:26 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/23/24 09:09:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
+ ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -123,27 +123,27 @@ C_C5         N41434 N46288  1m  TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-( VOUT)    0.0000  (N41294)   10.0000 (N41428)   -9.1349 (N41434)   10.0000     
+( VOUT)    0.0000  (N41294)    8.0000 (N41428)   -7.1283 (N41434)    8.0000     
 
-(N41608)    -.8630 (N41876)  -10.0000 (N44705)    0.0000 (N46288)    0.0000     
+(N41608)    -.8693 (N41876)   -8.0000 (N44705)    0.0000 (N50998)    0.0000     
 
-(X_Qi1.1)   -9.1349                   (X_Qi1.2)   -9.1349                       
+(X_Qi1.1)   -7.1283                   (X_Qi1.2)   -7.1283                       
 
-(X_Qi1.3)  -10.0000                   (X_Qi2.1)   -9.1349                       
+(X_Qi1.3)   -8.0000                   (X_Qi2.1)   -7.1283                       
 
-(X_Qi2.2)    -.8630                   (X_Qi2.3)  -10.0000                       
+(X_Qi2.2)    -.8693                   (X_Qi2.3)   -8.0000                       
 
-(X_Qm1.1) 41.23E-18                   (X_Qm1.2)   10.0000                       
+(X_Qm1.1) 23.42E-18                   (X_Qm1.2)    8.0000                       
 
-(X_Qm1.3)    -.8630                   (X_Qi1.10)   -9.1349                      
+(X_Qm1.3)    -.8693                   (X_Qi1.10)   -7.1283                      
 
-(X_Qi1.20)   -9.1349                  (X_Qi1.30)  -10.0000                      
+(X_Qi1.20)   -7.1283                  (X_Qi1.30)   -8.0000                      
 
-(X_Qi2.10)   -9.1349                  (X_Qi2.20)    -.8630                      
+(X_Qi2.10)   -7.1283                  (X_Qi2.20)    -.8693                      
 
-(X_Qi2.30)  -10.0000                  (X_Qm1.10) 41.20E-18                      
+(X_Qi2.30)   -8.0000                  (X_Qm1.10) 23.42E-18                      
 
-(X_Qm1.20)   10.0000                  (X_Qm1.30)    -.8630                  
+(X_Qm1.20)    8.0000                  (X_Qm1.30)    -.8693                  
 
 
 
@@ -151,18 +151,18 @@ C_C5         N41434 N46288  1m  TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V9        -6.696E-03
-    V_V11        6.714E-03
+    V_V9        -7.974E-03
+    V_V11        7.997E-03
 
-    TOTAL POWER DISSIPATION   1.34E-01  WATTS
+    TOTAL POWER DISSIPATION   1.28E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 03/17/24 18:50:26 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/23/24 09:09:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design-pspicefiles\schema
+ ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schema
 
 
  ****     JOB STATISTICS SUMMARY
@@ -172,5 +172,5 @@ C_C5         N41434 N46288  1m  TC=0,0
 
 
 
-  Total job time (using Solver 1)   =        6.92
+  Total job time (using Solver 1)   =        5.25
 

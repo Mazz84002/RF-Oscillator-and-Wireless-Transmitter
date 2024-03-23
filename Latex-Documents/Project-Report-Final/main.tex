@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass[]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[letterpaper, margin=1.2in]{geometry}
 \usepackage{lipsum}
@@ -14,6 +14,8 @@
 \usepackage{subcaption}
 \usepackage{titling}
 \usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{braket}
 
 
 
@@ -49,7 +51,7 @@
     \Large Project carried out at: \textbf{Tel Aviv University}\par
     \vspace{1cm}
     
-    \Large For the project instructor:\par
+    \Large \textbf{For the project instructor:}\par
     \vspace{0.3cm}
     
     I approve the submission of the following report\par
@@ -59,7 +61,7 @@
         \begin{tabular}{l}
             \\
             \\
-            \textbf{Name:} Edoh Shaulov \\
+            Edoh Shaulov \\
         \end{tabular}
     \end{flushright}
 \end{titlepage}
@@ -75,9 +77,16 @@
 \include{theoretical_bg}
 \include{conclusion}
 
-
-
 % -------------------------- references --------------------------
+
+\begin{comment}
+pdflatex yourfile.tex
+bibtex yourfile.aux
+pdflatex yourfile.tex
+pdflatex yourfile.tex
+\end{comment}
+
+
 \newpage
 \bibliographystyle{plain}
 \bibliography{references.bib}

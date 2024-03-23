@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{phdthesis}
+Macera Giuseppe.
+\newblock {\em Comparison of Voltage-Controlled-Oscillator Architectures for
+  Implementation in 180 nm SiGe Technology}.
+\newblock PhD thesis, 12 2016.
+
+\bibitem{Johnson1986ACO}
+Timothy~K. Johnson.
+\newblock A colpitts oscillator design technique using s-parameters.
+\newblock 1986.
+
+\bibitem{article}
+Xiaoyong Li, Sudip Shekhar, and David Allstot.
+\newblock G/sub m/-boosted common-gate lna and differential colpitts vco/qvco
+  in 0.18-/spl mu/m cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of}, 40:2609 -- 2619, 01
+  2006.
+
+\end{thebibliography}

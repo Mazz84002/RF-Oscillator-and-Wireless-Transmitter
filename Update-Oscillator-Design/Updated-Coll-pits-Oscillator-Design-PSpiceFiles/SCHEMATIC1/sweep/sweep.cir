@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-sweep"  [ C:\VCO-transmitter\Update-Oscillator-Design\Updated-Coll-pits-Oscillator-Design-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+** Profile: "SCHEMATIC1-sweep"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schematic1\sweep.sim ] 
 
 ** Creating circuit file "sweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,8 +6,8 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\mazz\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
-.lib "nom.lib" 
+* From [PSPICE NETLIST] section of C:\Users\mazz\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
 
 *Analysis directives: 
 .AC LIN 100 1e9 7e9

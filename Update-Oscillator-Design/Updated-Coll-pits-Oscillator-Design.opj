@@ -61,18 +61,18 @@
         (DisplayName "SCHEMATIC1-sweep")
         (Type "PSpice Profile"))
       (ActiveProfile
-         ".\updated-coll-pits-oscillator-design-pspicefiles\schematic1\sweep.sim")))
+         ".\updated-coll-pits-oscillator-design-pspicefiles\schematic1\trans.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (PARAM
-      (FullPartName "PARAM.Normal")
-      (LibraryName
-         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
-      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
@@ -97,28 +97,22 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design.dsn")
-      (Path "Design Resources"
-         "C:\VCO-transmitter\Update-Oscillator-Design\updated-coll-pits-oscillator-design.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         ".\updated-coll-pits-oscillator-design-pspicefiles\schematic1\sweep.sim"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 568"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 579"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1167 24 609")
-        (Scroll "75 104")
-        (Zoom "152")
+        (Placement "44 2 3 -1 -1 -8 -31 5 1167 24 609")
+        (Scroll "142 73")
+        (Zoom "138")
         (Occurrence "/"))
       (Path
          "C:\VCO-TRANSMITTER\UPDATE-OSCILLATOR-DESIGN\UPDATED-COLL-PITS-OSCILLATOR-DESIGN.DSN")

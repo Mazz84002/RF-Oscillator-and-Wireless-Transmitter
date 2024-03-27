@@ -1,5 +1,5 @@
 
-**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/22/24 15:15:04 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -18,11 +18,11 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\mazz\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
-.lib "nom.lib" 
+* From [PSPICE NETLIST] section of C:\Users\mazz\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 3e-6 0 2e-11 
+.TRAN  0 8e-8 0 2e-11 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -31,30 +31,23 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source COLLPITS-OSCILLATOR-FINAL-DESIGN
-.EXTERNAL OUTPUT Vout_prem
 .EXTERNAL OUTPUT Vout_sec
 V_V9         N39003 0 5Vdc
 X_Qi2         N39267 N39115 N39533 BFP520/INF
-C_Cs         N39197 VOUT_SEC  1m  TC=0,0 
-R_Rload         0 VOUT_SEC  50 TC=0,0 
+R_Rload         0 VOUT_SEC  100 TC=0,0 
 V_V11         N39533 0 -5Vdc
-X_Qi3         N39197 N39115 N39533 BFP520/INF
-R_Ri         N39115 N39003  9.3k TC=0,0 
-L_Lp         N39107 N39003  1nH  
-X_Qm2         N39003 VOUT_PREM N39197 BFP520/INF
-R_Rp         N39107 N39003  50k TC=0,0 
-C_C1         N39267 N39107  2.5p  TC=0,0 
-C_C2         0 N39267  2.5p  TC=0,0 
+R_Ri         N39115 N39003  6k TC=0,0 
+L_Lp         N39119 N39003  1nH  
+C_C1         N39267 N39119  3.3p  TC=0,0 
+C_C2         0 N39267  3.3p  TC=0,0 
 X_Qi1         N39115 N39115 N39533 BFP520/INF
-X_Qm1         N39107 0 N39267 BFP520/INF
-C_C3         N39107 VOUT_PREM  1m  TC=0,0 
-R_Rb1         VOUT_PREM N39003  100k TC=0,0 
-R_Rb2         0 VOUT_PREM  70 TC=0,0 
+X_Qm1         N39119 0 N39267 BFP520/INF
+C_C3         N39119 VOUT_SEC  1m  TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
 
-**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/22/24 15:15:04 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -111,7 +104,7 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
            D     .87         
 
 
-**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/22/24 15:15:04 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -126,41 +119,27 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N39003)    5.0000 (N39107)    5.0000 (N39115)   -4.1629 (N39197)    -.8315     
+(N39003)    5.0000 (N39115)   -4.1507 (N39119)    5.0000 (N39267)    -.8467     
 
-(N39267)    -.8346 (N39533)   -5.0000 (X_Qi1.1)   -4.1629                       
+(N39533)   -5.0000 (X_Qi1.1)   -4.1507                   (X_Qi1.2)   -4.1507    
 
-(X_Qi1.2)   -4.1629                   (X_Qi1.3)   -5.0000                       
+(X_Qi1.3)   -5.0000                   (X_Qi2.1)   -4.1507                       
 
-(X_Qi2.1)   -4.1629                   (X_Qi2.2)    -.8346                       
+(X_Qi2.2)    -.8467                   (X_Qi2.3)   -5.0000                       
 
-(X_Qi2.3)   -5.0000                   (X_Qi3.1)   -4.1629                       
+(X_Qm1.1)-26.67E-18                   (X_Qm1.2)    5.0000                       
 
-(X_Qi3.2)    -.8315                   (X_Qi3.3)   -5.0000                       
+(X_Qm1.3)    -.8467                   (VOUT_SEC)    0.0000                      
 
-(X_Qm1.1) 35.39E-18                   (X_Qm1.2)    5.0000                       
+(X_Qi1.10)   -4.1507                  (X_Qi1.20)   -4.1507                      
 
-(X_Qm1.3)    -.8346                   (X_Qm2.1)     .0030                       
+(X_Qi1.30)   -5.0000                  (X_Qi2.10)   -4.1507                      
 
-(X_Qm2.2)    5.0000                   (X_Qm2.3)    -.8315                       
+(X_Qi2.20)    -.8467                  (X_Qi2.30)   -5.0000                      
 
-(VOUT_SEC)    0.0000                  (X_Qi1.10)   -4.1629                      
+(X_Qm1.10)-26.67E-18                  (X_Qm1.20)    5.0000                      
 
-(X_Qi1.20)   -4.1629                  (X_Qi1.30)   -5.0000                      
-
-(X_Qi2.10)   -4.1629                  (X_Qi2.20)    -.8346                      
-
-(X_Qi2.30)   -5.0000                  (X_Qi3.10)   -4.1629                      
-
-(X_Qi3.20)    -.8315                  (X_Qi3.30)   -5.0000                      
-
-(X_Qm1.10) 35.40E-18                  (X_Qm1.20)    5.0000                      
-
-(X_Qm1.30)    -.8346                  (X_Qm2.10)     .0030                      
-
-(X_Qm2.20)    5.0000                  (X_Qm2.30)    -.8315                      
-
-(VOUT_PREM)     .0030                 
+(X_Qm1.30)    -.8467                  
 
 
 
@@ -168,16 +147,16 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V9        -3.378E-03
-    V_V11        3.341E-03
+    V_V9        -3.348E-03
+    V_V11        3.358E-03
 
-    TOTAL POWER DISSIPATION   3.36E-02  WATTS
+    TOTAL POWER DISSIPATION   3.35E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 03/03/24 19:53:47 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 03/22/24 15:15:04 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1
 
@@ -189,5 +168,5 @@ R_Rb2         0 VOUT_PREM  70 TC=0,0
 
 
 
-  Total job time (using Solver 1)   =       60.84
+  Total job time (using Solver 1)   =        1.88
 

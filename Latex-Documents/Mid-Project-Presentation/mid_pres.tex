@@ -6,6 +6,10 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.18}
+
 
 \usetheme{metropolis}           % Use metropolis theme
 % Set the font to the default LaTeX font
@@ -119,10 +123,10 @@ T-matching is better for matching a load to a source impedance when there's a la
   \column{0.4\textwidth}
 
   \begin{itemize}
-    \item \(L_{src} = \)
-    \item \(C_{src} = \)
-    \item \(L_{ld} = \)
-    \item \(C_{ld} = \)
+    \item \(L_{src} = 2.03361[nH]\)
+    \item \(C_{src} = 2.02955[fF]\)
+    \item \(L_{ld} = 10.4421[nH]\)
+    \item \(C_{ld} = 0.208424[pF]\)
   \end{itemize}
   \column{0.6\textwidth}
   \includegraphics[width = \linewidth]{images/matching_network.png}
@@ -130,12 +134,36 @@ T-matching is better for matching a load to a source impedance when there's a la
   
 \end{frame}
 
-\begin{frame}{S-parameters of the Matching Network}
-Tested with \(R_S = 1000 [\Omega]\) and \(R_L = 50[\Omega]\)
-
+\begin{frame}{S-parameters of the Matching Network\footnote{Simulated using \lstinline|.net| parameter in LTSpice}}
+\begin{columns}
+  \column{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/matching_s_params/S11.pdf}
+  \includegraphics[width=\linewidth]{images/matching_s_params/S21.pdf}
+  \column{0.5\textwidth}
+  \includegraphics[width=\linewidth]{images/matching_s_params/S12.pdf}
+  \includegraphics[width=\linewidth]{images/matching_s_params/S22.pdf}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Ouput of Oscillator using Matching Network as \(50[\Omega]\) load}
+\begin{frame}{Input impedance through the Matching Network}
+  \begin{itemize}
+    \item Attains max value of \(\approx 1000[\Omega]\) at \(3.5[GHz]\)
+    \item Tapers quickly for the non-central frequencies
+  \end{itemize}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{images/matching_s_params/matching_input_imp.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Oscillator using Matching Network as \(50[\Omega]\) load}
+  After making adjustements to supply and current to maximise efficiency, we have the following system\footnote{Efficiency \(\eta\) is defined in the next section}
+  \begin{center}
+    \includegraphics[width=0.85\linewidth]{images/Full_system.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Output of Oscillator using Matching Network as \(50[\Omega]\) load}
 
 \end{frame}
 
@@ -147,23 +175,31 @@ Tested with \(R_S = 1000 [\Omega]\) and \(R_L = 50[\Omega]\)
 \begin{itemize}
   \item <1-> \textbf{Input:} \(P_{DC} = V_{CC}I_C\)
   \item <2-> \textbf{Output:} \(P_{ac} = \frac{V_{rms}^2}{R_L}\) where \(V_{rms}=\frac{V_{max}}{\sqrt{2}}\) for the output waveform
-  \item <3-> \textbf{Efficiency:} \(\eta=\frac{P_{ac}}{P_{CD}}\)\footnote{It has been shown (Krauss, et al., 1980) that the maximum theoretical efficiency for this oscillator configuration is \(25\%\)}
+  \item <3-> \textbf{Efficiency:} \(\eta=\frac{P_{ac}}{P_{CD}}\)
 \end{itemize}
 
-\only<4->{We have \(\eta \approx 11\%\)}
+\only<4->{For \(V_{cc} = -V_{ee} = 8[V]\), and current mirror set to give \(3.36[mA]\), we have \(v_p = 1.6[V]\), giving us
+\begin{equation*}
+  \eta \approx 20\%\footnote{It has been shown (Krauss, et al., 1980) that the maximum theoretical efficiency for this oscillator configuration is \(25\%\), implying we have a decent efficiency}
+\end{equation*}}
+\end{frame}
+
+% ----------------- section 6 --------------------
+
+\section{Antenna Design}
+\begin{frame}{Patch Microstrip Antenna}
+  
 \end{frame}
 
 
-% ----------------- section 5 --------------------
+% ----------------- section 7 --------------------
 
 \section{Next Steps}
 
 \begin{frame}{Next Steps}
 \begin{itemize}
-  \item <1-> Create an antenna at \(3.5[GHz]\)
-  \item <2-> Measure S-parameters of the antenna and of the whole system
-  \item <3-> Layout the PCB
-  \item <4-> Fabrication and Testing
+  \item <1-> Layout the PCB
+  \item <2-> Fabrication and Testing
 \end{itemize}
 \end{frame}
 
@@ -271,7 +307,7 @@ This gives us
   R_L g_m -\frac{R_L}{r_\pi} -2 > 0
 \end{equation*}
 
-Thus, we need to set \(R_L\) accordingly at the oscillating frequency, giving us a lower bound for load and thus a need for a matching network.
+Thus, we need to set \(R_L\) accordingly at the oscillating frequency, giving us a lower bound for load and thus a need for a matching network
 \end{frame}
 
 \begin{frame}{Calculation of matching network - 1}
@@ -292,7 +328,8 @@ We have a source impedance \(Z_s\), a load impedance \(Z_L\), and operating freq
 Then, \(L=\frac{X}{2\pi f_0}\) and \(C = \frac{1}{2\pi f_0 X}\) for chosen \(X\) series/parallel
 \end{frame}
 
-\begin{frame}[fragile]{Calculation of matching network - 2}
+\begin{frame}[fragile]{Calculation of matching network - 2\footnote{Values generated uaing \lstinline|.py| script that we made}}
+After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the max efficiency. \(R_L\) was matched to \(1[K\Omega]\).
 \begin{columns}
   \column{0.45\textwidth}
   \begin{table}
@@ -301,7 +338,7 @@ Then, \(L=\frac{X}{2\pi f_0}\) and \(C = \frac{1}{2\pi f_0 X}\) for chosen \(X\)
         \hline
         \textbf{Variable} & \textbf{Value} \\
         \hline
-        $f0$ & $3.5 \times 10^9$ \\
+        $f_0$ & $3.5 \times 10^9$ \\
         $Z_{\text{out\_osc}}$ & $1000$ \\
         $Z_{\text{load}}$ & $50$ \\
         $Z_{\text{center}}$ & $1002$ \\

@@ -1,4 +1,5 @@
-\frametitle{Calculation of matching network - 2}
+\frametitle{Calculation of matching network - 2\footnote {Values generated uaing \lstinline |.py| script that we made}}
+After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the max efficiency. \(R_L\) was matched to \(1[K\Omega]\).
 \begin{columns}
   \column{0.45\textwidth}
   \begin{table}
@@ -7,7 +8,7 @@
         \hline
         \textbf{Variable} & \textbf{Value} \\
         \hline
-        $f0$ & $3.5 \times 10^9$ \\
+        $f_0$ & $3.5 \times 10^9$ \\
         $Z_{\text{out\_osc}}$ & $1000$ \\
         $Z_{\text{load}}$ & $50$ \\
         $Z_{\text{center}}$ & $1002$ \\

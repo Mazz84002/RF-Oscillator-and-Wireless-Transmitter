@@ -102,7 +102,7 @@ def main():
     args = sys.argv
 
     f0 = 3.5e9                                                                  # operating freq
-    f = np.linspace(3e9, 4e9, 100000)                                           # f array for plots
+    f = np.linspace(1e9, 5e9, 100000)                                           # f array for plots
     Z_out_osc = read_second_column("Input-Impedance.txt")                       # the load impedance at the output of oscillator for f = 3.5 Ghz
     Z_out_osc_0 = int(args[1])                              # oscillator output impedance at 3.5 GHz
     Z_load = 50                                                                 # the actual load impedance

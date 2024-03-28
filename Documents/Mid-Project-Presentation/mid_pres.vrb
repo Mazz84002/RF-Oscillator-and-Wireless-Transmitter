@@ -1,5 +1,5 @@
-\frametitle{Calculation of matching network - 2\footnote {Values generated uaing \lstinline |.py| script that we made}}
-After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the max efficiency. \(R_L\) was matched to \(1[K\Omega]\).
+\frametitle{Calculation of matching network - 2\footnote {Values generated using \lstinline |.py| script that we made}}
+After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the maximum efficiency. \(R_L\) was matched to \(1[K\Omega]\).
 \begin{columns}
   \column{0.45\textwidth}
   \begin{table}

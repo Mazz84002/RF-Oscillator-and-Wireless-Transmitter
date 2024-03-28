@@ -156,7 +156,7 @@ T-matching is better for matching a load to a source impedance when there's a la
 \end{frame}
 
 \begin{frame}{Oscillator using Matching Network as \(50[\Omega]\) load}
-  After making adjustements to supply and current to maximise efficiency, we have the following system\footnote{Efficiency \(\eta\) is defined in the next section}
+  After making adjustments to supply and current to maximize efficiency, we have the following system\footnote{Efficiency \(\eta\) is defined in the next section}
   \begin{center}
     \includegraphics[width=0.85\linewidth]{images/Full_system.png}
   \end{center}
@@ -165,11 +165,12 @@ T-matching is better for matching a load to a source impedance when there's a la
 
 \begin{frame}{Output of Oscillator using Matching Network as \(50[\Omega]\) load}
 
+
 \end{frame}
 
 % ----------------- section 5 --------------------
 
-\section{Efficiency \(\eta\)}
+\section{Efficiency}
 
 \begin{frame}{Calculation of \(\eta\)}
 \begin{itemize}
@@ -188,7 +189,10 @@ T-matching is better for matching a load to a source impedance when there's a la
 
 \section{Antenna Design}
 \begin{frame}{Patch Microstrip Antenna}
-  
+  \begin{itemize}
+    \item <1-> Directional Antenna with good efficiency and high gain when used in an antenna array
+    \item <2-> Input impedance of \(50[\Omega]\)
+  \end{itemize}
 \end{frame}
 
 
@@ -227,7 +231,6 @@ T-matching is better for matching a load to a source impedance when there's a la
 \begin{frame}[fragile]{BFP520 Spice File}
   \begin{tiny}
     \begin{lstlisting}
-      *$
       .SUBCKT BFP520/INF 200 100 300
       L1    1   10    0.47nH
       L2    2   20    0.56nH
@@ -254,8 +257,6 @@ T-matching is better for matching a load to a source impedance when there's a la
       + XTF=10           ITF=0.7          VTF=5
       + PTF=50           XTB=-0.25        XTI=0.035
       + EG=1.11)
-      ***************************************************************
-      *$
     \end{lstlisting}
   \end{tiny}
   
@@ -328,8 +329,8 @@ We have a source impedance \(Z_s\), a load impedance \(Z_L\), and operating freq
 Then, \(L=\frac{X}{2\pi f_0}\) and \(C = \frac{1}{2\pi f_0 X}\) for chosen \(X\) series/parallel
 \end{frame}
 
-\begin{frame}[fragile]{Calculation of matching network - 2\footnote{Values generated uaing \lstinline|.py| script that we made}}
-After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the max efficiency. \(R_L\) was matched to \(1[K\Omega]\).
+\begin{frame}[fragile]{Calculation of matching network - 2\footnote{Values generated using \lstinline|.py| script that we made}}
+After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to get the maximum efficiency. \(R_L\) was matched to \(1[K\Omega]\).
 \begin{columns}
   \column{0.45\textwidth}
   \begin{table}
@@ -377,6 +378,19 @@ After this, the values of \(V_{cc}, V_{ee}, \) and \(I_c\) were changed so as to
   pdflatex yourfile.tex
   pdflatex yourfile.tex
 \end{comment}
+
+\begin{frame}{Calculation of parameters of Patch Antenna}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{enumerate}
+        \item <1->\(W = \frac{1}{2f\sqrt{\mu_0\epsilon_0}}\sqrt{\frac{2}{\epsilon_r+1}}\)
+        \item <2-> \(\epsilon_{eff} = \frac{\epsilon_r+1}{2} + \frac{\epsilon_r - 1}{2\sqrt{1+\frac{12h}{W}}}\)
+        \item <3-> \(\frac{\Delta L}{h} = 0.412\frac{(\epsilon_{eff} + 0.3)\left(\frac{W}{h} + 0.264\right)}{(\epsilon_{eff} - 0.258)\left(\frac{W}{h} + 0.8\right)}\)
+      \end{enumerate}
+    \column{0.5\textwidth}
+    xnsxsj
+  \end{columns}
+\end{frame}
 
 \begin{frame}[allowframebreaks]{References}
   \nocite{*}

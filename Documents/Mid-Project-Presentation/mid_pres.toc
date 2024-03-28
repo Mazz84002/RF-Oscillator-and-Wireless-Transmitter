@@ -2,6 +2,6 @@
 \beamer@sectionintoc {2}{Choosing the BJT}{7}{0}{2}
 \beamer@sectionintoc {3}{Oscillator Circuit}{18}{0}{3}
 \beamer@sectionintoc {4}{Choosing a Matching Network}{23}{0}{4}
-\beamer@sectionintoc {5}{Efficiency \(\eta \)}{29}{0}{5}
+\beamer@sectionintoc {5}{Efficiency}{29}{0}{5}
 \beamer@sectionintoc {6}{Antenna Design}{34}{0}{6}
-\beamer@sectionintoc {7}{Next Steps}{36}{0}{7}
+\beamer@sectionintoc {7}{Next Steps}{37}{0}{7}

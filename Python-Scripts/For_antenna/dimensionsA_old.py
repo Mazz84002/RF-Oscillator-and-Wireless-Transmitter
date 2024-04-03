@@ -40,15 +40,30 @@ def cal():
     G12 = I12 / (120 * np.pi**2)
     yo = (L / np.pi) * np.arccos(np.sqrt(2 * Rin * (G1 + G12)))
 
-    with open('outputA.txt', 'w') as file:
-        file.write('width = ' + str(W * 1000) + ' mm\n')
-        file.write('length = ' + str(L * 1000) + ' mm\n')
-        file.write('the inset feed point distance = ' + str(yo * 1000) + ' mm\n\n')
+    print('width =', W * 1000, 'mm')
+    print('length =', L * 1000, 'mm')
+    print('the inset feed point distance =', yo * 1000, 'mm')
 
-        lambda_eff = c/f*np.sqrt(Er_eff)
-        file.write('lambda_eff = ' + str(lambda_eff) + '\n')
-        file.write('width of ground plane > ' + str(((lambda_eff/4)*2 + W)*1000) + ' mm\n')
-        file.write('length of ground plane > ' + str(((lambda_eff/4)*2 + L)*1000) + ' mm\n\n')
+    lambda_eff = c/f*np.sqrt(Er_eff)
+    print('\n')
+    print('lambda_eff =', lambda_eff)
+
+    print('width of ground plane >', ((lambda_eff/4)*2 + W)*1000, 'mm')
+    print('length of ground plane >', ((lambda_eff/4)*2 + L)*1000, 'mm')
+
+    # calculating the feed
+    '''Z_feed = 50
+    a3 = np.exp(Z_feed * np.sqrt(Er) / 60)
+    p = -4 * h * a3
+    q = 32 * h**2
+    W_feed1 = - (p / 2) + np.sqrt((p / 2)**2 - q)
+    W_feed2 = - (p / 2) - np.sqrt((p / 2)**2 - q)  # Width of the transition line
+    Er_feed = (Er + 1) / 2 + ((Er - 1) / 2) * (1 / np.sqrt(1 + (12 * (h / W_feed2))))
+    L_feed = (c / f) / (4 * np.sqrt(Er_feed))  # Length of transition line
+
+    print('\n')
+    print('width of feed line =', W_feed2*1000, 'mm')
+    print('length of feed line =', L_feed*100, 'mm')'''
 
     # Calculating the 50 ohm transmission line (symbolic solution required)
     Z0 = 50
@@ -57,35 +72,17 @@ def cal():
     W50 = np.linspace(2.5e-3, 3e-3, 100000)
     # Define the equation
     equation = W50/h + 2/3 * np.log(W50/h + 1.444) + a
-
-    # Plotting
-    plt.figure()
     fig, ax = plt.subplots()
     plt.plot(W50, equation)
     ax.axhline(y=0, color='red')
     plt.grid()
-    plt.savefig('plotA.png')
 
-    Z_feed = 50
-    B_feed = 377*np.pi/(2*Z_feed*np.sqrt(Er))
-    W_by_h_feed = (2/np.pi)*(B_feed-1-np.log(2*B_feed-1) + (Er-1)/(2*Er) * (np.log(B_feed-1)+0.39-0.61/Er))
+    closest_index = np.argmin(np.abs(equation))
 
-    with open('outputA.txt', 'a') as file:
-        closest_index = np.argmin(np.abs(equation))
-        W50_val = W50[closest_index]
-        file.write('width of the 50 Ohms line = ' + str(W_by_h_feed*h*1000) + ' mm\n')
-    
-    print('width =', W * 1000, 'mm')
-    print('length =', L * 1000, 'mm')
-    print('\n')
-    print('the inset feed point distance =', yo * 1000, 'mm')
-    print('\n')
-    print('lambda_eff =', lambda_eff)
-    print('width of ground plane >', ((lambda_eff/4)*2 + W)*1000, 'mm')
-    print('length of ground plane >', ((lambda_eff/4)*2 + L)*1000, 'mm')
-    print('\n')
-    print("W/h =", W_by_h_feed)
-    print('width of the 50 Ohms line =', W_by_h_feed*h * 1000, 'mm')
+    W50_val = W50[closest_index]
+
+    print('width of the 50 Ohms line =', W50_val * 1000, 'mm')
+    plt.show()
 
 if __name__ == '__main__':
     cal()

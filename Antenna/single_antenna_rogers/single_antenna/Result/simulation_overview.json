@@ -1,5 +1,5 @@
 {
-    "date": "2024-04-15, 13:19:01, India Standard Time",
+    "date": "2024-04-26, 5:46:44 PM, India Standard Time",
     "solver_runs_and_tasks": {
         "module_name": "standard simulation project",
         "solver_run": {
@@ -37,10 +37,10 @@
             "task_name": "solver run",
             "time_info": {
                 "details": {
-                    "discretizer": 29,
-                    "solver": 25
+                    "discretizer": 24,
+                    "solver": 32
                 },
-                "run_time": 60
+                "run_time": 71
             }
         }
     },

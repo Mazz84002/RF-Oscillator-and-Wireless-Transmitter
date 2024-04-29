@@ -1,0 +1,64 @@
+{
+   "execution": {
+      "classname": "SMAPowerByEmagHPCFrame",
+      "libname": "SMAPowerByEmagUI"
+   },
+   "inputVariables": [
+      {
+         "name": "y_gnd",
+         "type": "float",
+         "value": 60.0
+      },
+      {
+         "name": "x_gnd",
+         "type": "float",
+         "value": 60.0
+      },
+      {
+         "name": "t_gnd",
+         "type": "float",
+         "value": 0.018
+      },
+      {
+         "name": "H",
+         "type": "float",
+         "value": 2.0
+      },
+      {
+         "name": "x_feed",
+         "type": "float",
+         "value": 4.7
+      },
+      {
+         "name": "x_patch",
+         "type": "float",
+         "value": 28.076647803446505
+      },
+      {
+         "name": "y_patch",
+         "type": "float",
+         "value": 19.69
+      },
+      {
+         "name": "inset",
+         "type": "float",
+         "value": 7.14
+      },
+      {
+         "name": "cut_ratio",
+         "type": "float",
+         "value": 1.6571428571429
+      },
+      {
+         "name": "feed_cut_ratio",
+         "type": "float",
+         "value": 1.2
+      },
+      {
+         "name": "t",
+         "type": "float",
+         "value": 0.018
+      }
+   ],
+   "outputVariables": []
+}

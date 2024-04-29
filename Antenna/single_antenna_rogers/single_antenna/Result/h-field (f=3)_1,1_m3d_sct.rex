@@ -3,7 +3,7 @@
   <MetaGeometryFile filename="model.gex" lod="1"/>
   <SimulationProperties fieldname="surface current (f=3) [1]" frequency="3" encoded_unit="&amp;U:A^1.:m^-1" fieldtype="Surface current" fieldscaling="PEAK" dB_Amplitude="20"/>
   <ResultDataType vector="1" complex="1" timedomain="0" frequencymap="0"/>
-  <SimulationDomain min="-43.6269302 -43.6269302 -15.6449299" max="43.6269302 43.6269302 13.6449299"/>
+  <SimulationDomain min="-46.6551361 -46.6551361 -18.6731358" max="46.6551361 46.6551361 16.6731358"/>
   <PlotSettings Plot="2" ignore_symmetry="0" deformation="0" enforce_culling="0" integer_values="0" default_arrow_type="ARROWS" default_scaling="NONE"/>
   <Source type="SOLVER"/>
   <SpecialMaterials>

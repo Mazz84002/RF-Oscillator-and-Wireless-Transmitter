@@ -1,0 +1,80 @@
+{
+    "parameters": [
+        {
+            "expr": "60",
+            "name": "y_gnd",
+            "value": "60"
+        },
+        {
+            "expr": "60",
+            "name": "x_gnd",
+            "value": "60"
+        },
+        {
+            "expr": "0.018",
+            "name": "t_gnd",
+            "value": "0.018"
+        },
+        {
+            "expr": "y_gnd",
+            "name": "y_sub",
+            "value": "60"
+        },
+        {
+            "expr": "x_gnd",
+            "name": "x_sub",
+            "value": "60"
+        },
+        {
+            "expr": "2",
+            "name": "H",
+            "value": "2"
+        },
+        {
+            "expr": "4.7",
+            "name": "x_feed",
+            "value": "4.7"
+        },
+        {
+            "expr": "28.076647803446505",
+            "name": "x_patch",
+            "value": "28.076647803446505"
+        },
+        {
+            "expr": "19.69",
+            "name": "y_patch",
+            "value": "19.69"
+        },
+        {
+            "expr": "1.5*x_feed",
+            "name": "cut_x",
+            "value": "7.05"
+        },
+        {
+            "expr": "7.14",
+            "name": "inset",
+            "value": "7.14"
+        },
+        {
+            "expr": "cut_ratio*cut_x",
+            "name": "cut_y",
+            "value": "11.6828571428574"
+        },
+        {
+            "expr": "1.6571428571429",
+            "name": "cut_ratio",
+            "value": "1.6571428571429"
+        },
+        {
+            "expr": "1.2",
+            "name": "feed_cut_ratio",
+            "value": "1.2"
+        },
+        {
+            "expr": "0.018",
+            "name": "t",
+            "value": "0.018"
+        }
+    ],
+    "version": 1
+}

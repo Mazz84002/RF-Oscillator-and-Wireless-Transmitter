@@ -1,25 +1,3 @@
 @CACHEFILEVERSION 2
 @DOUBLE
--x_feed
--2.35123672704385
--x_feed*cut_ratio
--2.82148407245262
--x_patch
--14.0383239017233
--y_gnd
--30
--y_patch
--11.0330002331327
--y_patch+inset
--3.14608876555982
-h_patch
-0.018
-x_feed
-2.35123672704385
-x_feed*cut_ratio
-2.82148407245262
-x_patch
-14.0383239017233
-y_patch
-11.0330002331327
 @LONG

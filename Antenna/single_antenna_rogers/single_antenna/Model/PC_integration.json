@@ -17,12 +17,12 @@
       {
          "name": "h_substrate",
          "type": "float",
-         "value": 2.0
+         "value": 1.52
       },
       {
          "name": "x_feed",
          "type": "string",
-         "value": "4.702473454087699/2"
+         "value": "3.5301539057618996/2"
       },
       {
          "name": "h_patch",
@@ -42,7 +42,7 @@
       {
          "name": "inset",
          "type": "float",
-         "value": 7.886911467572881
+         "value": 8.88
       },
       {
          "name": "cut_ratio",

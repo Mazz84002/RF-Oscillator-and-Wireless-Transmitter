@@ -5,7 +5,7 @@
 [Author]
 mazz
 [Mesh Cells]
-68,204
+
 [Mesh Type]
 Hexahedral
 [Last Problem Type]
@@ -15,7 +15,7 @@ HF Time Domain
 [Last Solver Type Abb]
 t
 [Results]
-Time Domain: S-Parameter
+Unknown
 [Modeler Unique ID]
-5:single_antenna.cst?29f22e518d72f524c58dadf32e6c4832?63782:numberofparameters=12:port=1>mode=1>zre=0>zim=0:::cut_ratio?h_gnd?h_patch?h_substrate?inset?x_feed?x_gnd?x_patch?x_substrate?y_gnd?y_patch?y_substrate
+5:single_antenna.cst?7eefecc2420d3e245cd70f7f93d4a150?63782:numberofparameters=12:port=1>mode=1>zre=0>zim=0:::cut_ratio?h_gnd?h_patch?h_substrate?inset?x_feed?x_gnd?x_patch?x_substrate?y_gnd?y_patch?y_substrate
 [Comment]

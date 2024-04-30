@@ -7,7 +7,7 @@
       {
          "name": "y_gnd",
          "type": "float",
-         "value": 60.0
+         "value": 70.0
       },
       {
          "name": "x_gnd",
@@ -53,6 +53,21 @@
          "name": "t",
          "type": "float",
          "value": 0.035
+      },
+      {
+         "name": "hole_x_ratio",
+         "type": "float",
+         "value": 0.7
+      },
+      {
+         "name": "R",
+         "type": "float",
+         "value": 1.0
+      },
+      {
+         "name": "par_center",
+         "type": "float",
+         "value": 28.0
       }
    ],
    "outputVariables": []

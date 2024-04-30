@@ -1,9 +1,9 @@
 {
     "parameters": [
         {
-            "expr": "60",
+            "expr": "70",
             "name": "y_gnd",
-            "value": "60"
+            "value": "70"
         },
         {
             "expr": "60",
@@ -18,7 +18,7 @@
         {
             "expr": "y_gnd",
             "name": "y_sub",
-            "value": "60"
+            "value": "70"
         },
         {
             "expr": "x_gnd",
@@ -94,6 +94,21 @@
             "expr": "H-H_upper",
             "name": "H_lower",
             "value": "0.76"
+        },
+        {
+            "expr": "0.7",
+            "name": "hole_x_ratio",
+            "value": "0.7"
+        },
+        {
+            "expr": "1",
+            "name": "R",
+            "value": "1"
+        },
+        {
+            "expr": "28",
+            "name": "par_center",
+            "value": "28"
         }
     ],
     "version": 1

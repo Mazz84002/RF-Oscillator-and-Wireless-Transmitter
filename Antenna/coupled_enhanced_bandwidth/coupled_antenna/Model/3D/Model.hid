@@ -16,6 +16,32 @@ false
 [start]navigation_tree_text_files
 [end]navigation_tree_text_files
 [start]history_fast_undo
+[start]undo_item
+[start]block_index
+27
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "component1:parasitic2"
+
+Solid.Delete "component1:parasitic2"
+
+Solid.Delete "component1:parasitic2"
+
+Solid.Delete "component1:parasitic2"
+
+Solid.Delete "component1:parasitic2"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
 [end]history_fast_undo
 [start]PortAndLumpedLabelState
 [start]ShowLabels

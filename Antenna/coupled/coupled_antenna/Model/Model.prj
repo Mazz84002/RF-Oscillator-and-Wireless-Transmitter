@@ -5,7 +5,7 @@
 [Author]
 mazz
 [Mesh Cells]
-84,320
+93,600
 [Mesh Type]
 Hexahedral
 [Last Problem Type]
@@ -17,5 +17,5 @@ t
 [Results]
 Time Domain: S-Parameter
 [Modeler Unique ID]
-5:coupled_antenna.cst?f6a75d04e456d675683183635d8a61ed?39938:numberofparameters=14:port=1>mode=1>zre=0>zim=0:::t?h?cut_ratio?cut_x?cut_y?inset?t_gnd?x_feed?x_gnd?x_patch?x_sub?y_gnd?y_patch?y_sub
+5:coupled_antenna.cst?52780b354496f653fdb6d07206f5a5ac?39874:numberofparameters=16:port=1>mode=1>zre=0>zim=0:::feedline_stub?h?cut_ratio?cut_x?cut_y?feed_cut_ratio?inset?t?t_gnd?x_feed?x_gnd?x_patch?x_sub?y_gnd?y_patch?y_sub
 [Comment]

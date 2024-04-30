@@ -37,22 +37,22 @@
       {
          "name": "y_patch",
          "type": "float",
-         "value": 19.69
+         "value": 18.69
       },
       {
          "name": "inset",
          "type": "float",
-         "value": 7.14
+         "value": 12.38
       },
       {
          "name": "cut_ratio",
          "type": "float",
-         "value": 1.6571428571429
+         "value": 0.178
       },
       {
          "name": "feed_cut_ratio",
          "type": "float",
-         "value": 1.2
+         "value": 2.4
       },
       {
          "name": "t",

@@ -9,53 +9,14 @@
         "sequences": {
             "Sequence 1": [
                 {
-                    "from": "0.8",
-                    "samples": "6",
-                    "to": "4",
-                    "type": "linear",
-                    "varname": "feed_cut_ratio"
-                },
-                {
-                    "enabled": "false",
-                    "index": 2
-                }
-            ],
-            "Sequence 2": [
-                {
-                    "from": "1.2",
-                    "samples": "8",
-                    "to": "2",
-                    "type": "linear",
-                    "varname": "cut_ratio"
-                },
-                {
-                    "index": 1
-                }
-            ],
-            "Sequence 3": [
-                {
-                    "from": "6.5",
-                    "samples": "8",
-                    "to": "8",
+                    "from": "2.1",
+                    "samples": "20",
+                    "to": "30",
                     "type": "linear",
                     "varname": "inset"
                 },
                 {
-                    "enabled": "false",
-                    "index": 3
-                }
-            ],
-            "Sequence 4": [
-                {
-                    "from": "0.01",
-                    "samples": "10",
-                    "to": "0.2",
-                    "type": "linear",
-                    "varname": "t_gnd"
-                },
-                {
-                    "enabled": "false",
-                    "index": 4
+                    "index": 1
                 }
             ]
         },

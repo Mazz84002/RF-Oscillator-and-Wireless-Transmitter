@@ -41,39 +41,49 @@
             "value": "28.076647803446505"
         },
         {
-            "expr": "19.69",
+            "expr": "18.69",
             "name": "y_patch",
-            "value": "19.69"
+            "value": "18.69"
         },
         {
-            "expr": "1.5*x_feed",
+            "expr": "feed_cut_ratio*x_feed",
             "name": "cut_x",
-            "value": "7.05"
+            "value": "11.28"
         },
         {
-            "expr": "7.14",
+            "expr": "12.38",
             "name": "inset",
-            "value": "7.14"
+            "value": "12.38"
         },
         {
             "expr": "cut_ratio*cut_x",
             "name": "cut_y",
-            "value": "11.6828571428574"
+            "value": "2.00784"
         },
         {
-            "expr": "1.6571428571429",
+            "expr": "0.178",
             "name": "cut_ratio",
-            "value": "1.6571428571429"
+            "value": "0.178"
         },
         {
-            "expr": "1.2",
+            "expr": "2.4",
             "name": "feed_cut_ratio",
-            "value": "1.2"
+            "value": "2.4"
         },
         {
             "expr": "0.018",
             "name": "t",
             "value": "0.018"
+        },
+        {
+            "expr": "-y_patch/2+inset",
+            "name": "app_center_y",
+            "value": "3.035"
+        },
+        {
+            "expr": "inset",
+            "name": "feedline_stub",
+            "value": "12.38"
         }
     ],
     "version": 1

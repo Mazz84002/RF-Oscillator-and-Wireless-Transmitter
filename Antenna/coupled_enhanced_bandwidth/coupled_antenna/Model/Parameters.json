@@ -1,9 +1,9 @@
 {
     "parameters": [
         {
-            "expr": "70",
+            "expr": "60",
             "name": "y_gnd",
-            "value": "70"
+            "value": "60"
         },
         {
             "expr": "60",
@@ -18,7 +18,7 @@
         {
             "expr": "y_gnd",
             "name": "y_sub",
-            "value": "70"
+            "value": "60"
         },
         {
             "expr": "x_gnd",
@@ -96,19 +96,19 @@
             "value": "0.76"
         },
         {
-            "expr": "0.7",
-            "name": "hole_x_ratio",
-            "value": "0.7"
-        },
-        {
-            "expr": "1",
+            "expr": "0.2",
             "name": "R",
-            "value": "1"
+            "value": "0.2"
         },
         {
-            "expr": "28",
-            "name": "par_center",
-            "value": "28"
+            "expr": "0.2*y_patch/2",
+            "name": "hole_y",
+            "value": "2.22510927875852"
+        },
+        {
+            "expr": "0.3*x_patch/2",
+            "name": "hole_x",
+            "value": "4.21149717051698"
         }
     ],
     "version": 1

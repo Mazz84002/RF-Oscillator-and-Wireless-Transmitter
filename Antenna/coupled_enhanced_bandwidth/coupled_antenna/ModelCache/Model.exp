@@ -1,23 +1,17 @@
 @CACHEFILEVERSION 2
 @DOUBLE
--x_patch/2#
--14.0383239017233
--y_patch/2# + y_gnd/3.1#
-11.4550987674977
--y_patch/2# +par_center
-16.8744536062074
--y_patch/5# - par_center
--32.450218557517
+-hole_x
+-4.21149717051698
+-hole_y
+-2.22510927875852
+R
+0.2
+hole_x
+4.21149717051698
+hole_y
+2.22510927875852
+t_gnd
+0.0175
 t_gnd+H_upper
 0.7775
-t_gnd+H_upper+t
-0.8125
-x_patch/2#
-14.0383239017233
-y_patch/2# - par_center
--16.8744536062074
-y_patch/5# + y_gnd/3.1#
-27.0308637188074
-y_patch/5# +par_center
-32.450218557517
 @LONG

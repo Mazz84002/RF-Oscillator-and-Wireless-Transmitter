@@ -9,13 +9,6 @@
         "sequences": {
             "Sequence 1": [
                 {
-                    "from": "3.5",
-                    "samples": "10",
-                    "to": "5.5",
-                    "type": "linear",
-                    "varname": "feed_cut_ratio"
-                },
-                {
                     "index": 1
                 }
             ]

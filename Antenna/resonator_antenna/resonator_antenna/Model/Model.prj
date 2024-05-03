@@ -17,5 +17,5 @@ t
 [Results]
 Unknown
 [Modeler Unique ID]
-5:resonator_antenna.cst?e3d5f1234a52da6df41b882bf104f19c?54646:numberofparameters=12:port=1>mode=1>zre=0>zim=0:::h?r?delta?feed_x?gap?gnd_x?gnd_y?patch_x?patch_y?res_x?res_y?t
+5:resonator_antenna.cst?cc0771b8781af465904211637073ba05?54646:numberofparameters=14:port=1>mode=1>zre=0>zim=0:::h?r?a?delta?feed_x?gap?gnd_x?gnd_y?mod_ratio?patch_x?patch_y?res_x?res_y?t
 [Comment]

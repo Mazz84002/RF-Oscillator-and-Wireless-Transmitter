@@ -30,11 +30,6 @@
          "value": 26.076647803446505
       },
       {
-         "name": "patch_y",
-         "type": "float",
-         "value": 21.925038773058034
-      },
-      {
          "name": "feed_x",
          "type": "float",
          "value": 3.5301539057618996
@@ -42,7 +37,7 @@
       {
          "name": "gap",
          "type": "float",
-         "value": 2.2
+         "value": 2.1
       },
       {
          "name": "res_y",
@@ -50,14 +45,19 @@
          "value": 0.5
       },
       {
-         "name": "res_x",
-         "type": "float",
-         "value": 13.2222
-      },
-      {
          "name": "R",
          "type": "float",
          "value": 0.5
+      },
+      {
+         "name": "mod_ratio",
+         "type": "float",
+         "value": 1.056
+      },
+      {
+         "name": "a",
+         "type": "float",
+         "value": 13.18
       }
    ],
    "outputVariables": []

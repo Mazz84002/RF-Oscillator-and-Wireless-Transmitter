@@ -1,5 +1,5 @@
 {
-    "date": "2024-05-03, 11:00:14, India Standard Time",
+    "date": "2024-05-14, 7:01:12 PM, India Standard Time",
     "solver_runs_and_tasks": {
         "module_name": "standard simulation project",
         "solver_run": {
@@ -37,17 +37,17 @@
             "task_name": "solver run",
             "time_info": {
                 "details": {
-                    "discretizer": 21,
-                    "solver": 36
+                    "discretizer": 20,
+                    "solver": 30
                 },
-                "run_time": 65
+                "run_time": 54
             }
         }
     },
     "studio-version": "2022.4 Release from 2022-04-26 (change 967892)",
     "version": 1
 }{
-    "date": "2024-05-03, 11:04:31, India Standard Time",
+    "date": "2024-05-14, 7:02:29 PM, India Standard Time",
     "solver_runs_and_tasks": {
         "module_name": "standard simulation project",
         "solver_run": {
@@ -85,202 +85,10 @@
             "task_name": "solver run",
             "time_info": {
                 "details": {
-                    "discretizer": 22,
-                    "solver": 54
+                    "discretizer": 18,
+                    "solver": 23
                 },
-                "run_time": 87
-            }
-        }
-    },
-    "studio-version": "2022.4 Release from 2022-04-26 (change 967892)",
-    "version": 1
-}{
-    "date": "2024-05-03, 11:06:03, India Standard Time",
-    "solver_runs_and_tasks": {
-        "module_name": "standard simulation project",
-        "solver_run": {
-            "license_and_hardware_request": {
-                "in_use": true,
-                "license_type": "CST legacy token",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_physical_cores": -1,
-                "num_threads": 1024
-            },
-            "opt_par_run_id": 3,
-            "return_code": 1,
-            "solver_hwacc_usage": {
-                "info": "gathered from solver run",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_threads_or_physical_cores": 4
-            },
-            "solver_used": "Solver_HF_TD",
-            "task_name": "solver run",
-            "time_info": {
-                "details": {
-                    "discretizer": 20,
-                    "solver": 37
-                },
-                "run_time": 66
-            }
-        }
-    },
-    "studio-version": "2022.4 Release from 2022-04-26 (change 967892)",
-    "version": 1
-}{
-    "date": "2024-05-03, 11:08:12, India Standard Time",
-    "solver_runs_and_tasks": {
-        "module_name": "standard simulation project",
-        "solver_run": {
-            "license_and_hardware_request": {
-                "in_use": true,
-                "license_type": "CST legacy token",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_physical_cores": -1,
-                "num_threads": 1024
-            },
-            "opt_par_run_id": 4,
-            "return_code": 1,
-            "solver_hwacc_usage": {
-                "info": "gathered from solver run",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_threads_or_physical_cores": 4
-            },
-            "solver_used": "Solver_HF_TD",
-            "task_name": "solver run",
-            "time_info": {
-                "details": {
-                    "discretizer": 23,
-                    "solver": 31
-                },
-                "run_time": 62
-            }
-        }
-    },
-    "studio-version": "2022.4 Release from 2022-04-26 (change 967892)",
-    "version": 1
-}{
-    "date": "2024-05-03, 11:09:49, India Standard Time",
-    "solver_runs_and_tasks": {
-        "module_name": "standard simulation project",
-        "solver_run": {
-            "license_and_hardware_request": {
-                "in_use": true,
-                "license_type": "CST legacy token",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_physical_cores": -1,
-                "num_threads": 1024
-            },
-            "opt_par_run_id": 5,
-            "return_code": 1,
-            "solver_hwacc_usage": {
-                "info": "gathered from solver run",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_threads_or_physical_cores": 4
-            },
-            "solver_used": "Solver_HF_TD",
-            "task_name": "solver run",
-            "time_info": {
-                "details": {
-                    "discretizer": 24,
-                    "solver": 37
-                },
-                "run_time": 77
-            }
-        }
-    },
-    "studio-version": "2022.4 Release from 2022-04-26 (change 967892)",
-    "version": 1
-}{
-    "date": "2024-05-03, 11:16:33, India Standard Time",
-    "solver_runs_and_tasks": {
-        "module_name": "standard simulation project",
-        "solver_run": {
-            "license_and_hardware_request": {
-                "in_use": true,
-                "license_type": "CST legacy token",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_physical_cores": -1,
-                "num_threads": 1024
-            },
-            "opt_par_run_id": 6,
-            "return_code": 1,
-            "solver_hwacc_usage": {
-                "info": "gathered from solver run",
-                "mpi": {
-                    "consistency_check": true,
-                    "num_different_mpi_nodes": 0,
-                    "num_local_mpi_nodes": 0,
-                    "num_mpi_nodes": 0
-                },
-                "num_cpu_sockets": 1,
-                "num_dc_nodes": 0,
-                "num_gpus": 0,
-                "num_threads_or_physical_cores": 4
-            },
-            "solver_used": "Solver_HF_TD",
-            "task_name": "solver run",
-            "time_info": {
-                "details": {
-                    "discretizer": 21,
-                    "solver": 49
-                },
-                "run_time": 82
+                "run_time": 46
             }
         }
     },

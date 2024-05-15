@@ -27,7 +27,7 @@
       {
          "name": "patch_x",
          "type": "float",
-         "value": 26.076647803446505
+         "value": 26.0766
       },
       {
          "name": "feed_x",
@@ -37,7 +37,7 @@
       {
          "name": "gap",
          "type": "float",
-         "value": 2.1
+         "value": 2.0
       },
       {
          "name": "res_y",
@@ -57,7 +57,7 @@
       {
          "name": "a",
          "type": "float",
-         "value": 13.18
+         "value": 21.9
       }
    ],
    "outputVariables": []

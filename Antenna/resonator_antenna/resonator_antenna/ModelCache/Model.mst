@@ -4,10 +4,10 @@ component1:ground
 component1:substrate
 0
 1
-component1:patch
+component1:feed
 0
 1
-component1:feed
+component1:patch
 0
 1
 component1:short

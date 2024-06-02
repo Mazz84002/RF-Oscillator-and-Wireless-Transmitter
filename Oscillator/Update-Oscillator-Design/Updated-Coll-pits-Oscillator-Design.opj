@@ -98,30 +98,30 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "\\Mac\Home\University-Projects\VCO-transmitter\Oscillator\Update-Oscillator-Design\updated-coll-pits-oscillator-design.dsn")
+         "c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design.dsn")
       (Path "Design Resources"
-         "\\Mac\Home\University-Projects\VCO-transmitter\Oscillator\Update-Oscillator-Design\updated-coll-pits-oscillator-design.dsn"
+         "c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
-         "\\Mac\Home\University-Projects\VCO-transmitter\Oscillator\Update-Oscillator-Design\updated-coll-pits-oscillator-design.dsn"
+         "c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 579"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 678"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 748 52 434")
-        (Scroll "0 0")
+        (Placement "44 2 3 -1 -1 -8 -31 52 947 52 477")
+        (Scroll "-52 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "\\MAC\HOME\UNIVERSITY-PROJECTS\VCO-TRANSMITTER\OSCILLATOR\UPDATE-OSCILLATOR-DESIGN\UPDATED-COLL-PITS-OSCILLATOR-DESIGN.DSN")
+         "C:\VCO-TRANSMITTER\OSCILLATOR\UPDATE-OSCILLATOR-DESIGN\UPDATED-COLL-PITS-OSCILLATOR-DESIGN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

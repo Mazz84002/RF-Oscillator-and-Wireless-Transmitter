@@ -1,15 +1,27 @@
 @CACHEFILEVERSION 2
 @DOUBLE
--gnd_x/2#
--50
+-feed_x/2#
+-1.76507695288095
 -gnd_y/2#
 -30
--t
--0.035
+-patch_y/2# - gap - res_y
+-12.8693181818182
+-patch_y/2#-gap
+-12.3693181818182
+-patch_y/2#-gap-res_y
+-12.8693181818182
+-patch_y/2#-gap-res_y-delta
+-13.3693181818182
+-res_x
+-12.4810606060606
 H
 1.52
-gnd_x/2#
-50
-gnd_y/2#
-30
+H+t
+1.555
+R
+0.5
+feed_x/2#
+1.76507695288095
+res_x
+12.4810606060606
 @LONG

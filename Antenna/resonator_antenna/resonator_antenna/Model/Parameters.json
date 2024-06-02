@@ -26,7 +26,7 @@
             "value": "26.0766"
         },
         {
-            "expr": "a/mod_ratio",
+            "expr": "21.9/mod_ratio",
             "name": "patch_y",
             "value": "20.7386363636364"
         },
@@ -46,7 +46,7 @@
             "value": "0.5"
         },
         {
-            "expr": "13.18/mod_ratio",
+            "expr": "(res_y*res_ratio)/mod_ratio",
             "name": "res_x",
             "value": "12.4810606060606"
         },
@@ -69,6 +69,11 @@
             "expr": "21.9",
             "name": "a",
             "value": "21.9"
+        },
+        {
+            "expr": "26.36",
+            "name": "res_ratio",
+            "value": "26.36"
         }
     ],
     "version": 1

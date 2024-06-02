@@ -3,7 +3,7 @@ Frontend-Node:  ================================================================
                 =======================================================================
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-2024 May 14 (Tue):  19:01:40
+2024 May 15 (Wed):  11:09:56
 started: parallelization control
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -31,11 +31,11 @@ Architecture: Windows, ID: AMD64
 System Windows-64bit
 Using processor group 0/1
 HEX Mesh information:
-Hex mesh: global: [hxr o(0 | 0 | 0) s(85 | 58 | 18) np (no TSTs): 88740] 
+Hex mesh: global: [hxr o(0 | 0 | 0) s(83 | 60 | 18) np (no TSTs): 89640] 
 =========================================================================
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-2024 May 14 (Tue):  19:01:40
+2024 May 15 (Wed):  11:09:56
 started: processing CAD model
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -47,7 +47,7 @@ Version 2022.4 (build 20220426)
 PBA version 2022042622
 Sub-Workflow: Facets-QQ-GEX
 Workflow updated: -
-2024 May 14 (Tue):  19:01:40
+2024 May 15 (Wed):  11:09:56
 ========================================================================
 
 ===========================================
@@ -55,14 +55,14 @@ Finished CAD processing (for field results)
 ===========================================
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-2024 May 14 (Tue):  19:01:41
+2024 May 15 (Wed):  11:09:56
 Resource usage for processing CAD model:
-	Runtime                 00:00:00.00615
+	Runtime                 00:00:00.00628
 	Peak Memory Usage:               43 MB
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-2024 May 14 (Tue):  19:01:41
+2024 May 15 (Wed):  11:09:56
 started: processing CAD model
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -74,7 +74,7 @@ Version 2022.4 (build 20220426)
 PBA version 2022042622
 Sub-Workflow: Facets-QQ-GEX
 Workflow updated: -
-2024 May 14 (Tue):  19:01:41
+2024 May 15 (Wed):  11:09:56
 ========================================================================
 
 ----------------------------------------------
@@ -84,25 +84,25 @@ Used point accuracy enhancement value: 68.00%.
 =============================================================================
 Mesh statistics:
 -----------------------------------------------------------------------------
-Minimum edge length (x): 0.557 @ mesh line 28 (x)
-Maximum edge length (x): 4 @ mesh line 83 (x)
-Minimum face area (x): 0.259 @ mesh lines 19 | 8 (y | z)
-Maximum face area (x): 15.8 @ mesh lines 56 | 16 (y | z)
-Minimum edge length (y): 0.5 @ mesh line 19 (y)
-Maximum edge length (y): 3.97 @ mesh line 56 (y)
-Minimum face area (y): 0.289 @ mesh lines 8 | 28 (z | x)
-Maximum face area (y): 16 @ mesh lines 16 | 83 (z | x)
+Minimum edge length (x): 0.5 @ mesh line 40 (x)
+Maximum edge length (x): 3.97 @ mesh line 81 (x)
+Minimum face area (x): 0.259 @ mesh lines 21 | 8 (y | z)
+Maximum face area (x): 15.8 @ mesh lines 58 | 16 (y | z)
+Minimum edge length (y): 0.5 @ mesh line 21 (y)
+Maximum edge length (y): 3.97 @ mesh line 58 (y)
+Minimum face area (y): 0.259 @ mesh lines 8 | 40 (z | x)
+Maximum face area (y): 15.8 @ mesh lines 16 | 81 (z | x)
 Minimum edge length (z): 0.518 @ mesh line 8 (z)
 Maximum edge length (z): 3.99 @ mesh line 16 (z)
-Minimum face area (z): 0.279 @ mesh lines 28 | 19 (x | y)
-Maximum face area (z): 15.9 @ mesh lines 83 | 56 (x | y)
-Maximum mesh face aspect ratio (x): 7.98 : 1.0  @ mesh lines 19 | 16 (y | z)
-Maximum mesh face aspect ratio (y): 7.73 : 1.0  @ mesh lines 8 | 83 (z | x)
-Maximum mesh face aspect ratio (z): 8.01 : 1.0  @ mesh lines 83 | 19 (x | y)
+Minimum face area (z): 0.25 @ mesh lines 40 | 21 (x | y)
+Maximum face area (z): 15.7 @ mesh lines 81 | 58 (x | y)
+Maximum mesh face aspect ratio (x): 7.98 : 1.0  @ mesh lines 21 | 16 (y | z)
+Maximum mesh face aspect ratio (y): 7.98 : 1.0  @ mesh lines 16 | 40 (z | x)
+Maximum mesh face aspect ratio (z): 7.94 : 1.0  @ mesh lines 81 | 21 (x | y)
 =============================================================================
 
 =============================================================================
-Available resources to store TST cells: 2147394907 (2419872.56% of mesh size)
+Available resources to store TST cells: 2147394007 (2395575.64% of mesh size)
 =============================================================================
 
 ************************************************************************************************
@@ -143,7 +143,7 @@ Geometry processing log
 	PEC background is represented by CAD geometry: false
 	Background shape: used
 	Multithread portion: 100.00
-	Number of CAD shapes: 4
+	Number of CAD shapes: 5
 	Number of lumps: 0
 ------------------------------------------------------------------------------------------------
 ===================================================================================================
@@ -152,18 +152,19 @@ Geometry processing log
  
 Priorities are sorted in ascending order beginning with the lowest priority
  
-Priority-group: 1, shape 7: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 1, shape 8: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 1, shape 9: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 1, shape 10: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 1, shape 11: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 1, shape 12: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
-Priority-group: 2, shape 5: </cst/Ports/> 1^t0, material: Copper (pure),  user-priority: 0.000000,   material-attributes: pec.rho.surface-impedance,  shape-attributes: edge-element.wire,   scheme type:FIT_TD
-Priority-group: 2, shape 6: </cst/Ports/> 1^t1, material: Copper (pure),  user-priority: 0.000000,   material-attributes: pec.rho.surface-impedance,  shape-attributes: edge-element.wire,   scheme type:FIT_TD
-Priority-group: 3, shape 4: component1:substrate,   material: Rogers RO4350B (lossy), user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: dispersive-mue.normal,  shape-attributes: solid,   scheme type:FIT_TD
+Priority-group: 1, shape 8: </cst/Boundaries/> Low^X,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 9: </cst/Boundaries/> Low^Y,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 10: </cst/Boundaries/> Low^Z,   material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 11: </cst/Boundaries/> Up^X,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 12: </cst/Boundaries/> Up^Y,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 1, shape 13: </cst/Boundaries/> Up^Z,    material: $NFSMaterial$,  user-priority: 0.000000,   material-attributes: normal.vacuum,  shape-attributes: boundary,    scheme type:FIT_TD
+Priority-group: 2, shape 6: </cst/Ports/> 1^t0, material: Copper (pure),  user-priority: 0.000000,   material-attributes: pec.rho.surface-impedance,  shape-attributes: edge-element.wire,   scheme type:FIT_TD
+Priority-group: 2, shape 7: </cst/Ports/> 1^t1, material: Copper (pure),  user-priority: 0.000000,   material-attributes: pec.rho.surface-impedance,  shape-attributes: edge-element.wire,   scheme type:FIT_TD
+Priority-group: 3, shape 5: component1:substrate,   material: Rogers RO4350B (lossy), user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: dispersive-mue.normal,  shape-attributes: solid,   scheme type:FIT_TD
 Priority-group: 4, shape 1: component1:feed,    material: Copper (pure),  user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec.rho.surface-impedance,  shape-attributes: solid,   scheme type:FIT_TD
 Priority-group: 4, shape 2: component1:ground,  material: Copper (pure),  user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec.rho.surface-impedance,  shape-attributes: solid,   scheme type:FIT_TD
 Priority-group: 4, shape 3: component1:patch,   material: Copper (pure),  user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec.rho.surface-impedance,  shape-attributes: solid,   scheme type:FIT_TD
+Priority-group: 4, shape 4: component1:short,   material: Copper (pure),  user-priority: 0.000000,   2D/3D-geometry: true, material-attributes: pec.rho.surface-impedance,  shape-attributes: solid,   scheme type:FIT_TD
  
 ===================================================================================================
  
@@ -172,9 +173,9 @@ Finished CAD processing
 =======================
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-2024 May 14 (Tue):  19:01:41
+2024 May 15 (Wed):  11:09:56
 Resource usage for processing CAD model:
-	Runtime                 00:00:00.00117
+	Runtime                 00:00:00.00128
 	Peak Memory Usage:               43 MB
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -194,8 +195,8 @@ Number of mesh fill domains: 8
 Memory downscale: 1
 CPU load: 50.00%
 Emptiness: 0.00%
-Hex mesh complexity: 0.08140
-Geometric complexity: 0.00108
+Hex mesh complexity: 0.08225
+Geometric complexity: 0.00616
 lower size limit of domain (1D): 60
 ------------------------------------------------------------
 Node order
@@ -208,26 +209,26 @@ Currently running jobs: 0
 Waiting jobs: 2
 Concurrency for section: 2/2
 Matrix calculation node 1
-	Mesh coverage: 4263600.00 %
-	Estimated peak memory usage per node: 62 MB, tightness: 7.08 %
+	Mesh coverage: 4312900.00 %
+	Estimated peak memory usage per node: 62 MB, tightness: 6.94 %
 	Processor group: 0
 Matrix calculation node 0
-	Mesh coverage: 3972900.00 %
-	Estimated peak memory usage per node: 60 MB, tightness: 6.85 %
+	Mesh coverage: 4012000.00 %
+	Estimated peak memory usage per node: 60 MB, tightness: 6.71 %
 	Processor group: 0
 ------------------------------------------------------------------
 
 -----------------------------------
-Mesh: # of points excl. TSTs: 88740
-      # of points incl. TSTs: 88740
+Mesh: # of points excl. TSTs: 89640
+      # of points incl. TSTs: 89640
 -----------------------------------
 
 ===========================================
 Data rearrangement statistics:
-Disk IO directories:	00:00:00.0000
+Disk IO directories:	00:00:00.0001
 Disk IO node domain files:	00:00:00.0070
 Disk IO FI domain files:	00:00:00.0000
-Disk IO meta information:	00:00:00.0011
+Disk IO meta information:	00:00:00.0016
 Sequential merge (TST):	00:00:00.0000
 ===========================================
 
@@ -255,20 +256,20 @@ Sequential merge (TST):	00:00:00.0000
          System Windows-64bit
          Using processor group 0/1
          HEX Mesh information:
-         Hex mesh: node: [hxr o(0 | 0 | 0) s(42 | 58 | 18) np (no TSTs): 43848]
-         Hex mesh: extended: [hxr o(0 | 0 | 0) s(44 | 58 | 18) np (no TSTs): 45936]
+         Hex mesh: node: [hxr o(0 | 0 | 0) s(41 | 60 | 18) np (no TSTs): 44280]
+         Hex mesh: extended: [hxr o(0 | 0 | 0) s(43 | 60 | 18) np (no TSTs): 46440]
          ===================================================================================================
 
 1xN000:  ------------------------------------------------------
          Memory status  on node "1xN000" for matrix calculation
-         	Estimated memory consumption: 0.0599006 GB
+         	Estimated memory consumption: 0.0602505 GB
          	Physical memory installed: 3.21557 GB
-         	Available physical memory: 0.827 GB
-         	Available relative memory: 25.7186%s
+         	Available physical memory: 0.847 GB
+         	Available relative memory: 26.3406%s
          ------------------------------------------------------
 
 1xN000:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-         2024 May 14 (Tue):  19:01:41
+         2024 May 15 (Wed):  11:09:58
          started: calculating matrix coefficients per node
          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -280,7 +281,7 @@ Sequential merge (TST):	00:00:00.0000
          PBA version 2022042622
          Sub-Workflow: FARM-1xN-TST2-Node
          Workflow updated: -
-         2024 May 14 (Tue):  19:01:41
+         2024 May 15 (Wed):  11:09:58
          ================================================================
 
 1xN000:  ----------------------------------------------
@@ -345,11 +346,11 @@ Sequential merge (TST):	00:00:00.0000
          =================================
 
 1xN000:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-         2024 May 14 (Tue):  19:01:54
+         2024 May 15 (Wed):  11:10:12
          Resource usage for calculating matrix coefficients per node:
-         	Runtime                          00:00:12.00203
+         	Runtime                          00:00:14.00196
          	Peak Memory Estimation:                   60 MB
-         	Peak Memory Usage:                        93 MB
+         	Peak Memory Usage:                        95 MB
          <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
@@ -378,20 +379,20 @@ Sequential merge (TST):	00:00:00.0000
          System Windows-64bit
          Using processor group 0/1
          HEX Mesh information:
-         Hex mesh: node: [hxr o(40 | 0 | 0) s(45 | 58 | 18) np (no TSTs): 46980]
-         Hex mesh: extended: [hxr o(38 | 0 | 0) s(47 | 58 | 18) np (no TSTs): 49068]
+         Hex mesh: node: [hxr o(39 | 0 | 0) s(44 | 60 | 18) np (no TSTs): 47520]
+         Hex mesh: extended: [hxr o(37 | 0 | 0) s(46 | 60 | 18) np (no TSTs): 49680]
          ===================================================================================================
 
 1xN001:  ------------------------------------------------------
          Memory status  on node "1xN001" for matrix calculation
-         	Estimated memory consumption: 0.0618669 GB
+         	Estimated memory consumption: 0.0623343 GB
          	Physical memory installed: 3.21557 GB
-         	Available physical memory: 0.83 GB
-         	Available relative memory: 25.8119%s
+         	Available physical memory: 0.847 GB
+         	Available relative memory: 26.3406%s
          ------------------------------------------------------
 
 1xN001:  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-         2024 May 14 (Tue):  19:01:41
+         2024 May 15 (Wed):  11:09:58
          started: calculating matrix coefficients per node
          >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -403,7 +404,7 @@ Sequential merge (TST):	00:00:00.0000
          PBA version 2022042622
          Sub-Workflow: FARM-1xN-TST2-Node
          Workflow updated: -
-         2024 May 14 (Tue):  19:01:41
+         2024 May 15 (Wed):  11:09:58
          ================================================================
 
 1xN001:  ----------------------------------------------
@@ -474,24 +475,24 @@ Sequential merge (TST):	00:00:00.0000
          =================================
 
 1xN001:  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-         2024 May 14 (Tue):  19:01:55
+         2024 May 15 (Wed):  11:10:13
          Resource usage for calculating matrix coefficients per node:
-         	Runtime                          00:00:13.00465
+         	Runtime                          00:00:15.00162
          	Peak Memory Estimation:                   62 MB
-         	Peak Memory Usage:                        99 MB
+         	Peak Memory Usage:                       101 MB
          <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-2024 May 14 (Tue):  19:01:56
+2024 May 15 (Wed):  11:10:14
 Resource usage for parallelization control:
-	Runtime                      00:00:16.00562
+	Runtime                      00:00:18.00859
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 ------------------------------------------------------------------------------------------------------------------------------
-PBAMeshFeedback - InfoMap: 0[ms] - SBCell navigation: Using legacy edges - CornerCorrectionLinesAndWires: 0[ms] - Write: 1[ms]
-ConnectivityAXG - Load: 2[ms] - Setup: 4[ms] - Convert: 2[ms] ( Groups: 4 - Shapes: 5 - Threads: 4 ) - Write: 1[ms]
+PBAMeshFeedback - InfoMap: 0[ms] - SBCell navigation: Using legacy edges - CornerCorrectionLinesAndWires: 0[ms] - Write: 0[ms]
+ConnectivityAXG - Load: 1[ms] - Setup: 4[ms] - Convert: 2[ms] ( Groups: 3 - Shapes: 6 - Threads: 4 ) - Write: 1[ms]
 ------------------------------------------------------------------------------------------------------------------------------
 
 --------------------------------

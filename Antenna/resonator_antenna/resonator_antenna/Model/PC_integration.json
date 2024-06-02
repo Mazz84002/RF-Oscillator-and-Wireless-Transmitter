@@ -58,6 +58,11 @@
          "name": "a",
          "type": "float",
          "value": 21.9
+      },
+      {
+         "name": "res_ratio",
+         "type": "float",
+         "value": 26.36
       }
    ],
    "outputVariables": []

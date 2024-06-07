@@ -1,7 +1,7 @@
 
-**** 03/23/24 09:08:57 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 06/02/24 20:54:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\update-oscillator-design\updated-coll-pits-oscillator-design-pspicefiles\schema
+ ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design-pspicef
 
 
  ****     CIRCUIT DESCRIPTION
@@ -35,20 +35,21 @@
 L_Lp         N41434 N41294  1nH  
 X_Qm1         N41434 0 N41608 BFP520/INF
 X_Qi2         N41608 N41428 N41876 BFP520/INF
-C_C1         N41608 N41434  3.3p  TC=0,0 
+C_C1         N41608 N41434  3.4p  TC=0,0 
 V_V9         N41294 0 8Vdc
 R_Ri         N41428 N41294  4.5k TC=0,0 
-C_C2         0 N41608  3.3p  TC=0,0 
+C_C2         0 N41608  3.4p  TC=0,0 
 X_Qi1         N41428 N41428 N41876 BFP520/INF
 V_V11         N41876 0 -8Vdc
 R_R1         0 VOUT  50 TC=0,0 
 L_L1         0 N44705  1.04421e-08  
 C_C3         N44705 VOUT  2.08424e-13  TC=0,0 
-C_C4         0 N44705  2.02955e-15  TC=0,0 
-L_L2         N41434 N44705  2.03361e-09  
+C_C4         0 N44705  0  TC=0,0 
+-----------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+L_L2         N50998 N44705  2.03361e-09  
+C_C5         N41434 N50998  1m  TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
-
-ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving L_Lp. You may break the loop by adding a series resistance
 

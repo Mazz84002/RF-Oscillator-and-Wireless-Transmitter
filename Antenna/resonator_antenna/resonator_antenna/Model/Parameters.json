@@ -28,7 +28,7 @@
         {
             "expr": "21.9/mod_ratio",
             "name": "patch_y",
-            "value": "20.7386363636364"
+            "value": "20.5344585091421"
         },
         {
             "expr": "3.5301539057618996",
@@ -48,7 +48,7 @@
         {
             "expr": "(res_y*res_ratio)/mod_ratio",
             "name": "res_x",
-            "value": "12.4810606060606"
+            "value": "12.3581809657759"
         },
         {
             "expr": "0.5",
@@ -61,9 +61,9 @@
             "value": "0.5"
         },
         {
-            "expr": "1.056",
+            "expr": "1.0665",
             "name": "mod_ratio",
-            "value": "1.056"
+            "value": "1.0665"
         },
         {
             "expr": "21.9",
@@ -74,6 +74,16 @@
             "expr": "26.36",
             "name": "res_ratio",
             "value": "26.36"
+        },
+        {
+            "expr": "(-patch_y/2 - gap - res_y)-(-gnd_y/2)",
+            "name": "feed_y",
+            "value": "17.232770745429"
+        },
+        {
+            "expr": "-patch_y/2-gap-res_y-delta",
+            "name": "short_pos",
+            "value": "-13.2672292545711"
         }
     ],
     "version": 1

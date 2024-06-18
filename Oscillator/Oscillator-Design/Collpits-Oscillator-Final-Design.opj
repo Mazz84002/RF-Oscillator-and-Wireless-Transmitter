@@ -1,6 +1,6 @@
 (ExpressProject "Collpits-Oscillator-Final-Design"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[03/03/24]")
+  (SoftwareVersion "23.1 S004 (4189164)  [4/25/2024]-[03/22/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library"
@@ -33,7 +33,7 @@
     (ANNOTATE_Property_Combine "{Value}{Source Package}")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
     (Display_Online_DRC_Results "FALSE"))
   (Folder "Layout")
   (Folder "Outputs"
@@ -105,35 +105,36 @@
       (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory "LIBRARY\PSPICE")
-  (MPSSessionName "mazz")
+  (MPSSessionName "nirfi")
   (Folder "Logs")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design.dsn")
+         "C:\Users\nirfi\OneDrive\Documents\GitHub\VCO-transmitter\Oscillator\Oscillator-Design\collpits-oscillator-final-design.dsn")
       (Path "Design Resources"
-         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design.dsn"
+         "C:\Users\nirfi\OneDrive\Documents\GitHub\VCO-transmitter\Oscillator\Oscillator-Design\collpits-oscillator-final-design.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         "C:\VCO-transmitter\Oscillator-Final-Design\collpits-oscillator-final-design-pspicefiles\schematic1\trans.sim"))
+      (Select "Design Resources"
+         "C:\Users\nirfi\OneDrive\Documents\GitHub\VCO-transmitter\Oscillator\Oscillator-Design\collpits-oscillator-final-design.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 678"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 327 0 693"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 5 1142 24 741")
-        (Scroll "0 4")
-        (Zoom "186")
+        (Placement "44 0 1 -1 -1 0 0 5 1394 24 734")
+        (Scroll "-232 -8")
+        (Zoom "92")
         (Occurrence "/"))
       (Path
-         "C:\VCO-TRANSMITTER\OSCILLATOR-FINAL-DESIGN\COLLPITS-OSCILLATOR-FINAL-DESIGN.DSN")
+         "C:\USERS\NIRFI\ONEDRIVE\DOCUMENTS\GITHUB\VCO-TRANSMITTER\OSCILLATOR\OSCILLATOR-DESIGN\COLLPITS-OSCILLATOR-FINAL-DESIGN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

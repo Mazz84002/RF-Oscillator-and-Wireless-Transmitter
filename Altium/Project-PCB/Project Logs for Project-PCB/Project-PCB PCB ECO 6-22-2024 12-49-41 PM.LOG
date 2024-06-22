@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=A1-GND
+Add Pin To Net: Unknown Pin: Pin A1-2
+Added Pin To Net: NetName=GND Pin=Q1-1

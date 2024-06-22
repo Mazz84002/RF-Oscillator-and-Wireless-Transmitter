@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=A1-GND
+Change Component Footprint: Designator=C2 Old Footprint=CAP_0402_1XP55_AVX New Footprint=CAPC1006X50X20LL10T10
+Change Component Comment : Designator=C2 Old Comment=04021JR05ZBSTR New Comment=04023J0R2PBSTR
+Change Managed Component Library Link : Designator=C2 Old VaultGUID= New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID= New ItemGUID=75E03286-2E15-43D1-9654-EBE862AB1192 Old RevisionGUID= New RevisionGUID=6F5EB400-7F08-44ED-A111-3D5F1038E270
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAP_0402_1XP55_AVX"; UniqueID = "\EQHOCXPC" ("\EQHOCXPC")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "AVX Interconnect / Elco"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "04023J0R2PBSTR"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin A1-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=L4-2
+Added Pin To Net: NetName=GND Pin=Q1-1

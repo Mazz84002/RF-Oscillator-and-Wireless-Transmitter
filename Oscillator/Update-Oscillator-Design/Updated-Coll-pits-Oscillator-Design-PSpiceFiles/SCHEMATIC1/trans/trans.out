@@ -1,5 +1,5 @@
 
-**** 06/11/24 17:50:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 06/20/24 15:55:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design-pspicef
 
@@ -43,14 +43,14 @@ X_Qi1         N41428 N41428 N41876 BFP520/INF
 V_V11         N41876 0 -8Vdc
 R_R1         0 VOUT  50 TC=0,0 
 L_L1         0 N44705  1.0e-08  
-C_C3         N44705 VOUT  2.1e-13  TC=0,0 
+C_C3         N44705 VOUT  2e-13  TC=0,0 
 L_L2         N50998 N44705  2e-09  
 C_C5         N41434 N50998  1m  TC=0,0 
 
 **** RESUMING trans.cir ****
 .END
 
-**** 06/11/24 17:50:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 06/20/24 15:55:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design-pspicef
 
@@ -107,7 +107,7 @@ C_C5         N41434 N50998  1m  TC=0,0
            D     .87         
 
 
-**** 06/11/24 17:50:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 06/20/24 15:55:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design-pspicef
 
@@ -159,7 +159,7 @@ C_C5         N41434 N50998  1m  TC=0,0
 
           JOB CONCLUDED
 
-**** 06/11/24 17:50:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 06/20/24 15:55:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-trans"  [ c:\vco-transmitter\oscillator\update-oscillator-design\updated-coll-pits-oscillator-design-pspicef
 
@@ -171,5 +171,5 @@ C_C5         N41434 N50998  1m  TC=0,0
 
 
 
-  Total job time (using Solver 1)   =        5.25
+  Total job time (using Solver 1)   =        4.88
 

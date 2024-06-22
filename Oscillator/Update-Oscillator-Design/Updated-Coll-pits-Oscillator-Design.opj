@@ -118,8 +118,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 947 52 477")
-        (Scroll "-135 -4")
-        (Zoom "83")
+        (Scroll "477 203")
+        (Zoom "166")
         (Occurrence "/"))
       (Path
          "C:\VCO-TRANSMITTER\OSCILLATOR\UPDATE-OSCILLATOR-DESIGN\UPDATED-COLL-PITS-OSCILLATOR-DESIGN.DSN")

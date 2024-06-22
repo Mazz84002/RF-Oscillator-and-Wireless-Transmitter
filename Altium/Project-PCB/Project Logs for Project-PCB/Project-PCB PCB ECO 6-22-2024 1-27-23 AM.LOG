@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=A1-GND
+Removed Pin From Net: NetName=NetA1_1 Pin=C3-2
+Removed Member From Class: ClassName=Project-PCB Member=C3
+Change Component Footprint: Designator=C2 Old Footprint=FP-01005-L_0_4_0_02-W_0_2-MFG New Footprint=CAP_0402_1XP55_AVX
+Change Component Comment : Designator=C2 Old Comment=TMK042CG4R2BD-W New Comment=04021JR05ZBSTR
+Change Managed Component Library Link : Designator=C2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=7E82CD63-0492-42A2-AD69-4F609EC7FDFD New ItemGUID= Old RevisionGUID=8C51D998-E401-4961-9583-7294C3ACF3A6 New RevisionGUID=
+Change component parameters: Designator = "C2" ("C2"); Footprint = "FP-01005-L_0_4_0_02-W_0_2-MFG"; UniqueID = "\NSZKDQPF" ("\NSZKDQPF")
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "KYOCERA AVX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin A1-2
+Added Pin To Net: NetName=NetA1_1 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=L4-2
+Added Pin To Net: NetName=GND Pin=Q1-1
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=A1-GND
+Removed Member From Class: ClassName=Project-PCB Member=A1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=L4-2
+Added Pin To Net: NetName=GND Pin=Q1-1

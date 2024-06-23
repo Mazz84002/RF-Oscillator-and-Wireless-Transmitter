@@ -28,17 +28,17 @@
         {
             "expr": "21.9/mod_ratio",
             "name": "patch_y",
-            "value": "20.5344585091421"
+            "value": "20.4386374241717"
         },
         {
-            "expr": "3.5301539057618996",
+            "expr": "3.53015",
             "name": "feed_x",
-            "value": "3.5301539057618996"
+            "value": "3.53015"
         },
         {
-            "expr": "2",
+            "expr": "2.01579",
             "name": "gap",
-            "value": "2"
+            "value": "2.01579"
         },
         {
             "expr": "0.5",
@@ -48,7 +48,7 @@
         {
             "expr": "(res_y*res_ratio)/mod_ratio",
             "name": "res_x",
-            "value": "12.3581809657759"
+            "value": "12.3005132991134"
         },
         {
             "expr": "0.5",
@@ -61,9 +61,9 @@
             "value": "0.5"
         },
         {
-            "expr": "1.0665",
+            "expr": "1.0715",
             "name": "mod_ratio",
-            "value": "1.0665"
+            "value": "1.0715"
         },
         {
             "expr": "21.9",
@@ -78,12 +78,12 @@
         {
             "expr": "(-patch_y/2 - gap - res_y)-(-gnd_y/2)",
             "name": "feed_y",
-            "value": "17.232770745429"
+            "value": "17.2648912879141"
         },
         {
             "expr": "-patch_y/2-gap-res_y-delta",
             "name": "short_pos",
-            "value": "-13.2672292545711"
+            "value": "-13.2351087120859"
         }
     ],
     "version": 1

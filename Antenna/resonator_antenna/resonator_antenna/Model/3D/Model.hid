@@ -82,14 +82,16 @@ Solid.Delete "component1:short"
 [end]undo_item
 [start]undo_item
 [start]block_index
-13
+32
 [end]block_index
 [start]command
+
 '@ define discrete port: 1
  (undo)
 [end]command
 [start]content
 Port.Delete "1"
+
 [end]content
 [start]recover_picks
 1

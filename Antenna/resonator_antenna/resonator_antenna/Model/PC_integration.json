@@ -32,12 +32,12 @@
       {
          "name": "feed_x",
          "type": "float",
-         "value": 3.5301539057618996
+         "value": 3.53015
       },
       {
          "name": "gap",
          "type": "float",
-         "value": 2.0
+         "value": 2.01579
       },
       {
          "name": "res_y",
@@ -52,7 +52,7 @@
       {
          "name": "mod_ratio",
          "type": "float",
-         "value": 1.0665
+         "value": 1.0715
       },
       {
          "name": "a",

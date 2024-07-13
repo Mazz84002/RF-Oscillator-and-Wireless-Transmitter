@@ -4,6 +4,7 @@ import sys
 import ast
 from tabulate import tabulate
 import pandas as pd
+import csv
 
 def read_second_column(filename):
     data = pd.read_csv(filename, delimiter='\t')
@@ -43,11 +44,20 @@ def plotResponse(f, x, title):
     plt.ylabel(title)
     plt.grid()
 
+    filename = "Z_out_osc"
+    # Save data to CSV
+    with open(f'{filename}.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Frequency (f)', 'Z_out_osc'])
+        for i in range(len(f)):
+            writer.writerow([f[i], x[i]])
+
 def plotImpedance(w, L_src, L_ld, C_src, C_ld, Z_load):
     #impedance = (1j*w*L_src) + ll(1/(1j*w*C_com), 1j*w*L_ld+Z_load)
+    Z_load_curr = 75
     impedance = 1j*w*L_src + ll(
         1/(1j*w*C_src), ll(
-            1j*w*L_ld, 1/(1j*w*C_ld) + Z_load
+            1j*w*L_ld, 1/(1j*w*C_ld) + Z_load_curr
         )
     )
     plt.figure()
@@ -104,8 +114,8 @@ def main():
     f0 = 3.5e9                                                                  # operating freq
     f = np.linspace(1e9, 5e9, 100000)                                           # f array for plots
     Z_out_osc = read_second_column("Input-Impedance.txt")                       # the load impedance at the output of oscillator for f = 3.5 Ghz
-    Z_out_osc_0 = int(args[1])                              # oscillator output impedance at 3.5 GHz
-    Z_load = 50                                                                 # the actual load impedance
+    Z_out_osc_0 = 1000                              # oscillator output impedance at 3.5 GHz
+    Z_load = 75                                                                 # the actual load impedance
 
     Z_center = Z_out_osc_0+2                                           # must be larger than both Z_load and Z_out_osc
 

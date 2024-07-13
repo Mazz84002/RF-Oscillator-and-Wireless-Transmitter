@@ -7,8 +7,8 @@ def cal():
     global k0, W, L
 
     f = 3.5 * 1e9  # Convert to Hz
-    Er = 2.2
-    h = 1 / 1000  # Convert to meters
+    Er = 4.3
+    h = 2 / 1000  # Convert to meters
 
     c = 3e8  # Speed of light
     k0 = 2 * np.pi * f / c  # Wave number

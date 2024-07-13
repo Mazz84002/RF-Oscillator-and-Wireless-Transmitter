@@ -1,6 +1,6 @@
 \documentclass[]{extarticle}
 \usepackage[utf8]{inputenc}
-\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[letterpaper, margin=1.3in]{geometry}
 \usepackage{lipsum}
 \usepackage{amsmath}
 \usepackage{tikz}
@@ -16,20 +16,25 @@
 \usepackage{fancyhdr}
 \usepackage{listings}
 \usepackage{braket}
-
-
-
+\usepackage{multicol}
 \usepackage{titlesec}
+\usepackage{tocloft}
 
 \setcounter{secnumdepth}{4}
-
-\newcommand{\mypar}{\par\vspace{\baselineskip}}
 
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
+
+
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+  
 \begin{document}
 
 \begin{titlepage}
@@ -70,14 +75,20 @@
 
 
 \tableofcontents
-
+\listoffigures
+\listoftables
 
 \newpage
 
 \include{abstract}
 \include{introduction}
-\include{theoretical_bg}
-\include{conclusion}
+\include{theoretical_background}
+\include{simulation}
+\include{implementation}
+\include{analysis_of_results}
+\include{conclusion_and_further_work}
+\include{project_documentation}
+
 
 % -------------------------- references --------------------------
 
@@ -88,10 +99,8 @@ pdflatex yourfile.tex
 pdflatex yourfile.tex
 \end{comment}
 
-
 \newpage
 \bibliographystyle{plain}
 \bibliography{references.bib}
 
-
-\end{document}  
+\end{document}

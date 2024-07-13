@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Milestones completed so far}{2}{0}{1}
+\beamer@sectionintoc {2}{Choosing the BJT}{8}{0}{2}
+\beamer@sectionintoc {3}{Oscillator Circuit}{19}{0}{3}
+\beamer@sectionintoc {4}{Choosing a Matching Network}{23}{0}{4}
+\beamer@sectionintoc {5}{Efficiency}{31}{0}{5}
+\beamer@sectionintoc {6}{Antenna Design}{34}{0}{6}
+\beamer@sectionintoc {7}{Next Steps}{44}{0}{7}

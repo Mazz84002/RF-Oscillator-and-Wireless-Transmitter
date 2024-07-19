@@ -1,0 +1,7 @@
+* source BFP520_CHARS
+.EXTERNAL OUTPUT out
+V_V1         N14447 0 DC 0Vdc AC 1Vac 
+V_V2         N14648 0 5Vdc
+X_Q1         OUT N14447 N14475 BFP520/INF
+I_I1         N14475 0 DC 0Adc  
+R_R1         OUT N14648  10k TC=0,0 

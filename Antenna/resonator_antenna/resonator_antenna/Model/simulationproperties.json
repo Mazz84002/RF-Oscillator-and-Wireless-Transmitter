@@ -22,7 +22,7 @@
             "multi_gpu": true,
             "price model": "Premium",
             "user acc settings": {
-                "cpu devices": 1,
+                "cpu devices": 2,
                 "dc nodes": 0,
                 "gpu devices": 0,
                 "mpi nodes": 0,

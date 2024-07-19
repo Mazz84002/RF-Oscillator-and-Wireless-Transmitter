@@ -1,0 +1,90 @@
+{
+    "parameters": [
+        {
+            "expr": "100",
+            "name": "gnd_x",
+            "value": "100"
+        },
+        {
+            "expr": "60",
+            "name": "gnd_y",
+            "value": "60"
+        },
+        {
+            "expr": "0.035",
+            "name": "t",
+            "value": "0.035"
+        },
+        {
+            "expr": "2",
+            "name": "H",
+            "value": "2"
+        },
+        {
+            "expr": "26.0766",
+            "name": "patch_x",
+            "value": "26.0766"
+        },
+        {
+            "expr": "21.9/mod_ratio",
+            "name": "patch_y",
+            "value": "18.0246913580247"
+        },
+        {
+            "expr": "2.5",
+            "name": "feed_x",
+            "value": "2.5"
+        },
+        {
+            "expr": "2.01579",
+            "name": "gap",
+            "value": "2.01579"
+        },
+        {
+            "expr": "0.5",
+            "name": "res_y",
+            "value": "0.5"
+        },
+        {
+            "expr": "(res_y*res_ratio)/mod_ratio",
+            "name": "res_x",
+            "value": "10.7818930041152"
+        },
+        {
+            "expr": "0.5",
+            "name": "R",
+            "value": "0.5"
+        },
+        {
+            "expr": "R",
+            "name": "delta",
+            "value": "0.5"
+        },
+        {
+            "expr": "1.215",
+            "name": "mod_ratio",
+            "value": "1.215"
+        },
+        {
+            "expr": "21.9",
+            "name": "a",
+            "value": "21.9"
+        },
+        {
+            "expr": "26.2",
+            "name": "res_ratio",
+            "value": "26.2"
+        },
+        {
+            "expr": "(-patch_y/2 - gap - res_y)-(-gnd_y/2)",
+            "name": "feed_y",
+            "value": "18.4718643209876"
+        },
+        {
+            "expr": "-patch_y/2-gap-res_y-delta",
+            "name": "short_pos",
+            "value": "-12.0281356790124"
+        }
+    ],
+    "version": 1
+}

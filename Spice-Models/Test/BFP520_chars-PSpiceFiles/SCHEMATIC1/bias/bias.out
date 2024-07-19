@@ -1,0 +1,150 @@
+
+**** 07/14/24 02:17:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\vco-transmitter\spice-models\test\bfp520_chars-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\mazz\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 2000 1e9 100e9
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source BFP520_CHARS
+.EXTERNAL OUTPUT out
+V_V1         N14447 0 DC 0Vdc AC 1Vac 
+V_V2         N14648 0 5Vdc
+X_Q1         OUT N14447 N14475 BFP520/INF
+I_I1         N14475 0 DC 0Adc  
+R_R1         OUT N14648  10k TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 07/14/24 02:17:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\vco-transmitter\spice-models\test\bfp520_chars-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BFP520          
+               NPN             
+       LEVEL    1            
+          IS   15.000000E-18 
+          BF  235            
+          NF    1            
+         VAF   25            
+         IKF     .4          
+         ISE   25.000000E-15 
+          NE    2            
+          BR    1.5          
+          NR    1            
+         VAR    2            
+         IKR     .01         
+         ISC   20.000000E-15 
+         ISS    0            
+          RB   11            
+         RBM    7.5          
+          RE     .6          
+          RC    7.6          
+         CJE  235.000000E-15 
+         VJE     .958        
+         MJE     .335        
+         CJC   93.000000E-15 
+         VJC     .661        
+         MJC     .236        
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+         MJS     .333        
+          TF    1.700000E-12 
+         XTF   10            
+         VTF    5            
+         ITF     .7          
+         PTF   50            
+          TR   50.000000E-09 
+         XTB    -.25         
+         XTI     .035        
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 07/14/24 02:17:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\vco-transmitter\spice-models\test\bfp520_chars-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    5.0000  (N14447)    0.0000 (N14475)    3.7654 (N14648)    5.0000     
+
+(X_Q1.1)    0.0000 (X_Q1.2)    5.0000 (X_Q1.3)    3.7654 (X_Q1.10)    0.0000    
+
+(X_Q1.20)    5.0000                   (X_Q1.30)    3.7654                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.394E-12
+    V_V2        -7.159E-12
+
+    TOTAL POWER DISSIPATION   3.58E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/14/24 02:17:42 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ c:\vco-transmitter\spice-models\test\bfp520_chars-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

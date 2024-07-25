@@ -1,7 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=A2-2
-Removed Member From Class: ClassName=Project-PCB Member=A2
-Add Pin To Net: Unknown Pin: Pin A1-2
-Added Pin To Net: NetName=NetA1_1 Pin=A1-1
-Added Pin To Net: NetName=NetA1_1 Pin=A1-1
-Added Pin To Net: NetName=NetA1_1 Pin=C3-2
-Added Net: Name=NetA1_1

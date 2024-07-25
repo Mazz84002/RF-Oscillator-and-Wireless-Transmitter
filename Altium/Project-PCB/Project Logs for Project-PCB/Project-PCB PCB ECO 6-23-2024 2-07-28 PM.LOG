@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=A1-GND
-Add Pin To Net: Unknown Pin: Pin A1-2
-Added Pin To Net: NetName=GND Pin=C5-1
-Added Pin To Net: NetName=GND Pin=Q1-1
-Added Member To Class: ClassName=Project-PCB Member=Component A1 CustomAntenna

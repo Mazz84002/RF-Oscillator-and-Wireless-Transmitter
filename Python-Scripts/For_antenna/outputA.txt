@@ -1,9 +1,0 @@
-width = 33.88154635894693 mm
-length = 28.41003263411258 mm
-the inset feed point distance = 9.96753317562358 mm
-
-lambda_eff = 0.12467233769351088
-width of ground plane > 96.21771520570236 mm
-length of ground plane > 90.74620148086802 mm
-
-width of the 50 Ohms line = 3.0811734482841038 mm

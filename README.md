@@ -61,7 +61,7 @@ We first used Python to measure the antenna dimensions, writing scripts to analy
 
 <img src="images/Antenna.png" alt="Scaled Image" style="transform: scale(0.5);">
 
-<img src="images/s11.png" alt="Scaled Image" style="transform: scale(0.5);">
+<img src="images/S11.png" alt="Scaled Image" style="transform: scale(0.5);">
 
 ### PCB
 

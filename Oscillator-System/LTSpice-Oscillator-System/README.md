@@ -1,1 +1,1 @@
-The files given here are LTSpice files, which are placeholders and NOT THE ONES USED IN OUR DESIGN. In order to access the files we worked with, you need access of Virtuoso
+The files given here are LTSpice files, which are placeholders and NOT THE ONES USED IN OUR DESIGN.

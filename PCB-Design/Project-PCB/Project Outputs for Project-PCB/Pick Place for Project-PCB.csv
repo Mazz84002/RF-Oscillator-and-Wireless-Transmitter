@@ -1,0 +1,26 @@
+Altium Designer Pick and Place Locations
+C:\VCO-transmitter\Altium\Project-PCB\Project Outputs for Project-PCB\Pick Place for Project-PCB.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       02/07/24
+Time:       12:10
+Revision:   2a6b44b3c3e0950e5143b07a76ade7acc73fe7e7
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"P1","62000211121","TopLayer","62000211121","20.8280","14.9715","90",""
+"C1","GRM1555C1H102FA01D","TopLayer","FP-GRM155-0_05-IPC_B","42.7990","12.8125","0","Chip Multilayer Ceramic Capacitors for General Purpose, 0402, 1000pF, C0G, 30ppm/°C, 1%, 50V"
+"R1","CRCW06035K10FKEA","TopLayer","FP-CRCW0603-e3-IPC_C","23.8760","15.8750","270","RES Thick Film, 5.1kO, 1%, 0.1W, 100ppm/°C, 0603"
+"Q3","BFP520","TopLayer","INF-SOT343_V","29.9720","12.1775","90","NPN Silicon RF Transistor, 2.5 V VCEO, 40 mA IC, 23.5 dB Gmax, SOT343, Green"
+"Q2","BFP520","TopLayer","INF-SOT343_V","24.6380","12.3045","180","NPN Silicon RF Transistor, 2.5 V VCEO, 40 mA IC, 23.5 dB Gmax, SOT343, Green"
+"Q1","BFP520","TopLayer","INF-SOT343_V","33.6550","12.1775","90","NPN Silicon RF Transistor, 2.5 V VCEO, 40 mA IC, 23.5 dB Gmax, SOT343, Green"
+"L4","LQG15WZ10NG02D","TopLayer","FP-LQG15WH_02-IPC_A","47.3710","9.8915","270","Multilayer type Inductor for Automotive 10nH ±2% 0.19O 500mA 0402"
+"L3","LQP03TN2N0B02D","TopLayer","FP-LQP03TG_02-IPC_A","45.6933","12.7979","0","Film type RF Inductor 2nH ±0.1nH 600mA 0.15O 0201 (0603)"
+"L2","LQG15HN2N0B02D","TopLayer","FP-LQG15HH_02-MFG","34.2900","15.3670","90","Multilayer type RF Inductor 2nH ±0.1nH 0.09O 900mA 0402"
+"L1","LQG15HN2N0B02D","TopLayer","FP-LQG15HH_02-MFG","31.4960","15.3525","90","Multilayer type RF Inductor 2nH ±0.1nH 0.09O 900mA 0402"
+"C5","GRM1555C1H3R4WA01D","TopLayer","CAPC1005X55X25ML05T10","38.2270","8.5125","90",""
+"C4","GRM1555C1H3R4WA01D","TopLayer","CAPC1005X55X25ML05T10","38.3540","12.3045","90",""
+"C2","04023J0R2PBSTR","TopLayer","CAPC1006X50X20LL10T10","47.9425","12.7000","0",""

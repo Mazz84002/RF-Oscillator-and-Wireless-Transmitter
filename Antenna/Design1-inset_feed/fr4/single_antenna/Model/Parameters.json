@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "expr": "28",
+            "name": "x_substrate",
+            "value": "28"
+        },
+        {
+            "expr": "28",
+            "name": "y_substrate",
+            "value": "28"
+        },
+        {
+            "expr": "2",
+            "name": "h_substrate",
+            "value": "2"
+        },
+        {
+            "expr": "x_substrate",
+            "name": "x_gnd",
+            "value": "28"
+        },
+        {
+            "expr": "y_substrate",
+            "name": "y_gnd",
+            "value": "28"
+        },
+        {
+            "expr": "h_patch",
+            "name": "h_gnd",
+            "value": "0.018"
+        },
+        {
+            "expr": "4.22703362314735/2",
+            "name": "x_feed",
+            "value": "2.11351681157368"
+        },
+        {
+            "expr": "0.018",
+            "name": "h_patch",
+            "value": "0.018"
+        },
+        {
+            "expr": "26.32693357859791/2",
+            "name": "x_patch",
+            "value": "13.163466789299"
+        },
+        {
+            "expr": "20.02940997631315/2",
+            "name": "y_patch",
+            "value": "10.0147049881566"
+        },
+        {
+            "expr": "7.401408118081416",
+            "name": "inset",
+            "value": "7.401408118081416"
+        },
+        {
+            "expr": "1.2",
+            "name": "cut_ratio",
+            "value": "1.2"
+        }
+    ],
+    "version": 1
+}

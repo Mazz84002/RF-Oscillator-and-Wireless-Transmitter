@@ -1,0 +1,7 @@
+Added Component: Designator=A2(CustomAntennaFootprint)
+Added Pin To Net: NetName=GND Pin=A2-2
+Added Pin To Net: NetName=NetA2_1 Pin=A2-1
+Added Pin To Net: NetName=NetA2_1 Pin=A2-1
+Added Pin To Net: NetName=NetA2_1 Pin=C3-2
+Added Net: Name=NetA2_1
+Added Member To Class: ClassName=Project-PCB Member=Component A2 CustomAntenna

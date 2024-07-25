@@ -1,0 +1,1 @@
+The design used in the project - `.../RF-Oscillator-and-Wireless-Transmitter/Antenna/Design3-resonator_coupled/resonator_antenna.cst`

@@ -1,0 +1,111 @@
+\documentclass[]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{graphicx} 
+\usepackage{subcaption}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{braket}
+
+
+
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\newcommand{\mypar}{\par\vspace{\baselineskip}}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \includegraphics[scale=0.8]{TAU.png}\par\vspace{1cm}
+    {\LARGE\bfseries Mid Semester Progress Report\par}
+    \vspace{1cm}
+    {\Large 2896\par}
+    \vspace{0.5cm}
+    {\Large Designing Oscillator for an Antenna at $\sim$3.5 GHz\par}
+    \vspace{1cm}
+    
+    \Large \textbf{Students}:\par
+    \vspace{0.5cm}
+    \begin{tabular}{l l}
+        Nir Finch Cohen & 230336612 \\
+        Mazz Shaikh & 932056724 \\
+    \end{tabular}\par
+    \vspace{1cm}
+    
+    \Large Project carried out at: \textbf{Tel Aviv University}\par
+    \vspace{1cm}
+    
+    \Large \textbf{For the project instructor:}\par
+    \vspace{0.3cm}
+    
+    I approve the submission of the following report\par
+    \vspace{1cm}
+    
+    \begin{flushright}
+        \begin{tabular}{l}
+            \\
+            \\
+            Edoh Shaulov \\
+        \end{tabular}
+    \end{flushright}
+\end{titlepage}
+
+\begin{tabular}{|p{0.4cm}|p{4cm}|p{11cm}|}
+    \hline
+    & \textbf{Accomplished Task} & \textbf{Comments}\\
+    \hline
+    1 & Paper review & Conduct a thorough review of relevant literature and research papers to establish a foundation for the project.  \\
+    \hline
+    2 & Choosing an oscillator model to build upon & Evaluate and select a suitable oscillator model as the basis for further development. Consider factors such as stability and frequency range.  \\
+    \hline
+    3 & Building Ideal Single-Ended Oscillator Model and Simulating for S-parameters & Construct an ideal single-ended oscillator model and perform simulations to analyze S-parameters, ensuring initial functionality.  \\
+    \hline
+    4 & Choosing a transistor, building its spice model, and using it in place of the ideal one & Identifying a suitable transistor, developing its Spice model, and integrating it into the oscillator model, replacing the idealized component. \\
+    \hline
+    5 & Research on Antenna matching  & Reading papers related to antenna matching for design inspirations\\
+    \hline
+    6 & Building a matching networks assuming antenna to be \(50[\Omega]\) & Design a matching network under the assumption of a \(50[\Omega]\) antenna impedance. Simulate and optimize for effective impedance matching.  \\
+    \hline
+    7 & Using a Microstrip Patch Antenna with required impedance & Developing an antenna system with the specified impedance characteristics, considering radiation patterns, efficiency and bandwidth. \\
+    \hline
+    8 & Enhancing Bandwidth & Enhancing bandwidth of the antenna to account for fabrication variations in the oscillator\\
+    \hline
+    9 & Component Search & Finding components with required values and tolerances to keep \(\Delta\)(oscillating frequency) inside the antenna's \(S_{11}\le -10[dB]\) region\\
+    \hline
+    10 & PCB layout & Design the printed circuit board (PCB) layout, considering optimal component placement\\
+    \hline
+    11 & PCB fabrication& Sending the PCB for fabrication of the design (vendor: JLCPCB)\\
+    \hline
+\end{tabular}
+
+\vspace{2cm}
+
+\begin{tabular}{|p{0.4cm}|p{4cm}|p{11cm}|}
+     \hline
+    & \textbf{The following month tasks} & \textbf{Comments}\\
+    \hline
+    1 & Testing Transmitter & Conduct comprehensive testing of the assembled transmitter system to validate its functionality and performance.\\
+    \hline
+\end{tabular}
+
+
+
+\end{document}  

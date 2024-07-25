@@ -1,0 +1,150 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[size=custom,width=100,height=70,scale=0.8]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{eurecom}
+\usepackage{graphicx}
+\usepackage{epstopdf}  % Include the epstopdf package
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{comment} % Required for the comment environment
+\usepackage{subcaption} % for subfigures
+\usepackage{tabularx}
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% ====================
+% Title
+% ====================
+
+\title{\textsf{RF Oscillator and Wireless Transmitter}}
+\author{ \textsf{ \textbf{Project Number:} 2896 \\
+        \textbf{Names:} Mazz Shaikh \and Nir Finch Cohen\\ 
+        \textbf{Advisor:} Edoh Shaulov
+        }
+    }
+
+% ====================
+% Header and Footer Colors
+% ====================
+
+% Set header and footer background color to white
+\setbeamercolor{headline}{bg=white}
+\setbeamercolor{footline}{bg=white}
+
+% ====================
+% Logo (optional)
+% ====================
+
+% Include Eurecom logo on the right side of the header
+\logoleft{\includegraphics[height=7cm]{./logos/TAU_new.jpeg}}
+% Include Lab logo on the left side of the header
+%\logoleft{\includegraphics[height=7cm]{./logos/s3logo.png}}
+
+% ====================
+% Block Title Color
+% ====================
+
+% Set block title background color to white and text color to black
+\setbeamercolor{block title}{fg=black}
+
+% ====================
+
+% Custom Command for Styled Section Titles
+\newcommand{\mysection}[1]{%
+    \par\vspace{0.5\baselineskip} % Adjust the space before the title
+    \begin{center}
+        {\usebeamerfont{section title}\textbf{\large\bfseries #1}\par} % Adjust the font size and weight (\large\bfseries)
+    \end{center}
+    \vspace{0.5\baselineskip} % Adjust the space after the title
+}
+
+
+% Explicitly set the title font to the default LaTeX font
+\makeatletter
+\setbeamertemplate{title page}{
+    \vbox{}
+    \vfill
+    \begin{centering}
+        {\usebeamerfont{title}\usebeamercolor[fg]{title}\rmfamily\inserttitle\par}
+        \vskip0.5em
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+        \vskip1em
+        {\usebeamerfont{author}\insertauthor\par}
+        \vskip1em
+        {\usebeamerfont{institute}\insertinstitute\par}
+        \vskip1em
+        {\usebeamerfont{date}\insertdate\par}
+    \end{centering}
+    \vfill
+}
+
+\makeatother
+
+% Body
+\begin{document}
+
+\begin{frame}[t]
+
+\begin{columns}[t]
+\begin{column}{\colwidth}
+\mysection{Introduction}
+\input{introduction}
+
+\mysection{Motivation}
+\input{objectives}
+
+\mysection{Implementation}
+\input{implementation1}
+
+\end{column}
+
+\begin{column}{\colwidth}
+\input{implementation2}
+
+\mysection{Results}
+\input{results1}
+
+\end{column}
+
+\begin{column}{\colwidth}
+\input{results2}
+\mysection{Conclusion}
+\input{conclusion}
+
+\mysection{References}
+
+
+    \nocite{*}
+    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\end{document}

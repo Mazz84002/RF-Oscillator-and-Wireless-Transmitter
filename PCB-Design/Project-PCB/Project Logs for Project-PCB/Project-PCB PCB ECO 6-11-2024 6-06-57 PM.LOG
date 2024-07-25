@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC3116X70X50ML13T20 New Footprint=RESC1005X40X25ML05T10
+Change Component Comment : Designator=R1 Old Comment=Resistor 4k7 +/-1% 1206 250 mW New Comment=RC0402FR-074K53L
+Change Managed Component Library Link : Designator=R1 Old VaultGUID=02A93F39-2874-4B72-8E53-0B5335D90356 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=8A785A9C-9D68-4053-9AA3-4A445B826E74 New ItemGUID=CF3BF3AB-CEF4-4F88-B475-9E278F84F147 Old RevisionGUID=B09171F6-D672-4B47-9F62-8937B588CDF5 New RevisionGUID=EEE752E8-13AC-450A-A4C7-2BF838558872
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RESC3116X70X50ML13T20"; UniqueID = "\FVHJQPGT" ("\FVHJQPGT")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Yageo / Phycomp"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "RC0402FR-074K53L"; VariantName = "[No Variations]"
